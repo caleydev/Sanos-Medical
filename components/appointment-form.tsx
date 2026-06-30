@@ -60,7 +60,7 @@ export function AppointmentForm() {
     return (
       <div
         role="status"
-        className="border-border bg-surface rounded-card border p-8 text-center"
+        className="border-border bg-surface rounded-2xl border p-8 text-center"
       >
         <CircleCheck aria-hidden className="text-secondary mx-auto h-12 w-12" />
         <h2 className="text-primary mt-4 text-2xl font-bold">
@@ -82,7 +82,7 @@ export function AppointmentForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
       {/* COMPLIANCE (SPEC §5): no medical detail in any public form. */}
-      <p className="text-muted bg-surface rounded-md p-3 text-sm">
+      <p className="text-muted bg-surface rounded-xl p-3 text-sm">
         {t("medicalDetailHelp")}
       </p>
 
@@ -249,7 +249,7 @@ export function AppointmentForm() {
 }
 
 const inputClass =
-  "border-border focus:border-secondary w-full rounded-md border bg-background px-3 py-2 text-ink outline-none";
+  "border-border focus:border-secondary w-full rounded-xl border bg-background px-4 py-3 text-ink outline-none transition";
 
 function Field({
   id,

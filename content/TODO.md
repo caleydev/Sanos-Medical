@@ -42,9 +42,9 @@ practice-approved information before launch. Search the codebase for `TODO` and
 
 ## Home page
 
-- [ ] Verify the "Board-certified providers" trust-band claim before launch — it
-      is placeholder copy (`home.trust.providers`, also `home.heroSubtitle`). No
-      unverified board-certification claims (SPEC §6).
+- [x] Removed the unverified "Board-certified providers" trust-band claim from
+      `home.trust.providers` and `home.heroSubtitle`; the UI now uses licensed
+      provider language instead.
 - [ ] Real patient testimonials — the Home "What our patients say" section is a
       placeholder (`home.testimonialsNote`).
 

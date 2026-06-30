@@ -36,24 +36,24 @@ export default async function ContactPage({
 
   return (
     <main id="main" className="flex-1">
-      <header className="bg-surface">
+      <header className="topographic">
         <div className="mx-auto w-full max-w-5xl px-6 py-16 sm:py-20">
-          <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+          <p className="text-primary-foreground/80 text-sm font-semibold tracking-widest uppercase">
             {t("eyebrow")}
           </p>
-          <h1 className="text-primary mt-3 text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+          <h1 className="text-primary-foreground mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             {t("title")}
           </h1>
-          <p className="text-muted mt-4 max-w-2xl text-lg text-pretty">
+          <p className="text-primary-foreground/85 mt-4 max-w-2xl text-lg text-pretty">
             {t("intro")}
           </p>
         </div>
       </header>
 
-      <div className="mx-auto grid w-full max-w-5xl gap-12 px-6 py-16 lg:grid-cols-[1fr_1.4fr]">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[0.9fr_1.35fr]">
         {/* Practice contact details (NAP + hours). Values are placeholders — TODO. */}
-        <aside className="space-y-8">
-          <div>
+        <aside className="bg-surface rounded-2xl p-6">
+          <div className="space-y-8">
             <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
               <MapPin aria-hidden className="text-secondary h-5 w-5" />
               {t("visitHeading")}
@@ -62,7 +62,6 @@ export default async function ContactPage({
               <p>{tFooter("addressPlaceholder")}</p>
               <p>{tFooter("cityPlaceholder")}</p>
             </address>
-          </div>
 
           <div>
             <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
@@ -96,11 +95,15 @@ export default async function ContactPage({
             src="https://www.google.com/maps?q=14024%20SW%208th%20St%2C%20Miami%2C%20FL%2033184&output=embed"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="border-border rounded-card h-64 w-full border"
+            className="border-border rounded-2xl h-72 w-full border"
           />
+          </div>
         </aside>
 
-        <section aria-labelledby="form-heading">
+        <section
+          aria-labelledby="form-heading"
+          className="soft-panel rounded-2xl border border-border bg-background p-6 sm:p-8"
+        >
           <h2 id="form-heading" className="sr-only">
             {t("formHeading")}
           </h2>

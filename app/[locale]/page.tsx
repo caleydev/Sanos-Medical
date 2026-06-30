@@ -1,8 +1,19 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
+  ArrowRight,
+  CalendarDays,
+  CheckCircle2,
   HeartPulse,
   FlaskConical,
+  Languages,
+  MapPinned,
+  Play,
+  Quote,
+  Search,
   Scale,
+  ShieldCheck,
+  Star,
+  Stethoscope,
   Syringe,
   type LucideIcon,
 } from "lucide-react";
@@ -10,6 +21,7 @@ import { Link } from "@/i18n/navigation";
 import { ServiceCard } from "@/components/service-card";
 import { TrustBand } from "@/components/trust-band";
 import { CTASection } from "@/components/cta-section";
+import { AppointmentForm } from "@/components/appointment-form";
 
 const PILLARS: { key: string; href: string; icon: LucideIcon }[] = [
   { key: "primaryCare", href: "/services/primary-care", icon: HeartPulse },
@@ -17,6 +29,24 @@ const PILLARS: { key: string; href: string; icon: LucideIcon }[] = [
   { key: "weightManagement", href: "/services/weight-management", icon: Scale },
   { key: "glp1", href: "/services/glp-1", icon: Syringe },
 ];
+
+const STAT_ICONS = [Languages, CalendarDays, MapPinned];
+
+type HomeStat = {
+  value: string;
+  label: string;
+};
+
+type HomeQuickLink = {
+  title: string;
+  description: string;
+};
+
+type TestimonialCard = {
+  quote: string;
+  name: string;
+  role: string;
+};
 
 export default async function HomePage({
   params,
@@ -29,76 +59,365 @@ export default async function HomePage({
     getTranslations("home"),
     getTranslations("services"),
   ]);
+  const stats = t.raw("stats") as HomeStat[];
+  const quickLinks = t.raw("quickLinks") as HomeQuickLink[];
+  const specialtyPills = t.raw("specialtyPills") as string[];
+  const whyItems = t.raw("whyItems") as string[];
+  const testimonialCards = t.raw("testimonialCards") as TestimonialCard[];
 
   return (
     <main id="main" className="flex-1">
-      <section className="bg-surface">
-        <div className="mx-auto w-full max-w-5xl px-6 py-24 text-center sm:py-32">
-          <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
-            {t("heroEyebrow")}
-          </p>
-          <h1 className="text-primary mt-4 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            {t("heroTitle")}
-          </h1>
-          <p className="text-muted mx-auto mt-6 max-w-2xl text-lg text-pretty">
-            {t("heroSubtitle")}
-          </p>
-          <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Link
-              href="/contact"
-              className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
+      <section className="bg-surface overflow-hidden">
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:py-24">
+          <div>
+            <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+              {t("heroEyebrow")}
+            </p>
+            <h1 className="text-primary mt-4 max-w-2xl text-5xl font-bold tracking-tight text-balance sm:text-6xl">
+              {t("heroTitle")}
+            </h1>
+            <p className="text-muted mt-6 max-w-xl text-xl leading-relaxed text-pretty">
+              {t("heroSubtitle")}
+            </p>
+
+            <form
+              action={`/${locale}/services`}
+              aria-label={t("searchLabel")}
+              className="soft-panel mt-8 flex max-w-xl flex-col gap-3 rounded-2xl bg-background p-3 sm:flex-row"
             >
-              {t("heroCta")}
-            </Link>
-            <Link
-              href="/services"
-              className="text-primary rounded-full px-6 py-3 font-semibold underline-offset-4 hover:underline"
-            >
-              {t("heroSecondaryCta")}
-            </Link>
+              <label htmlFor="home-service-search" className="sr-only">
+                {t("searchLabel")}
+              </label>
+              <div className="flex min-w-0 flex-1 items-center gap-3 rounded-xl px-3">
+                <Search aria-hidden className="text-secondary h-5 w-5 shrink-0" />
+                <input
+                  id="home-service-search"
+                  name="q"
+                  type="search"
+                  placeholder={t("searchPlaceholder")}
+                  className="text-ink placeholder:text-muted h-12 min-w-0 flex-1 bg-transparent text-sm outline-none"
+                />
+              </div>
+              <button
+                type="submit"
+                className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 text-sm font-semibold transition hover:opacity-90"
+              >
+                {t("searchButton")}
+              </button>
+            </form>
+
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/contact"
+                className="bg-secondary text-secondary-foreground inline-flex justify-center rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
+              >
+                {t("heroCta")}
+              </Link>
+              <Link
+                href="/services"
+                className="text-primary inline-flex justify-center rounded-full px-6 py-3 font-semibold underline-offset-4 hover:underline"
+              >
+                {t("heroSecondaryCta")}
+              </Link>
+            </div>
+          </div>
+
+          <div className="relative min-h-[360px]">
+            <div className="absolute inset-8 rounded-full bg-secondary/20 blur-2xl" />
+            <div className="topographic soft-panel relative mx-auto flex aspect-square max-w-md items-center justify-center overflow-hidden rounded-full">
+              {/* TODO: replace placeholder media with approved clinician photography. */}
+              <div
+                role="img"
+                aria-label={t("heroMediaAlt")}
+                className="flex h-[78%] w-[78%] items-center justify-center rounded-full bg-background/95"
+              >
+                <Stethoscope aria-hidden className="text-secondary h-28 w-28" />
+              </div>
+              <span className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/40" />
+              <span className="absolute right-[18%] bottom-[28%] inline-flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-lg">
+                <Play
+                  aria-hidden
+                  className="text-secondary ml-1 h-7 w-7 fill-current"
+                />
+              </span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-20">
-        <div className="mx-auto max-w-2xl text-center">
+      <section className="bg-background">
+        <div className="mx-auto grid w-full max-w-6xl gap-0 px-6 py-10 sm:grid-cols-3">
+          {stats.map((stat, index) => {
+            const Icon = STAT_ICONS[index] ?? ShieldCheck;
+            return (
+              <div
+                key={stat.label}
+                className="relative flex items-center gap-4 py-5 sm:justify-center"
+              >
+                <span className="bg-surface text-secondary inline-flex h-11 w-11 items-center justify-center rounded-full">
+                  <Icon aria-hidden className="h-5 w-5" />
+                </span>
+                <div>
+                  <p className="text-primary text-2xl font-bold">{stat.value}</p>
+                  <p className="text-muted text-sm">{stat.label}</p>
+                </div>
+                {index < stats.length - 1 ? (
+                  <span
+                    aria-hidden
+                    className="bg-border absolute top-6 right-4 hidden h-16 w-px rotate-[18deg] sm:block"
+                  />
+                ) : null}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl px-6 py-12">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {quickLinks.map((item, index) => {
+            const pillar = PILLARS[index] ?? PILLARS[0];
+            const Icon = pillar.icon;
+            return (
+              <Link
+                key={item.title}
+                href={pillar.href}
+                className="lift-card border-border rounded-2xl border bg-background p-5"
+              >
+                <span className="bg-surface text-secondary inline-flex h-12 w-12 items-center justify-center rounded-2xl">
+                  <Icon aria-hidden className="h-6 w-6" />
+                </span>
+                <h2 className="text-primary mt-4 text-lg font-semibold">
+                  {item.title}
+                </h2>
+                <p className="text-muted mt-2 text-sm leading-relaxed">
+                  {item.description}
+                </p>
+                <span className="text-secondary mt-4 inline-flex items-center gap-1 text-sm font-semibold">
+                  {tServices("learnMore")}
+                  <ArrowRight aria-hidden className="h-4 w-4" />
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1fr]">
+        <div className="relative hidden min-h-[440px] lg:block">
+          <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/30" />
+          <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/20" />
+          <div className="bg-secondary text-secondary-foreground absolute top-1/2 left-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-center text-2xl font-bold leading-tight shadow-xl">
+            {t("pillarsEyebrow")}
+          </div>
+          {PILLARS.map(({ key, icon: Icon }, index) => {
+            const positions = [
+              "top-8 left-1/2 -translate-x-1/2",
+              "top-1/2 right-8 -translate-y-1/2",
+              "bottom-8 left-1/2 -translate-x-1/2",
+              "top-1/2 left-8 -translate-y-1/2",
+            ];
+            return (
+              <Link
+                key={key}
+                href={PILLARS[index].href}
+                className={`bg-background text-secondary soft-panel absolute inline-flex h-16 w-16 items-center justify-center rounded-full ${positions[index]}`}
+              >
+                <Icon aria-hidden className="h-8 w-8" />
+                <span className="sr-only">{tServices(`cards.${key}.title`)}</span>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div>
           <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
             {t("pillarsEyebrow")}
           </p>
-          <h2 className="text-primary mt-3 text-3xl font-bold tracking-tight text-balance">
-            {t("pillarsTitle")}
+          <h2 className="text-primary mt-3 text-4xl font-bold tracking-tight text-balance">
+            {t("specialtiesTitle")}
           </h2>
-          <p className="text-muted mt-4 text-lg text-pretty">
-            {t("pillarsSubtitle")}
+          <p className="text-muted mt-5 max-w-2xl text-lg leading-relaxed text-pretty">
+            {t("specialtiesBody")}
           </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {specialtyPills.map((pill, index) => (
+              <span
+                key={pill}
+                className={`rounded-full border px-4 py-2 text-sm font-semibold ${
+                  index % 3 === 0
+                    ? "border-secondary bg-secondary text-secondary-foreground"
+                    : "border-border bg-background text-ink"
+                }`}
+              >
+                {pill}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {PILLARS.map(({ key, href, icon }) => (
-            <ServiceCard
-              key={key}
-              icon={icon}
-              href={href}
-              title={tServices(`cards.${key}.title`)}
-              summary={tServices(`cards.${key}.summary`)}
-              cta={tServices("learnMore")}
-            />
-          ))}
+      </section>
+
+      <section className="bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20">
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+                {t("pillarsEyebrow")}
+              </p>
+              <h2 className="text-primary mt-3 text-3xl font-bold tracking-tight text-balance">
+                {t("pillarsTitle")}
+              </h2>
+              <p className="text-muted mt-4 max-w-2xl text-lg text-pretty">
+                {t("pillarsSubtitle")}
+              </p>
+            </div>
+            <Link
+              href="/services"
+              className="text-secondary inline-flex items-center gap-2 font-semibold"
+            >
+              {t("viewAllServices")}
+              <ArrowRight aria-hidden className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {PILLARS.map(({ key, href, icon }) => (
+              <ServiceCard
+                key={key}
+                icon={icon}
+                href={href}
+                title={tServices(`cards.${key}.title`)}
+                summary={tServices(`cards.${key}.summary`)}
+                cta={tServices("learnMore")}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
       <TrustBand />
 
-      {/* Testimonials placeholder — real patient stories land in a later pass (SPEC §3). */}
-      <section className="bg-surface">
-        <div className="mx-auto w-full max-w-4xl px-6 py-20 text-center">
-          <h2 className="text-primary text-3xl font-bold tracking-tight">
-            {t("testimonialsTitle")}
+      <section className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-2">
+        <div>
+          <h2 className="text-primary text-4xl font-bold tracking-tight text-balance">
+            {t("whyTitle")}
           </h2>
-          <p className="text-muted mt-4 text-lg">{t("testimonialsNote")}</p>
+          <p className="text-muted mt-5 max-w-xl text-lg leading-relaxed text-pretty">
+            {t("whyBody")}
+          </p>
+          <ul className="mt-8 space-y-4">
+            {whyItems.map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <CheckCircle2
+                  aria-hidden
+                  className="text-secondary mt-0.5 h-5 w-5 shrink-0"
+                />
+                <span className="text-ink">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/about"
+              className="border-border text-primary inline-flex justify-center rounded-full border px-6 py-3 font-semibold transition hover:bg-surface"
+            >
+              {t("whyPrimaryCta")}
+            </Link>
+            <Link
+              href="/contact"
+              className="bg-secondary text-secondary-foreground inline-flex justify-center rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
+            >
+              {t("whySecondaryCta")}
+            </Link>
+          </div>
+        </div>
+        {/* TODO: replace placeholder media with approved clinic photography. */}
+        <div
+          role="img"
+          aria-label={t("clinicMediaAlt")}
+          className="topographic soft-panel flex aspect-[4/3] items-center justify-center rounded-2xl"
+        >
+          <span className="bg-background/95 text-secondary inline-flex h-24 w-24 items-center justify-center rounded-2xl">
+            <ShieldCheck aria-hidden className="h-12 w-12" />
+          </span>
+        </div>
+      </section>
+
+      {/* Testimonials placeholder — real patient stories land in a later pass (SPEC §3). */}
+      <section className="bg-surface overflow-hidden">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20">
+          <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div>
+              <h2 className="text-primary text-3xl font-bold tracking-tight">
+                {t("testimonialsTitle")}
+              </h2>
+              <p className="text-muted mt-3 max-w-2xl text-lg">
+                {t("testimonialsNote")}
+              </p>
+            </div>
+            <div className="flex gap-3" aria-hidden>
+              <span className="bg-background text-secondary inline-flex h-11 w-11 items-center justify-center rounded-full shadow-sm">
+                <ArrowRight className="h-5 w-5 rotate-180" />
+              </span>
+              <span className="bg-secondary text-secondary-foreground inline-flex h-11 w-11 items-center justify-center rounded-full shadow-sm">
+                <ArrowRight className="h-5 w-5" />
+              </span>
+            </div>
+          </div>
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {testimonialCards.map((card, index) => (
+              <article
+                key={`${card.name}-${index}`}
+                className="soft-panel rounded-2xl bg-background p-6"
+              >
+                <Quote aria-hidden className="text-secondary h-8 w-8" />
+                <p className="text-ink mt-5 text-sm leading-relaxed">
+                  {card.quote}
+                </p>
+                <div className="mt-5 flex gap-1 text-yellow-500" aria-hidden>
+                  {[0, 1, 2, 3, 4].map((star) => (
+                    <Star
+                      key={star}
+                      className="h-4 w-4 fill-current"
+                    />
+                  ))}
+                </div>
+                <div className="mt-6 flex items-center gap-3">
+                  <span className="bg-surface text-secondary inline-flex h-11 w-11 items-center justify-center rounded-full">
+                    <Stethoscope aria-hidden className="h-5 w-5" />
+                  </span>
+                  <div>
+                    <h3 className="text-primary text-sm font-semibold">
+                      {card.name}
+                    </h3>
+                    <p className="text-muted text-xs">{card.role}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <CTASection />
+
+      <section className="topographic">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-primary-foreground/85 text-sm font-semibold tracking-widest uppercase">
+              {t("heroEyebrow")}
+            </p>
+            <h2 className="text-primary-foreground mt-3 text-4xl font-bold tracking-tight">
+              {t("heroCta")}
+            </h2>
+            <p className="text-primary-foreground/85 mt-4 text-lg">
+              {t("heroSubtitle")}
+            </p>
+          </div>
+          <div className="soft-panel rounded-2xl bg-background p-6 sm:p-8">
+            <AppointmentForm />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

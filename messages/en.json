@@ -12,6 +12,7 @@
     "contact": "Contact",
     "requestAppointment": "Request an appointment",
     "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "brandWordmark": "Sanos Medical Group"
   },
   "languageToggle": {
@@ -21,13 +22,51 @@
   },
   "home": {
     "heroEyebrow": "Sanos Medical Group",
-    "heroTitle": "Comprehensive primary care for Miami families",
-    "heroSubtitle": "Bilingual, board-certified care — from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
+    "heroTitle": "Care for you and your family",
+    "heroSubtitle": "Bilingual primary care in Miami, from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
     "heroCta": "Request an appointment",
     "heroSecondaryCta": "Explore our services",
+    "searchLabel": "Search services",
+    "searchPlaceholder": "Search a service...",
+    "searchButton": "Search",
+    "heroMediaAlt": "Illustration placeholder for a Sanos Medical clinician",
+    "stats": [
+      { "value": "English / Spanish", "label": "Bilingual care" },
+      { "value": "Mon-Sat", "label": "Office hours" },
+      { "value": "Miami", "label": "Local primary care" }
+    ],
+    "quickLinks": [
+      {
+        "title": "Primary care",
+        "description": "Get a consultation from our primary care team."
+      },
+      {
+        "title": "Blood testing",
+        "description": "Ask about lab work coordinated through your provider."
+      },
+      {
+        "title": "Weight management",
+        "description": "Learn about provider-evaluated support."
+      },
+      {
+        "title": "GLP-1 therapy",
+        "description": "Review supervised treatment information."
+      }
+    ],
     "pillarsEyebrow": "What we offer",
     "pillarsTitle": "Care for every stage of your health",
     "pillarsSubtitle": "From preventive checkups to ongoing treatment, our bilingual team supports you with personalized, evidence-based care.",
+    "specialtiesTitle": "Coordinated care around your needs",
+    "specialtiesBody": "Start with primary care and connect to labs, follow-up support, and treatment options when clinically appropriate.",
+    "specialtyPills": [
+      "Preventive care",
+      "Annual physicals",
+      "Lab work",
+      "Weight management",
+      "GLP-1 evaluation",
+      "Bilingual visits"
+    ],
+    "viewAllServices": "View all services",
     "trustTitle": "Why patients choose Sanos",
     "trust": {
       "bilingual": {
@@ -35,7 +74,7 @@
         "description": "Our team serves Miami's diverse community in both English and Spanish."
       },
       "providers": {
-        "title": "Board-certified providers",
+        "title": "Licensed providers",
         "description": "Compassionate, evidence-based care from licensed clinicians."
       },
       "insurance": {
@@ -43,8 +82,35 @@
         "description": "We work with many major insurance plans — ask us about your coverage."
       }
     },
-    "testimonialsTitle": "What our patients say",
-    "testimonialsNote": "Patient stories are coming soon."
+    "whyTitle": "A calmer way to coordinate care",
+    "whyBody": "We keep scheduling, follow-up, and communication straightforward so your visit feels organized from the first request.",
+    "whyItems": [
+      "Appointment requests reviewed by the care team",
+      "Personalized plans based on provider evaluation",
+      "English and Spanish support for Miami families"
+    ],
+    "whyPrimaryCta": "Learn more",
+    "whySecondaryCta": "Contact us",
+    "clinicMediaAlt": "Placeholder for Sanos Medical clinic interior",
+    "testimonialsTitle": "Patient feedback",
+    "testimonialsNote": "Approved patient stories will be added here before launch.",
+    "testimonialCards": [
+      {
+        "quote": "Patient testimonial pending practice approval.",
+        "name": "Patient story",
+        "role": "Patient"
+      },
+      {
+        "quote": "Patient testimonial pending practice approval.",
+        "name": "Patient story",
+        "role": "Patient"
+      },
+      {
+        "quote": "Patient testimonial pending practice approval.",
+        "name": "Patient story",
+        "role": "Patient"
+      }
+    ]
   },
   "cta": {
     "title": "Ready to be seen?",

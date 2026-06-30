@@ -22,18 +22,29 @@ export function ServiceCard({
   return (
     <Link
       href={href}
-      className="group border-border bg-background rounded-card hover:border-secondary flex flex-col border p-6 transition hover:shadow-sm"
+      className="lift-card group border-border bg-background rounded-2xl flex flex-col border p-3"
     >
-      <Icon aria-hidden className="text-secondary h-8 w-8" />
-      <h3 className="text-primary mt-4 text-lg font-semibold">{title}</h3>
-      <p className="text-muted mt-2 flex-1 text-sm leading-relaxed">{summary}</p>
-      <span className="text-secondary mt-4 inline-flex items-center gap-1 text-sm font-semibold">
-        {cta}
-        <ArrowRight
-          aria-hidden
-          className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
-        />
-      </span>
+      {/* TODO: replace placeholder media with approved service photography. */}
+      <div className="bg-surface relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl">
+        <div className="absolute -top-12 -right-10 h-28 w-28 rounded-full bg-white/70" />
+        <div className="absolute -bottom-14 -left-10 h-32 w-32 rounded-full bg-secondary/10" />
+        <span className="bg-background text-secondary relative inline-flex h-16 w-16 items-center justify-center rounded-2xl shadow-sm">
+          <Icon aria-hidden className="h-8 w-8" />
+        </span>
+      </div>
+      <div className="flex flex-1 flex-col p-3">
+        <h3 className="text-primary text-lg font-semibold leading-snug">{title}</h3>
+        <p className="text-muted mt-2 flex-1 text-sm leading-relaxed">
+          {summary}
+        </p>
+        <span className="text-secondary mt-5 inline-flex items-center gap-1 text-sm font-semibold">
+          {cta}
+          <ArrowRight
+            aria-hidden
+            className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+          />
+        </span>
+      </div>
     </Link>
   );
 }

@@ -9,17 +9,17 @@ export async function CTASection() {
   const t = await getTranslations("cta");
 
   return (
-    <section className="bg-primary">
-      <div className="mx-auto w-full max-w-4xl px-6 py-16 text-center sm:py-20">
-        <h2 className="text-primary-foreground text-3xl font-bold tracking-tight text-balance">
-          {t("title")}
-        </h2>
-        <p className="text-primary-foreground/80 mx-auto mt-4 max-w-2xl text-lg text-pretty">
-          {t("body")}
-        </p>
+    <section className="bg-background px-6 py-16">
+      <div className="border-secondary/50 soft-panel mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-5 rounded-2xl border bg-background p-6 sm:flex-row sm:items-center sm:p-8">
+        <div>
+          <h2 className="text-primary text-2xl font-bold tracking-tight text-balance">
+            {t("title")}
+          </h2>
+          <p className="text-muted mt-2 max-w-2xl text-pretty">{t("body")}</p>
+        </div>
         <Link
           href="/contact"
-          className="bg-secondary text-secondary-foreground mt-8 inline-block rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
+          className="bg-secondary text-secondary-foreground inline-flex shrink-0 rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
         >
           {t("button")}
         </Link>

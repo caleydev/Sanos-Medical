@@ -12,6 +12,7 @@
     "contact": "Contacto",
     "requestAppointment": "Solicitar una cita",
     "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
     "brandWordmark": "Sanos Medical Group"
   },
   "languageToggle": {
@@ -21,13 +22,51 @@
   },
   "home": {
     "heroEyebrow": "Sanos Medical Group",
-    "heroTitle": "Atención primaria integral para las familias de Miami",
-    "heroSubtitle": "Atención bilingüe con médicos certificados — desde exámenes físicos anuales y análisis de laboratorio hasta el control de peso y la terapia con GLP-1 bajo supervisión médica.",
+    "heroTitle": "Cuidado para usted y su familia",
+    "heroSubtitle": "Atención primaria bilingüe en Miami, desde exámenes físicos anuales y análisis de laboratorio hasta control de peso y terapia con GLP-1 bajo supervisión médica.",
     "heroCta": "Solicitar una cita",
     "heroSecondaryCta": "Conozca nuestros servicios",
+    "searchLabel": "Buscar servicios",
+    "searchPlaceholder": "Buscar un servicio...",
+    "searchButton": "Buscar",
+    "heroMediaAlt": "Ilustración provisional de un profesional clínico de Sanos Medical",
+    "stats": [
+      { "value": "Inglés / Español", "label": "Atención bilingüe" },
+      { "value": "Lun-Sáb", "label": "Horario de atención" },
+      { "value": "Miami", "label": "Atención primaria local" }
+    ],
+    "quickLinks": [
+      {
+        "title": "Atención primaria",
+        "description": "Solicite una consulta con nuestro equipo de atención primaria."
+      },
+      {
+        "title": "Análisis de sangre",
+        "description": "Pregunte por análisis coordinados por su proveedor."
+      },
+      {
+        "title": "Control de peso",
+        "description": "Conozca el apoyo evaluado por un proveedor."
+      },
+      {
+        "title": "Terapia con GLP-1",
+        "description": "Revise la información sobre tratamiento supervisado."
+      }
+    ],
     "pillarsEyebrow": "Lo que ofrecemos",
     "pillarsTitle": "Atención para cada etapa de su salud",
     "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe le acompaña con una atención personalizada y basada en la evidencia.",
+    "specialtiesTitle": "Atención coordinada según sus necesidades",
+    "specialtiesBody": "Comience con atención primaria y conecte con análisis, seguimiento y opciones de tratamiento cuando sea clínicamente apropiado.",
+    "specialtyPills": [
+      "Atención preventiva",
+      "Exámenes anuales",
+      "Análisis de laboratorio",
+      "Control de peso",
+      "Evaluación GLP-1",
+      "Visitas bilingües"
+    ],
+    "viewAllServices": "Ver todos los servicios",
     "trustTitle": "Por qué los pacientes eligen Sanos",
     "trust": {
       "bilingual": {
@@ -35,7 +74,7 @@
         "description": "Nuestro equipo atiende a la diversa comunidad de Miami en inglés y en español."
       },
       "providers": {
-        "title": "Médicos certificados",
+        "title": "Proveedores con licencia",
         "description": "Atención cercana y basada en la evidencia, brindada por profesionales con licencia."
       },
       "insurance": {
@@ -43,8 +82,35 @@
         "description": "Trabajamos con muchos planes de seguro principales — pregúntenos por su cobertura."
       }
     },
-    "testimonialsTitle": "Lo que dicen nuestros pacientes",
-    "testimonialsNote": "Las historias de nuestros pacientes estarán disponibles pronto."
+    "whyTitle": "Una forma más tranquila de coordinar su atención",
+    "whyBody": "Hacemos que la programación, el seguimiento y la comunicación sean claros para que su visita se sienta organizada desde la primera solicitud.",
+    "whyItems": [
+      "Solicitudes de cita revisadas por el equipo de atención",
+      "Planes personalizados basados en la evaluación del proveedor",
+      "Apoyo en inglés y español para las familias de Miami"
+    ],
+    "whyPrimaryCta": "Conozca más",
+    "whySecondaryCta": "Contáctenos",
+    "clinicMediaAlt": "Imagen provisional del interior de la clínica Sanos Medical",
+    "testimonialsTitle": "Comentarios de pacientes",
+    "testimonialsNote": "Las historias aprobadas de pacientes se agregarán aquí antes del lanzamiento.",
+    "testimonialCards": [
+      {
+        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
+        "name": "Historia de paciente",
+        "role": "Paciente"
+      },
+      {
+        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
+        "name": "Historia de paciente",
+        "role": "Paciente"
+      },
+      {
+        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
+        "name": "Historia de paciente",
+        "role": "Paciente"
+      }
+    ]
   },
   "cta": {
     "title": "¿Listo para su consulta?",

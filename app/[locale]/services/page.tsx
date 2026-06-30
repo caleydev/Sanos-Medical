@@ -48,22 +48,22 @@ export default async function ServicesPage({
 
   return (
     <main id="main" className="flex-1">
-      <header className="bg-surface">
+      <header className="topographic">
         <div className="mx-auto w-full max-w-4xl px-6 py-16 sm:py-20">
-          <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+          <p className="text-primary-foreground/80 text-sm font-semibold tracking-widest uppercase">
             {t("overview.eyebrow")}
           </p>
-          <h1 className="text-primary mt-3 text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+          <h1 className="text-primary-foreground mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
             {t("overview.title")}
           </h1>
-          <p className="text-muted mt-4 max-w-2xl text-lg text-pretty">
+          <p className="text-primary-foreground/85 mt-4 max-w-2xl text-lg text-pretty">
             {t("overview.intro")}
           </p>
         </div>
       </header>
 
       <div className="mx-auto w-full max-w-6xl px-6 py-16">
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {SERVICES.map(({ key, href, icon }) => (
             <ServiceCard
               key={key}

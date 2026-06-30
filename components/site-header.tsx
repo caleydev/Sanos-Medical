@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "@/components/language-toggle";
+import { MobileNav } from "@/components/mobile-nav";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -13,9 +14,13 @@ const NAV_LINKS = [
 
 export async function SiteHeader() {
   const t = await getTranslations("nav");
+  const mobileLinks = NAV_LINKS.map((link) => ({
+    href: link.href,
+    label: t(link.key),
+  }));
 
   return (
-    <header className="border-border bg-background/95 sticky top-0 z-40 border-b backdrop-blur">
+    <header className="border-border bg-background/90 sticky top-0 z-40 border-b backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" className="flex items-center">
           <Image
@@ -47,10 +52,16 @@ export async function SiteHeader() {
           <LanguageToggle />
           <Link
             href="/contact"
-            className="bg-secondary text-secondary-foreground rounded-full px-4 py-2 text-sm font-semibold transition hover:opacity-90"
+            className="bg-secondary text-secondary-foreground hidden rounded-full px-4 py-2 text-sm font-semibold transition hover:opacity-90 sm:inline-flex"
           >
             {t("requestAppointment")}
           </Link>
+          <MobileNav
+            links={mobileLinks}
+            ctaLabel={t("requestAppointment")}
+            openLabel={t("openMenu")}
+            closeLabel={t("closeMenu")}
+          />
         </div>
       </div>
     </header>
