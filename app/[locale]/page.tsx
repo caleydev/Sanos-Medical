@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
@@ -23,11 +24,36 @@ import { TrustBand } from "@/components/trust-band";
 import { CTASection } from "@/components/cta-section";
 import { AppointmentForm } from "@/components/appointment-form";
 
-const PILLARS: { key: string; href: string; icon: LucideIcon }[] = [
-  { key: "primaryCare", href: "/services/primary-care", icon: HeartPulse },
-  { key: "labs", href: "/services/labs", icon: FlaskConical },
-  { key: "weightManagement", href: "/services/weight-management", icon: Scale },
-  { key: "glp1", href: "/services/glp-1", icon: Syringe },
+const PILLARS: {
+  key: string;
+  href: string;
+  icon: LucideIcon;
+  imageSrc?: string;
+}[] = [
+  {
+    key: "primaryCare",
+    href: "/services/primary-care",
+    icon: HeartPulse,
+    imageSrc: "/images/services/doctorBlue.png",
+  },
+  {
+    key: "labs",
+    href: "/services/labs",
+    icon: FlaskConical,
+    imageSrc: "/images/services/labwork.png",
+  },
+  {
+    key: "weightManagement",
+    href: "/services/weight-management",
+    icon: Scale,
+    imageSrc: "/images/services/weight-management-2.jpg",
+  },
+  {
+    key: "glp1",
+    href: "/services/glp-1",
+    icon: Syringe,
+    imageSrc: "/images/services/glp.png",
+  },
 ];
 
 const STAT_ICONS = [Languages, CalendarDays, MapPinned];
@@ -35,11 +61,6 @@ const STAT_ICONS = [Languages, CalendarDays, MapPinned];
 type HomeStat = {
   value: string;
   label: string;
-};
-
-type HomeQuickLink = {
-  title: string;
-  description: string;
 };
 
 type TestimonialCard = {
@@ -60,7 +81,6 @@ export default async function HomePage({
     getTranslations("services"),
   ]);
   const stats = t.raw("stats") as HomeStat[];
-  const quickLinks = t.raw("quickLinks") as HomeQuickLink[];
   const specialtyPills = t.raw("specialtyPills") as string[];
   const whyItems = t.raw("whyItems") as string[];
   const testimonialCards = t.raw("testimonialCards") as TestimonialCard[];
@@ -173,73 +193,68 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-6 py-12">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {quickLinks.map((item, index) => {
-            const pillar = PILLARS[index] ?? PILLARS[0];
-            const Icon = pillar.icon;
-            return (
-              <Link
-                key={item.title}
-                href={pillar.href}
-                className="lift-card border-border rounded-2xl border bg-background p-5"
-              >
-                <span className="bg-surface text-secondary inline-flex h-12 w-12 items-center justify-center rounded-2xl">
-                  <Icon aria-hidden className="h-6 w-6" />
-                </span>
-                <h2 className="text-primary mt-4 text-lg font-semibold">
-                  {item.title}
-                </h2>
-                <p className="text-muted mt-2 text-sm leading-relaxed">
-                  {item.description}
-                </p>
-                <span className="text-secondary mt-4 inline-flex items-center gap-1 text-sm font-semibold">
-                  {tServices("learnMore")}
-                  <ArrowRight aria-hidden className="h-4 w-4" />
-                </span>
-              </Link>
-            );
-          })}
-        </div>
-      </section>
-
-      <section className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1fr]">
-        <div className="relative hidden min-h-[440px] lg:block">
-          <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/30" />
-          <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/20" />
-          <div className="bg-secondary text-secondary-foreground absolute top-1/2 left-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-center text-2xl font-bold leading-tight shadow-xl">
-            {t("pillarsEyebrow")}
-          </div>
-          {PILLARS.map(({ key, icon: Icon }, index) => {
-            const positions = [
-              "top-8 left-1/2 -translate-x-1/2",
-              "top-1/2 right-8 -translate-y-1/2",
-              "bottom-8 left-1/2 -translate-x-1/2",
-              "top-1/2 left-8 -translate-y-1/2",
-            ];
-            return (
-              <Link
-                key={key}
-                href={PILLARS[index].href}
-                className={`bg-background text-secondary soft-panel absolute inline-flex h-16 w-16 items-center justify-center rounded-full ${positions[index]}`}
-              >
-                <Icon aria-hidden className="h-8 w-8" />
-                <span className="sr-only">{tServices(`cards.${key}.title`)}</span>
-              </Link>
-            );
-          })}
-        </div>
-
-        <div>
+      <section className="mx-auto w-full max-w-6xl px-6 py-20">
+        <div className="mx-auto max-w-2xl text-center">
           <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
             {t("pillarsEyebrow")}
           </p>
           <h2 className="text-primary mt-3 text-4xl font-bold tracking-tight text-balance">
             {t("specialtiesTitle")}
           </h2>
-          <p className="text-muted mt-5 max-w-2xl text-lg leading-relaxed text-pretty">
+          <p className="text-muted mt-5 text-lg leading-relaxed text-pretty">
             {t("specialtiesBody")}
           </p>
+        </div>
+
+        <div className="orbit-stage mx-auto mt-14 hidden lg:block">
+          <div className="absolute top-1/2 left-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/30" />
+          <div className="absolute top-1/2 left-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/20" />
+          <div className="absolute top-1/2 left-1/2 h-[30rem] w-[30rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-secondary/10" />
+          <div className="bg-secondary text-secondary-foreground soft-panel absolute top-1/2 left-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full text-center text-2xl font-bold leading-tight">
+            {t("pillarsEyebrow")}
+          </div>
+          {PILLARS.map(({ key, icon: Icon }, index) => {
+            const angles = ["0deg", "90deg", "180deg", "270deg"];
+            const panelPositions = [
+              "left-1/2 top-20",
+              "left-1/2 top-20",
+              "left-1/2 bottom-20",
+              "left-1/2 top-20",
+            ];
+            return (
+              <Link
+                key={key}
+                href={PILLARS[index].href}
+                className="orbit-service group z-10"
+                style={{ "--orbit-angle": angles[index] } as CSSProperties}
+              >
+                <span className="bg-background text-secondary soft-panel inline-flex h-16 w-16 items-center justify-center rounded-full transition group-hover:scale-110 group-focus-visible:scale-110">
+                  <Icon aria-hidden className="h-8 w-8" />
+                </span>
+                <span className="sr-only">
+                  {tServices(`cards.${key}.title`)}
+                </span>
+                <span
+                  aria-hidden
+                  className={`orbit-popover border-border soft-panel pointer-events-none absolute z-20 w-72 rounded-2xl border bg-background p-5 text-left opacity-0 transition group-hover:opacity-100 group-focus-visible:opacity-100 ${panelPositions[index]}`}
+                >
+                  <span className="text-primary block text-lg font-semibold">
+                    {tServices(`cards.${key}.title`)}
+                  </span>
+                  <span className="text-muted mt-2 block text-sm leading-relaxed">
+                    {tServices(`cards.${key}.summary`)}
+                  </span>
+                  <span className="text-secondary mt-4 inline-flex items-center gap-1 text-sm font-semibold">
+                    {tServices("learnMore")}
+                    <ArrowRight aria-hidden className="h-4 w-4" />
+                  </span>
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="mt-10 lg:hidden">
           <div className="mt-8 flex flex-wrap gap-3">
             {specialtyPills.map((pill, index) => (
               <span
@@ -280,7 +295,7 @@ export default async function HomePage({
             </Link>
           </div>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {PILLARS.map(({ key, href, icon }) => (
+            {PILLARS.map(({ key, href, icon, imageSrc }) => (
               <ServiceCard
                 key={key}
                 icon={icon}
@@ -288,6 +303,10 @@ export default async function HomePage({
                 title={tServices(`cards.${key}.title`)}
                 summary={tServices(`cards.${key}.summary`)}
                 cta={tServices("learnMore")}
+                imageSrc={imageSrc}
+                imageAlt={
+                  imageSrc ? tServices(`cardImages.${key}`) : undefined
+                }
               />
             ))}
           </div>

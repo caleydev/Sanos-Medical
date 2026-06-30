@@ -35,24 +35,6 @@
       { "value": "Mon-Sat", "label": "Office hours" },
       { "value": "Miami", "label": "Local primary care" }
     ],
-    "quickLinks": [
-      {
-        "title": "Primary care",
-        "description": "Get a consultation from our primary care team."
-      },
-      {
-        "title": "Blood testing",
-        "description": "Ask about lab work coordinated through your provider."
-      },
-      {
-        "title": "Weight management",
-        "description": "Learn about provider-evaluated support."
-      },
-      {
-        "title": "GLP-1 therapy",
-        "description": "Review supervised treatment information."
-      }
-    ],
     "pillarsEyebrow": "What we offer",
     "pillarsTitle": "Care for every stage of your health",
     "pillarsSubtitle": "From preventive checkups to ongoing treatment, our bilingual team supports you with personalized, evidence-based care.",
@@ -268,6 +250,12 @@
         "title": "GLP-1 Therapy",
         "summary": "Provider-evaluated GLP-1 treatment offered as part of a weight-management plan."
       }
+    },
+    "cardImages": {
+      "primaryCare": "Clinician in blue scrubs representing primary and comprehensive care",
+      "labs": "Lab testing supplies representing blood testing and laboratory services",
+      "weightManagement": "Healthy meal and measuring tape representing weight-management support",
+      "glp1": "Clinician with medication pen representing medically supervised GLP-1 therapy"
     },
     "primaryCare": {
       "eyebrow": "Primary & Comprehensive Care",

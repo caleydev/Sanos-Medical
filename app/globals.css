@@ -84,6 +84,52 @@ body {
   box-shadow: 0 20px 45px rgb(28 44 89 / 0.12);
 }
 
+.orbit-stage {
+  --orbit-size: 34rem;
+  position: relative;
+  width: var(--orbit-size);
+  height: var(--orbit-size);
+}
+
+.orbit-service {
+  --orbit-angle: 0deg;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) rotate(var(--orbit-angle))
+    translateY(-14.25rem) rotate(calc(-1 * var(--orbit-angle)));
+  animation: orbit-service-spin 32s linear infinite;
+}
+
+.orbit-service:hover,
+.orbit-service:focus-visible {
+  z-index: 30;
+}
+
+.orbit-service:hover,
+.orbit-service:focus-visible,
+.orbit-stage:focus-within .orbit-service,
+.orbit-stage:hover .orbit-service {
+  animation-play-state: paused;
+}
+
+.orbit-popover {
+  transform: translateX(-50%);
+}
+
+@keyframes orbit-service-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(var(--orbit-angle))
+      translateY(-14.25rem) rotate(calc(-1 * var(--orbit-angle)));
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(calc(var(--orbit-angle) + 360deg))
+      translateY(-14.25rem) rotate(calc(-1 * (var(--orbit-angle) + 360deg)));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .lift-card {
     transition: none;
@@ -91,5 +137,9 @@ body {
 
   .lift-card:hover {
     transform: none;
+  }
+
+  .orbit-service {
+    animation: none;
   }
 }

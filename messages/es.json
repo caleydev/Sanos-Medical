@@ -35,24 +35,6 @@
       { "value": "Lun-Sáb", "label": "Horario de atención" },
       { "value": "Miami", "label": "Atención primaria local" }
     ],
-    "quickLinks": [
-      {
-        "title": "Atención primaria",
-        "description": "Solicite una consulta con nuestro equipo de atención primaria."
-      },
-      {
-        "title": "Análisis de sangre",
-        "description": "Pregunte por análisis coordinados por su proveedor."
-      },
-      {
-        "title": "Control de peso",
-        "description": "Conozca el apoyo evaluado por un proveedor."
-      },
-      {
-        "title": "Terapia con GLP-1",
-        "description": "Revise la información sobre tratamiento supervisado."
-      }
-    ],
     "pillarsEyebrow": "Lo que ofrecemos",
     "pillarsTitle": "Atención para cada etapa de su salud",
     "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe le acompaña con una atención personalizada y basada en la evidencia.",
@@ -268,6 +250,12 @@
         "title": "Terapia con GLP-1",
         "summary": "Tratamiento con GLP-1 evaluado por un proveedor, ofrecido como parte de un plan de control de peso."
       }
+    },
+    "cardImages": {
+      "primaryCare": "Profesional clínico con uniforme azul que representa la atención primaria e integral",
+      "labs": "Materiales de laboratorio que representan análisis de sangre y servicios de laboratorio",
+      "weightManagement": "Comida saludable y cinta métrica que representan el apoyo para el control de peso",
+      "glp1": "Profesional clínico con pluma de medicamento que representa la terapia GLP-1 bajo supervisión médica"
     },
     "primaryCare": {
       "eyebrow": "Atención primaria e integral",

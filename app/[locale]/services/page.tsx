@@ -30,11 +30,36 @@ export async function generateMetadata({
   });
 }
 
-const SERVICES: { key: string; href: string; icon: LucideIcon }[] = [
-  { key: "primaryCare", href: "/services/primary-care", icon: HeartPulse },
-  { key: "labs", href: "/services/labs", icon: FlaskConical },
-  { key: "weightManagement", href: "/services/weight-management", icon: Scale },
-  { key: "glp1", href: "/services/glp-1", icon: Syringe },
+const SERVICES: {
+  key: string;
+  href: string;
+  icon: LucideIcon;
+  imageSrc?: string;
+}[] = [
+  {
+    key: "primaryCare",
+    href: "/services/primary-care",
+    icon: HeartPulse,
+    imageSrc: "/images/services/doctorBlue.png",
+  },
+  {
+    key: "labs",
+    href: "/services/labs",
+    icon: FlaskConical,
+    imageSrc: "/images/services/labwork.png",
+  },
+  {
+    key: "weightManagement",
+    href: "/services/weight-management",
+    icon: Scale,
+    imageSrc: "/images/services/weight-management-2.jpg",
+  },
+  {
+    key: "glp1",
+    href: "/services/glp-1",
+    icon: Syringe,
+    imageSrc: "/images/services/glp.png",
+  },
 ];
 
 export default async function ServicesPage({
@@ -64,7 +89,7 @@ export default async function ServicesPage({
 
       <div className="mx-auto w-full max-w-6xl px-6 py-16">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map(({ key, href, icon }) => (
+          {SERVICES.map(({ key, href, icon, imageSrc }) => (
             <ServiceCard
               key={key}
               icon={icon}
@@ -72,6 +97,8 @@ export default async function ServicesPage({
               title={t(`cards.${key}.title`)}
               summary={t(`cards.${key}.summary`)}
               cta={t("learnMore")}
+              imageSrc={imageSrc}
+              imageAlt={imageSrc ? t(`cardImages.${key}`) : undefined}
             />
           ))}
         </div>
