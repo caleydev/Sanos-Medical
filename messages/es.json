@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "Sanos Medical Group | Atención primaria en Miami",
+    "description": "Atención primaria bilingüe, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica en el área de Miami. Solicite una cita con Sanos Medical Group."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "providers": "Proveedores",
+    "resources": "Recursos para pacientes",
+    "contact": "Contacto",
+    "requestAppointment": "Solicitar una cita",
+    "openMenu": "Abrir menú",
+    "brandWordmark": "Sanos Medical Group"
+  },
+  "languageToggle": {
+    "en": "English",
+    "es": "Español",
+    "switchTo": "Cambiar idioma"
+  },
+  "home": {
+    "heroEyebrow": "Sanos Medical Group",
+    "heroTitle": "Atención primaria integral para las familias de Miami",
+    "heroSubtitle": "Atención bilingüe con médicos certificados — desde exámenes físicos anuales y análisis de laboratorio hasta el control de peso y la terapia con GLP-1 bajo supervisión médica.",
+    "heroCta": "Solicitar una cita",
+    "heroSecondaryCta": "Conozca nuestros servicios",
+    "pillarsEyebrow": "Lo que ofrecemos",
+    "pillarsTitle": "Atención para cada etapa de su salud",
+    "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe le acompaña con una atención personalizada y basada en la evidencia.",
+    "trustTitle": "Por qué los pacientes eligen Sanos",
+    "trust": {
+      "bilingual": {
+        "title": "Atención bilingüe",
+        "description": "Nuestro equipo atiende a la diversa comunidad de Miami en inglés y en español."
+      },
+      "providers": {
+        "title": "Médicos certificados",
+        "description": "Atención cercana y basada en la evidencia, brindada por profesionales con licencia."
+      },
+      "insurance": {
+        "title": "Aceptamos seguros",
+        "description": "Trabajamos con muchos planes de seguro principales — pregúntenos por su cobertura."
+      }
+    },
+    "testimonialsTitle": "Lo que dicen nuestros pacientes",
+    "testimonialsNote": "Las historias de nuestros pacientes estarán disponibles pronto."
+  },
+  "cta": {
+    "title": "¿Listo para su consulta?",
+    "body": "Solicite una cita y un miembro de nuestro equipo se comunicará con usted para confirmar su visita.",
+    "button": "Solicitar una cita"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Solicitar una cita",
+    "intro": "Indíquenos cómo comunicarnos con usted y un miembro de nuestro equipo se pondrá en contacto para confirmar su visita. Este formulario es únicamente para programar citas.",
+    "visitHeading": "Visítenos",
+    "callHeading": "Llámenos",
+    "mapTitle": "Mapa que muestra la ubicación de Sanos Medical Group en Miami",
+    "formHeading": "Formulario de solicitud de cita",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "contactMethod": "Método de contacto preferido",
+      "reason": "Motivo de la visita",
+      "timeWindow": "Horario preferido",
+      "timeWindowPlaceholder": "p. ej. mañanas entre semana",
+      "optional": "opcional",
+      "selectPlaceholder": "Seleccione…",
+      "medicalDetailHelp": "Por favor, no comparta detalles médicos aquí — los recopilaremos de forma segura en su visita.",
+      "submit": "Solicitar cita",
+      "submitting": "Enviando…",
+      "submitError": "Lo sentimos, ocurrió un error. Inténtelo de nuevo o llámenos.",
+      "successTitle": "Gracias — hemos recibido su solicitud.",
+      "successBody": "Un miembro de nuestro equipo se comunicará con usted para confirmar su cita.",
+      "contactMethodOptions": {
+        "email": "Correo electrónico",
+        "phone": "Llamada telefónica",
+        "text": "Mensaje de texto"
+      },
+      "reasonOptions": {
+        "newPatient": "Paciente nuevo",
+        "annualPhysical": "Examen físico anual",
+        "weightManagement": "Control de peso",
+        "labWork": "Análisis de laboratorio",
+        "other": "Otro"
+      },
+      "errors": {
+        "firstName": "Por favor, ingrese su nombre.",
+        "lastName": "Por favor, ingrese su apellido.",
+        "email": "Por favor, ingrese un correo electrónico válido.",
+        "phone": "Por favor, ingrese un número de teléfono válido.",
+        "contactMethod": "Por favor, elija un método de contacto preferido.",
+        "reason": "Por favor, elija un motivo para su visita."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Nosotros",
+    "title": "Atención integral y bilingüe para Miami",
+    "intro": "Sanos Medical Group es una práctica de atención primaria dedicada a cuidar la salud de las familias de Miami con una atención personalizada y basada en la evidencia, en inglés y en español.",
+    "story": {
+      "heading": "Nuestra historia",
+      "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a la comunidad de Miami. [Historia de la práctica — POR DEFINIR: reemplazar con la historia real de la práctica.] Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad."
+    },
+    "mission": {
+      "heading": "Nuestra misión",
+      "body": "Brindar una atención primaria cercana y de alta calidad que ayude a nuestra comunidad a vivir más saludablemente — atendiendo a cada paciente con respeto, comunicación clara y cuidado en el idioma que prefiera."
+    },
+    "expect": {
+      "heading": "Qué esperar",
+      "items": [
+        "Un equipo bilingüe que le da la bienvenida",
+        "Tiempo para conversar sobre su salud y sus preguntas",
+        "Un plan personalizado basado en una evaluación del proveedor",
+        "Coordinación de análisis, referidos y atención de seguimiento"
+      ]
+    },
+    "visit": {
+      "heading": "Visítenos",
+      "body": "Será un gusto darle la bienvenida. Consulte nuestra ubicación y horario a continuación, o solicite una cita y nuestro equipo se comunicará con usted."
+    }
+  },
+  "providers": {
+    "eyebrow": "Nuestro equipo",
+    "title": "Conozca a nuestros proveedores",
+    "intro": "Nuestros proveedores con licencia aportan experiencia y un compromiso con una atención bilingüe y centrada en el paciente.",
+    "languagesLabel": "Idiomas",
+    "placeholderNote": "Los nombres, las credenciales y las biografías que se muestran aquí son provisionales y se reemplazarán con información verificada antes del lanzamiento.",
+    "list": [
+      {
+        "name": "[Nombre del proveedor — POR DEFINIR]",
+        "credentials": "[Credenciales / NPI — verificar]",
+        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
+        "languages": "Inglés, Español"
+      },
+      {
+        "name": "[Nombre del proveedor — POR DEFINIR]",
+        "credentials": "[Credenciales / NPI — verificar]",
+        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
+        "languages": "Inglés, Español"
+      },
+      {
+        "name": "[Nombre del proveedor — POR DEFINIR]",
+        "credentials": "[Credenciales / NPI — verificar]",
+        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
+        "languages": "Inglés, Español"
+      }
+    ]
+  },
+  "resources": {
+    "eyebrow": "Recursos para pacientes",
+    "title": "Información útil para nuestros pacientes",
+    "intro": "Todo lo que necesita antes y entre sus visitas. ¿Tiene alguna pregunta? Comuníquese con nuestro equipo y con gusto le ayudaremos.",
+    "portal": {
+      "heading": "Portal del paciente",
+      "body": "Acceda a su información y comuníquese con nuestro equipo a través del portal del paciente.",
+      "button": "Abrir el portal del paciente"
+    },
+    "insurance": {
+      "heading": "Seguros aceptados",
+      "body": "Trabajamos con muchos planes de seguro principales. [Aseguradoras aceptadas — POR DEFINIR.] ¿No está seguro de su cobertura? Comuníquese con nosotros y le ayudaremos a verificarla."
+    },
+    "newPatient": {
+      "heading": "Pacientes nuevos",
+      "body": "¡Bienvenido! Para que su primera visita sea más cómoda, llegue unos minutos antes con su identificación con foto, su tarjeta del seguro y una lista de los medicamentos que toma actualmente. [Detalles para pacientes nuevos — POR DEFINIR.]"
+    },
+    "forms": {
+      "heading": "Formularios para pacientes",
+      "body": "Pronto estarán disponibles aquí los formularios descargables para pacientes nuevos. [Formularios — POR DEFINIR.]"
+    },
+    "telehealth": {
+      "heading": "Telemedicina",
+      "body": "Si se ofrece telemedicina, se aplica un consentimiento de telemedicina antes de cualquier visita virtual. [Nota de consentimiento de telemedicina — POR DEFINIR; incluir solo si se ofrece telemedicina.]"
+    }
+  },
+  "services": {
+    "learnMore": "Más información",
+    "disclaimer": "Esta información tiene únicamente fines educativos generales y no constituye un consejo médico. No reemplaza la evaluación de un proveedor con licencia. Los resultados varían según cada persona, y todo tratamiento depende de una evaluación clínica. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
+    "overview": {
+      "eyebrow": "Nuestros servicios",
+      "title": "Atención integral, todo en un mismo lugar",
+      "intro": "Sanos Medical Group ofrece atención primaria y servicios complementarios diseñados en torno a sus objetivos de salud. Todo plan de tratamiento comienza con una evaluación realizada por un proveedor con licencia."
+    },
+    "cards": {
+      "primaryCare": {
+        "title": "Atención primaria e integral",
+        "summary": "Exámenes físicos anuales, atención preventiva, manejo de enfermedades crónicas y consultas por enfermedad."
+      },
+      "labs": {
+        "title": "Análisis de sangre y laboratorio",
+        "summary": "Paneles de diagnóstico y pruebas preventivas con una cómoda toma de muestras en el consultorio."
+      },
+      "weightManagement": {
+        "title": "Control de peso",
+        "summary": "Apoyo individualizado y bajo supervisión médica que combina la atención clínica y el estilo de vida."
+      },
+      "glp1": {
+        "title": "Terapia con GLP-1",
+        "summary": "Tratamiento con GLP-1 evaluado por un proveedor, ofrecido como parte de un plan de control de peso."
+      }
+    },
+    "primaryCare": {
+      "eyebrow": "Atención primaria e integral",
+      "title": "Atención diaria que crece con usted",
+      "intro": "Su equipo de atención primaria es su primer punto de contacto para mantenerse sano y atender cualquier inquietud a medida que surja. Nos enfocamos en la prevención, la detección temprana y una relación a largo plazo en el cuidado de su salud.",
+      "featuresHeading": "Lo que ofrecemos",
+      "features": [
+        "Exámenes físicos anuales y de bienestar",
+        "Atención preventiva y pruebas de detección",
+        "Manejo de enfermedades crónicas (como diabetes, hipertensión y colesterol)",
+        "Consultas por enfermedad para problemas agudos que no son de emergencia",
+        "Coordinación de referidos y atención con especialistas",
+        "Vacunas de rutina y orientación sobre inmunizaciones"
+      ],
+      "expectHeading": "Qué esperar",
+      "expectBody": "En su consulta, su proveedor revisa su historial, escucha sus inquietudes y trabaja con usted en un plan adaptado a sus necesidades. Nos tomamos el tiempo para responder sus preguntas en el idioma con el que se sienta más cómodo."
+    },
+    "labs": {
+      "eyebrow": "Análisis de sangre y laboratorio",
+      "title": "Las respuestas claras comienzan con las pruebas adecuadas",
+      "intro": "Los análisis de laboratorio ayudan a su proveedor a comprender su salud, detectar problemas a tiempo y dar seguimiento a la evolución de un plan de tratamiento. Facilitamos las pruebas con la toma de muestras en el consultorio y laboratorios asociados de confianza.",
+      "featuresHeading": "Pruebas comunes",
+      "features": [
+        "Paneles de diagnóstico completos",
+        "Pruebas preventivas y de bienestar",
+        "Monitoreo de enfermedades crónicas",
+        "Toma de sangre en el consultorio con un laboratorio asociado"
+      ],
+      "processHeading": "Cómo funciona",
+      "processBody": "Su proveedor determina qué pruebas son apropiadas según su evaluación. Las muestras se toman en el consultorio y son procesadas por nuestro laboratorio asociado. Los resultados se revisan con usted para que comprenda qué significan para su atención. Las recomendaciones de pruebas son individualizadas — esta página no garantiza pruebas ni resultados específicos."
+    },
+    "weightManagement": {
+      "eyebrow": "Control de peso",
+      "title": "Control de peso bajo supervisión médica",
+      "intro": "Nuestro programa de control de peso combina la supervisión clínica con un apoyo práctico en el estilo de vida. La atención es individualizada y comienza con una evaluación del proveedor para determinar si el programa es apropiado para usted.",
+      "featuresHeading": "Qué incluye",
+      "features": [
+        "Una evaluación clínica de su historial de salud y sus objetivos",
+        "Un plan individualizado y supervisado por un proveedor",
+        "Orientación sobre estilo de vida, nutrición y actividad física",
+        "Monitoreo y seguimiento continuos",
+        "Una conversación sobre las opciones de tratamiento cuando sea clínicamente apropiado"
+      ],
+      "eligibilityHeading": "¿Es adecuado para mí?",
+      "eligibilityBody": "La elegibilidad la determina un proveedor con licencia según su perfil de salud individual. El programa no es un plan único para todos, y no prometemos resultados específicos. Su proveedor conversará con usted sobre qué esperar y sobre las opciones que puedan ser apropiadas para su caso."
+    },
+    "glp1": {
+      "eyebrow": "Terapia con GLP-1",
+      "title": "Tratamiento con GLP-1 bajo supervisión médica",
+      "intro": "Los medicamentos GLP-1 pueden ofrecerse como una parte de un plan integral de control de peso bajo supervisión médica. Son medicamentos recetados que se usan únicamente después de una evaluación clínica y se prescriben a criterio de un proveedor con licencia.",
+      "featuresHeading": "Cómo funciona la atención con GLP-1 en Sanos",
+      "features": [
+        "Una evaluación clínica para revisar su historial de salud y sus objetivos",
+        "La determinación del proveedor sobre si el tratamiento es apropiado para usted",
+        "Integración con el apoyo en estilo de vida y nutrición",
+        "Monitoreo y seguimiento continuos durante el programa"
+      ],
+      "howHeading": "Prescripción y elegibilidad",
+      "howBody": "Los medicamentos GLP-1 son medicamentos recetados que se dispensan únicamente después de una evaluación clínica. La elegibilidad la determina un proveedor con licencia, y el tratamiento no está garantizado. Su proveedor conversará con usted sobre si la terapia con GLP-1 se ajusta a su plan individual.",
+      "safetyHeading": "Seguridad y efectos secundarios",
+      "safetyBody": "Como todos los medicamentos, los tratamientos con GLP-1 pueden tener efectos secundarios, que pueden incluir náuseas y molestias digestivas, entre otros. Su proveedor revisará con usted los posibles beneficios y riesgos. Hable siempre con su proveedor antes de comenzar, cambiar o suspender cualquier medicamento.",
+      "fdaNote": "Durante su evaluación conversaremos sobre el medicamento específico que pueda ser apropiado para usted, incluido su estado regulatorio. Esta página no hace afirmaciones sobre marcas específicas ni sobre la aprobación de la FDA."
+    }
+  },
+  "common": {
+    "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",
+    "skipToContent": "Saltar al contenido principal",
+    "backToHome": "Volver al inicio",
+    "notFound": "No encontramos la página que buscaba.",
+    "emergencyNotice": "No es para emergencias. Si se trata de una emergencia médica, llame al 911 o acuda a la sala de emergencias más cercana."
+  },
+  "pages": {
+    "about": { "title": "Acerca de Sanos Medical Group" },
+    "services": { "title": "Nuestros servicios" },
+    "primaryCare": { "title": "Atención primaria e integral" },
+    "labs": { "title": "Análisis de sangre y laboratorio" },
+    "weightManagement": { "title": "Control de peso" },
+    "glp1": { "title": "Terapia con GLP-1" },
+    "providers": { "title": "Nuestros proveedores" },
+    "resources": { "title": "Recursos para pacientes" },
+    "contact": { "title": "Contacto y solicitud de citas" },
+    "legal": {
+      "privacy": { "title": "Política de privacidad" },
+      "hipaa": { "title": "Aviso de prácticas de privacidad (HIPAA)" },
+      "terms": { "title": "Términos de uso" },
+      "accessibility": { "title": "Declaración de accesibilidad" },
+      "medicalDisclaimer": { "title": "Aviso médico" }
+    }
+  },
+  "legal": {
+    "metaDescription": "{document} de Sanos Medical Group, una práctica de atención primaria bilingüe en Miami, FL.",
+    "reviewNotice": "Contenido provisional — REVISAR POR UN ASESOR LEGAL ANTES DEL LANZAMIENTO.",
+    "lastUpdatedLabel": "Última actualización",
+    "lastUpdated": "[Fecha — POR DEFINIR]",
+    "privacy": {
+      "intro": "Esta Política de privacidad explica cómo Sanos Medical Group (\"nosotros\") recopila y utiliza la información a través de este sitio web. Se aplica únicamente a este sitio web y es independiente de nuestro Aviso de prácticas de privacidad de HIPAA, que rige la información médica protegida.",
+      "sections": [
+        {
+          "heading": "Información que recopilamos",
+          "body": "Cuando envía el formulario de solicitud de cita, recopilamos la información de contacto que usted proporciona: su nombre, correo electrónico, teléfono, método de contacto preferido, horario preferido y un motivo no médico para su visita. Por favor, no envíe detalles médicos a través de este sitio web."
+        },
+        {
+          "heading": "Cómo usamos la información",
+          "body": "Usamos esta información únicamente para responder a su solicitud, programar y confirmar citas, y comunicarnos con usted sobre su consulta."
+        },
+        {
+          "heading": "Cómo se almacena y comparte la información",
+          "body": "Las solicitudes se almacenan en nuestra base de datos segura y pueden compartirse con nuestro equipo de programación y con los proveedores de servicios que nos ayudan a operar este sitio web (por ejemplo, nuestros proveedores de alojamiento, base de datos y hojas de cálculo). No vendemos su información personal. [Confirmar proveedores — POR DEFINIR.]"
+        },
+        {
+          "heading": "Cookies y análisis",
+          "body": "Este sitio web utiliza únicamente cookies esenciales de forma predeterminada. Si se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Actualizar si se agregan análisis — POR DEFINIR.]"
+        },
+        {
+          "heading": "Sus opciones",
+          "body": "Puede comunicarse con nosotros para consultar, actualizar o solicitar la eliminación de la información que envió, sujeto a la ley aplicable y a nuestras obligaciones de conservación de registros."
+        },
+        {
+          "heading": "Privacidad de los menores",
+          "body": "Este sitio web no está dirigido a menores y no recopilamos a sabiendas información de menores a través de él."
+        },
+        {
+          "heading": "Cambios y contacto",
+          "body": "Podemos actualizar esta política periódicamente. Si tiene preguntas, comuníquese con nosotros en [contacto — POR DEFINIR]."
+        }
+      ]
+    },
+    "hipaa": {
+      "intro": "ESTE AVISO DESCRIBE CÓMO PUEDE USARSE Y DIVULGARSE LA INFORMACIÓN MÉDICA SOBRE USTED Y CÓMO PUEDE ACCEDER A ESTA INFORMACIÓN. POR FAVOR, REVÍSELO CON ATENCIÓN. [Provisional — debe completarse y ser revisado por un asesor legal.]",
+      "sections": [
+        {
+          "heading": "Nuestras obligaciones",
+          "body": "La ley nos exige mantener la privacidad de su información médica protegida (PHI), proporcionarle este Aviso de nuestras obligaciones legales y prácticas de privacidad, y cumplir con los términos del Aviso vigente."
+        },
+        {
+          "heading": "Cómo podemos usar y divulgar su información médica",
+          "body": "Podemos usar y divulgar su PHI para tratamiento, pago y operaciones de atención médica, y según lo permita o exija la ley. [Detalle — POR DEFINIR.]"
+        },
+        {
+          "heading": "Sus derechos",
+          "body": "Usted tiene derecho a inspeccionar y obtener copias de su PHI, solicitar modificaciones, solicitar restricciones, solicitar comunicaciones confidenciales, recibir un registro de ciertas divulgaciones y obtener una copia impresa de este Aviso. [Detalle — POR DEFINIR.]"
+        },
+        {
+          "heading": "Quejas",
+          "body": "Si considera que se han violado sus derechos de privacidad, puede presentar una queja ante nosotros y ante el Departamento de Salud y Servicios Humanos de los EE. UU. No se tomarán represalias en su contra por presentar una queja."
+        },
+        {
+          "heading": "Contacto y fecha de vigencia",
+          "body": "Para preguntas o para ejercer sus derechos, comuníquese con nuestro Oficial de Privacidad en [contacto — POR DEFINIR]. Fecha de vigencia: [Fecha — POR DEFINIR]."
+        }
+      ]
+    },
+    "terms": {
+      "intro": "Estos Términos de uso rigen el uso de este sitio web. Al usar el sitio, usted acepta estos términos. [Provisional — revisar por un asesor legal.]",
+      "sections": [
+        {
+          "heading": "Fines informativos",
+          "body": "El contenido de este sitio web se proporciona únicamente con fines informativos generales y no constituye un consejo médico. Consulte nuestro Aviso médico."
+        },
+        {
+          "heading": "Sin relación médico–paciente",
+          "body": "El uso de este sitio web o el envío del formulario de solicitud de cita no crea una relación médico–paciente."
+        },
+        {
+          "heading": "Uso aceptable",
+          "body": "Usted se compromete a no hacer un uso indebido del sitio web, enviar información falsa ni intentar interrumpir su funcionamiento o seguridad."
+        },
+        {
+          "heading": "Propiedad intelectual",
+          "body": "El contenido, la marca y el diseño del sitio web son propiedad de Sanos Medical Group o de sus licenciantes y no pueden usarse sin autorización."
+        },
+        {
+          "heading": "Enlaces a terceros",
+          "body": "El sitio web puede enlazar a sitios de terceros, como el portal del paciente. No somos responsables del contenido ni de las prácticas de esos sitios."
+        },
+        {
+          "heading": "Renuncias y limitación de responsabilidad",
+          "body": "El sitio web se proporciona \"tal cual\", sin garantías de ningún tipo, en la máxima medida permitida por la ley. [Detalle — POR DEFINIR.]"
+        },
+        {
+          "heading": "Cambios y ley aplicable",
+          "body": "Podemos actualizar estos términos en cualquier momento. Estos términos se rigen por las leyes del estado de Florida. [Confirmar — POR DEFINIR.]"
+        }
+      ]
+    },
+    "accessibility": {
+      "intro": "Sanos Medical Group se compromete a que este sitio web sea accesible para todos, incluidas las personas con discapacidad.",
+      "sections": [
+        {
+          "heading": "Nuestro compromiso",
+          "body": "Nuestro objetivo es cumplir con las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 nivel AA y seguir prácticas de diseño accesible, como una estructura semántica, la navegación con teclado, indicadores de enfoque visibles, texto alternativo descriptivo y un contraste de color suficiente."
+        },
+        {
+          "heading": "Esfuerzo continuo",
+          "body": "La accesibilidad es un esfuerzo continuo y seguimos mejorando el sitio. [Confirmar el estado de la auditoría antes del lanzamiento — POR DEFINIR.]"
+        },
+        {
+          "heading": "Comentarios y contacto",
+          "body": "Si encuentra una barrera de accesibilidad o necesita ayuda, comuníquese con nosotros en [contacto — POR DEFINIR] y trabajaremos para brindarle la información o el servicio que necesita."
+        },
+        {
+          "heading": "Acceso alternativo",
+          "body": "Con gusto le ayudaremos por teléfono con cualquier cosa que no pueda acceder en el sitio web."
+        }
+      ]
+    },
+    "medicalDisclaimer": {
+      "intro": "La información de este sitio web se proporciona únicamente con fines educativos e informativos generales y no sustituye el consejo, el diagnóstico ni el tratamiento médico profesional.",
+      "sections": [
+        {
+          "heading": "No es un consejo médico",
+          "body": "El contenido de este sitio web no constituye un consejo médico y no debe utilizarse para tomar decisiones médicas. Busque siempre el consejo de su médico u otro proveedor de salud calificado ante cualquier pregunta sobre una afección médica."
+        },
+        {
+          "heading": "Sin relación médico–paciente",
+          "body": "Ver este sitio web o comunicarse con nosotros a través de él no establece una relación médico–paciente. Esa relación comienza únicamente después de una evaluación clínica establecida."
+        },
+        {
+          "heading": "Los resultados varían",
+          "body": "Las descripciones de los servicios, incluidos el control de peso y la terapia con GLP-1, son generales. El tratamiento requiere la evaluación de un proveedor con licencia, la elegibilidad se determina de forma individual y los resultados varían. No garantizamos resultados específicos."
+        },
+        {
+          "heading": "Medicamentos",
+          "body": "Los medicamentos recetados, incluidos los medicamentos GLP-1, se proporcionan únicamente después de una evaluación clínica y a criterio de un proveedor con licencia. Hable con su proveedor sobre los beneficios y los riesgos."
+        },
+        {
+          "heading": "Emergencias",
+          "body": "No use este sitio web para emergencias médicas. Si tiene una emergencia médica, llame al 911 o acuda de inmediato a la sala de emergencias más cercana."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Atención primaria integral y bilingüe en el área de Miami.",
+    "navHeading": "Explorar",
+    "legalHeading": "Legal",
+    "contactHeading": "Contacto",
+    "addressPlaceholder": "14024 SW 8th St, Unit B1",
+    "cityPlaceholder": "Miami, FL 33184",
+    "phoneLabel": "Teléfono",
+    "phonePlaceholder": "(786) 292-1402",
+    "hoursHeading": "Horario",
+    "hoursPlaceholder": "Lun–Vie 9 a. m.–5 p. m. · Sáb 10 a. m.–3 p. m. · Dom cerrado",
+    "disclaimer": "La información de este sitio web tiene únicamente fines informativos generales y no constituye consejo médico ni crea una relación médico-paciente. Los resultados varían según cada persona y todo tratamiento requiere la evaluación de un proveedor con licencia. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
+    "rights": "Todos los derechos reservados."
+  }
+}

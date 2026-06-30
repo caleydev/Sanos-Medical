@@ -1,0 +1,112 @@
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { MapPin, Phone, Clock } from "lucide-react";
+import { AppointmentForm } from "@/components/appointment-form";
+import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const [tPages, t] = await Promise.all([
+    getTranslations({ locale, namespace: "pages" }),
+    getTranslations({ locale, namespace: "contact" }),
+  ]);
+  return buildPageMetadata({
+    locale,
+    path: "/contact",
+    title: tPages("contact.title"),
+    description: t("intro"),
+  });
+}
+
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const [t, tFooter] = await Promise.all([
+    getTranslations("contact"),
+    getTranslations("footer"),
+  ]);
+
+  return (
+    <main id="main" className="flex-1">
+      <header className="bg-surface">
+        <div className="mx-auto w-full max-w-5xl px-6 py-16 sm:py-20">
+          <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+            {t("eyebrow")}
+          </p>
+          <h1 className="text-primary mt-3 text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+            {t("title")}
+          </h1>
+          <p className="text-muted mt-4 max-w-2xl text-lg text-pretty">
+            {t("intro")}
+          </p>
+        </div>
+      </header>
+
+      <div className="mx-auto grid w-full max-w-5xl gap-12 px-6 py-16 lg:grid-cols-[1fr_1.4fr]">
+        {/* Practice contact details (NAP + hours). Values are placeholders — TODO. */}
+        <aside className="space-y-8">
+          <div>
+            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+              <MapPin aria-hidden className="text-secondary h-5 w-5" />
+              {t("visitHeading")}
+            </h2>
+            <address className="text-ink mt-3 text-sm not-italic">
+              <p>{tFooter("addressPlaceholder")}</p>
+              <p>{tFooter("cityPlaceholder")}</p>
+            </address>
+          </div>
+
+          <div>
+            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+              <Phone aria-hidden className="text-secondary h-5 w-5" />
+              {t("callHeading")}
+            </h2>
+            <p className="mt-3 text-sm">
+              <a
+                href="tel:+17862921402"
+                className="text-secondary font-medium hover:underline"
+              >
+                {tFooter("phonePlaceholder")}
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+              <Clock aria-hidden className="text-secondary h-5 w-5" />
+              {tFooter("hoursHeading")}
+            </h2>
+            <p className="text-ink mt-3 text-sm">
+              {tFooter("hoursPlaceholder")}
+            </p>
+          </div>
+
+          {/* Live Google Maps embed (keyless). Note: this sets third-party
+              cookies; if a cookie-consent banner is added later, gate it. */}
+          <iframe
+            title={t("mapTitle")}
+            src="https://www.google.com/maps?q=14024%20SW%208th%20St%2C%20Miami%2C%20FL%2033184&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="border-border rounded-card h-64 w-full border"
+          />
+        </aside>
+
+        <section aria-labelledby="form-heading">
+          <h2 id="form-heading" className="sr-only">
+            {t("formHeading")}
+          </h2>
+          <AppointmentForm />
+        </section>
+      </div>
+    </main>
+  );
+}

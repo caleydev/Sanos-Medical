@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/*
+ * Sanos Medical Group — brand design tokens
+ * Palette from the logo: deep navy, Sanos blue, light tint, near-black ink.
+ * Tailwind v4 reads these in @theme to generate utilities like
+ * `bg-primary`, `text-secondary`, `bg-surface`, `border-border`, etc.
+ */
+@theme {
+  --color-primary: #1c2c59; /* deep navy — wordmark, headings */
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #2d7dc1; /* Sanos blue — CTAs, links, accents */
+  --color-secondary-foreground: #ffffff;
+
+  --color-surface: #eaf4fc; /* light blue tint — section backgrounds */
+  --color-ink: #0b1020; /* near-black — primary text */
+
+  --color-background: #ffffff;
+  --color-foreground: #0b1020;
+
+  /* Derived neutrals (not in the brand palette; tuned for contrast/AA). */
+  --color-muted: #4f5a6a; /* secondary text on white (>= 7:1) */
+  --color-border: #d4e3f3; /* hairlines / card borders */
+
+  --font-sans:
+    var(--font-source-sans), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+
+  --radius-card: 0.875rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus for all interactive elements (WCAG 2.4.7). */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}

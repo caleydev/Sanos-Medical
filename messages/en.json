@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "Sanos Medical Group | Primary Care in Miami",
+    "description": "Bilingual primary care, lab testing, weight management, and medically supervised GLP-1 therapy in the Miami area. Request an appointment with Sanos Medical Group."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "providers": "Providers",
+    "resources": "Patient Resources",
+    "contact": "Contact",
+    "requestAppointment": "Request an appointment",
+    "openMenu": "Open menu",
+    "brandWordmark": "Sanos Medical Group"
+  },
+  "languageToggle": {
+    "en": "English",
+    "es": "Español",
+    "switchTo": "Switch language"
+  },
+  "home": {
+    "heroEyebrow": "Sanos Medical Group",
+    "heroTitle": "Comprehensive primary care for Miami families",
+    "heroSubtitle": "Bilingual, board-certified care — from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
+    "heroCta": "Request an appointment",
+    "heroSecondaryCta": "Explore our services",
+    "pillarsEyebrow": "What we offer",
+    "pillarsTitle": "Care for every stage of your health",
+    "pillarsSubtitle": "From preventive checkups to ongoing treatment, our bilingual team supports you with personalized, evidence-based care.",
+    "trustTitle": "Why patients choose Sanos",
+    "trust": {
+      "bilingual": {
+        "title": "Bilingual care",
+        "description": "Our team serves Miami's diverse community in both English and Spanish."
+      },
+      "providers": {
+        "title": "Board-certified providers",
+        "description": "Compassionate, evidence-based care from licensed clinicians."
+      },
+      "insurance": {
+        "title": "Insurance accepted",
+        "description": "We work with many major insurance plans — ask us about your coverage."
+      }
+    },
+    "testimonialsTitle": "What our patients say",
+    "testimonialsNote": "Patient stories are coming soon."
+  },
+  "cta": {
+    "title": "Ready to be seen?",
+    "body": "Request an appointment and a member of our team will follow up to confirm your visit.",
+    "button": "Request an appointment"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Request an appointment",
+    "intro": "Tell us how to reach you and a member of our team will follow up to confirm your visit. This form is for scheduling only.",
+    "visitHeading": "Visit us",
+    "callHeading": "Call us",
+    "mapTitle": "Map showing the location of Sanos Medical Group in Miami",
+    "formHeading": "Appointment request form",
+    "form": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "phone": "Phone",
+      "contactMethod": "Preferred contact method",
+      "reason": "Reason for visit",
+      "timeWindow": "Preferred time window",
+      "timeWindowPlaceholder": "e.g. weekday mornings",
+      "optional": "optional",
+      "selectPlaceholder": "Please select…",
+      "medicalDetailHelp": "Please don't share medical details here — we'll collect those securely at your visit.",
+      "submit": "Request appointment",
+      "submitting": "Sending…",
+      "submitError": "Sorry, something went wrong. Please try again or call us.",
+      "successTitle": "Thank you — we've received your request.",
+      "successBody": "A member of our team will follow up to confirm your appointment.",
+      "contactMethodOptions": {
+        "email": "Email",
+        "phone": "Phone call",
+        "text": "Text message"
+      },
+      "reasonOptions": {
+        "newPatient": "New patient",
+        "annualPhysical": "Annual physical",
+        "weightManagement": "Weight management",
+        "labWork": "Lab work",
+        "other": "Other"
+      },
+      "errors": {
+        "firstName": "Please enter your first name.",
+        "lastName": "Please enter your last name.",
+        "email": "Please enter a valid email address.",
+        "phone": "Please enter a valid phone number.",
+        "contactMethod": "Please choose a preferred contact method.",
+        "reason": "Please choose a reason for your visit."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "Comprehensive, bilingual care for Miami",
+    "intro": "Sanos Medical Group is a primary care practice dedicated to keeping Miami families healthy with personalized, evidence-based care in English and Spanish.",
+    "story": {
+      "heading": "Our story",
+      "body": "Sanos Medical Group was founded to bring accessible, relationship-centered primary care to the Miami community. [Practice story — TODO: replace with the practice's real history.] We focus on building lasting relationships with our patients and caring for the whole person."
+    },
+    "mission": {
+      "heading": "Our mission",
+      "body": "To provide compassionate, high-quality primary care that helps our community live healthier lives — meeting each patient with respect, clear communication, and care in the language they prefer."
+    },
+    "expect": {
+      "heading": "What to expect",
+      "items": [
+        "A welcoming, bilingual team",
+        "Time to talk through your health and your questions",
+        "A personalized plan based on a provider evaluation",
+        "Coordination of labs, referrals, and follow-up care"
+      ]
+    },
+    "visit": {
+      "heading": "Visit us",
+      "body": "We look forward to welcoming you. See our location and hours below, or request an appointment and our team will follow up."
+    }
+  },
+  "providers": {
+    "eyebrow": "Our team",
+    "title": "Meet our providers",
+    "intro": "Our licensed providers bring experience and a commitment to bilingual, patient-centered care.",
+    "languagesLabel": "Languages",
+    "placeholderNote": "Provider names, credentials, and bios shown here are placeholders to be replaced with verified information before launch.",
+    "list": [
+      {
+        "name": "[Provider Name — TODO]",
+        "credentials": "[Credentials / NPI — verify]",
+        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
+        "languages": "English, Spanish"
+      },
+      {
+        "name": "[Provider Name — TODO]",
+        "credentials": "[Credentials / NPI — verify]",
+        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
+        "languages": "English, Spanish"
+      },
+      {
+        "name": "[Provider Name — TODO]",
+        "credentials": "[Credentials / NPI — verify]",
+        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
+        "languages": "English, Spanish"
+      }
+    ]
+  },
+  "resources": {
+    "eyebrow": "Patient resources",
+    "title": "Helpful information for our patients",
+    "intro": "Everything you need before and between visits. Have a question? Contact our team and we'll be glad to help.",
+    "portal": {
+      "heading": "Patient portal",
+      "body": "Access your information and connect with our team through the patient portal.",
+      "button": "Open patient portal"
+    },
+    "insurance": {
+      "heading": "Accepted insurance",
+      "body": "We work with many major insurance plans. [Accepted carriers — TODO.] Not sure about your coverage? Contact us and we'll help you check."
+    },
+    "newPatient": {
+      "heading": "New patients",
+      "body": "Welcome! To make your first visit smooth, please arrive a few minutes early with your photo ID, insurance card, and a list of any current medications. [New-patient details — TODO.]"
+    },
+    "forms": {
+      "heading": "Patient forms",
+      "body": "Downloadable new-patient forms will be available here soon. [Forms — TODO.]"
+    },
+    "telehealth": {
+      "heading": "Telehealth",
+      "body": "If telehealth is offered, a telehealth consent applies before any virtual visit. [Telehealth consent note — TODO; include only if telemedicine is offered.]"
+    }
+  },
+  "services": {
+    "learnMore": "Learn more",
+    "disclaimer": "This information is for general educational purposes only and is not medical advice. It does not replace evaluation by a licensed provider. Individual results vary, and all treatment depends on a clinical assessment. In an emergency, call 911 or go to the nearest emergency room.",
+    "overview": {
+      "eyebrow": "Our services",
+      "title": "Comprehensive care, all in one place",
+      "intro": "Sanos Medical Group offers primary care and connected services built around your health goals. Every treatment plan begins with an evaluation by a licensed provider."
+    },
+    "cards": {
+      "primaryCare": {
+        "title": "Primary & Comprehensive Care",
+        "summary": "Annual physicals, preventive care, chronic condition management, and sick visits."
+      },
+      "labs": {
+        "title": "Blood Testing & Labs",
+        "summary": "Diagnostic panels and preventive screenings with convenient in-office collection."
+      },
+      "weightManagement": {
+        "title": "Weight Management",
+        "summary": "Medically supervised, individualized support that combines clinical and lifestyle care."
+      },
+      "glp1": {
+        "title": "GLP-1 Therapy",
+        "summary": "Provider-evaluated GLP-1 treatment offered as part of a weight-management plan."
+      }
+    },
+    "primaryCare": {
+      "eyebrow": "Primary & Comprehensive Care",
+      "title": "Everyday care that grows with you",
+      "intro": "Your primary care team is your first point of contact for staying healthy and managing concerns as they arise. We focus on prevention, early detection, and a long-term partnership in your care.",
+      "featuresHeading": "What we provide",
+      "features": [
+        "Annual physicals and wellness exams",
+        "Preventive care and health screenings",
+        "Chronic disease management (such as diabetes, hypertension, and cholesterol)",
+        "Sick visits for acute, non-emergency concerns",
+        "Coordination of referrals and specialist care",
+        "Routine immunizations and vaccine guidance"
+      ],
+      "expectHeading": "What to expect",
+      "expectBody": "At your visit, your provider reviews your history, listens to your concerns, and works with you on a plan tailored to your needs. We take the time to answer your questions in the language you are most comfortable with."
+    },
+    "labs": {
+      "eyebrow": "Blood Testing & Labs",
+      "title": "Clear answers start with the right tests",
+      "intro": "Lab work helps your provider understand your health, catch issues early, and track how a treatment plan is working. We make testing convenient with in-office collection and trusted laboratory partners.",
+      "featuresHeading": "Common testing",
+      "features": [
+        "Comprehensive diagnostic panels",
+        "Preventive and wellness screenings",
+        "Monitoring for chronic conditions",
+        "In-office blood draw with a partner laboratory"
+      ],
+      "processHeading": "How it works",
+      "processBody": "Your provider determines which tests are appropriate based on your evaluation. Samples are collected in-office and processed by our laboratory partner. Results are reviewed with you so you understand what they mean for your care. Testing recommendations are individualized — this page does not guarantee specific tests or results."
+    },
+    "weightManagement": {
+      "eyebrow": "Weight Management",
+      "title": "Medically supervised weight management",
+      "intro": "Our weight-management program combines clinical oversight with practical lifestyle support. Care is individualized and begins with a provider evaluation to determine whether the program is appropriate for you.",
+      "featuresHeading": "What's included",
+      "features": [
+        "A clinical evaluation of your health history and goals",
+        "An individualized, provider-supervised plan",
+        "Lifestyle, nutrition, and activity guidance",
+        "Ongoing monitoring and follow-up",
+        "A discussion of treatment options when clinically appropriate"
+      ],
+      "eligibilityHeading": "Is it right for me?",
+      "eligibilityBody": "Eligibility is determined by a licensed provider based on your individual health profile. The program is not a one-size-fits-all plan, and we do not promise specific outcomes. Your provider will discuss what to expect and any options that may be appropriate for you."
+    },
+    "glp1": {
+      "eyebrow": "GLP-1 Therapy",
+      "title": "Medically supervised GLP-1 treatment",
+      "intro": "GLP-1 medications may be offered as one part of a comprehensive, medically supervised weight-management plan. They are prescription medications used only after a clinical evaluation and prescribed at the discretion of a licensed provider.",
+      "featuresHeading": "How GLP-1 care works with us",
+      "features": [
+        "A clinical evaluation to review your health history and goals",
+        "A provider determination of whether treatment is appropriate for you",
+        "Integration with lifestyle and nutrition support",
+        "Ongoing monitoring and follow-up while in the program"
+      ],
+      "howHeading": "Prescription and eligibility",
+      "howBody": "GLP-1 medications are prescription medications dispensed only after a clinical evaluation. Eligibility is determined by a licensed provider, and treatment is not guaranteed. Your provider will discuss whether GLP-1 therapy fits your individual plan.",
+      "safetyHeading": "Safety and side effects",
+      "safetyBody": "Like all medications, GLP-1 treatments can have side effects, which may include nausea and digestive discomfort, among others. Your provider will review the potential benefits and risks with you. Always talk to your provider before starting, changing, or stopping any medication.",
+      "fdaNote": "We will discuss the specific medication that may be appropriate for you, including its regulatory status, during your evaluation. This page makes no claims about specific brands or FDA-approval status."
+    }
+  },
+  "common": {
+    "underConstruction": "This page is being prepared. Content is coming soon.",
+    "skipToContent": "Skip to main content",
+    "backToHome": "Back to home",
+    "notFound": "We couldn't find the page you were looking for.",
+    "emergencyNotice": "Not for emergencies. If this is a medical emergency, call 911 or go to the nearest emergency room."
+  },
+  "pages": {
+    "about": { "title": "About Sanos Medical Group" },
+    "services": { "title": "Our Services" },
+    "primaryCare": { "title": "Primary & Comprehensive Care" },
+    "labs": { "title": "Blood Testing & Labs" },
+    "weightManagement": { "title": "Weight Management" },
+    "glp1": { "title": "GLP-1 Therapy" },
+    "providers": { "title": "Our Providers" },
+    "resources": { "title": "Patient Resources" },
+    "contact": { "title": "Contact & Appointment Requests" },
+    "legal": {
+      "privacy": { "title": "Privacy Policy" },
+      "hipaa": { "title": "HIPAA Notice of Privacy Practices" },
+      "terms": { "title": "Terms of Use" },
+      "accessibility": { "title": "Accessibility Statement" },
+      "medicalDisclaimer": { "title": "Medical Disclaimer" }
+    }
+  },
+  "legal": {
+    "metaDescription": "{document} for Sanos Medical Group, a bilingual primary care practice in Miami, FL.",
+    "reviewNotice": "Placeholder content — REVIEW BY LEGAL COUNSEL BEFORE LAUNCH.",
+    "lastUpdatedLabel": "Last updated",
+    "lastUpdated": "[Date — TODO]",
+    "privacy": {
+      "intro": "This Privacy Policy explains how Sanos Medical Group (\"we\", \"us\") collects and uses information through this website. It applies to this website only and is separate from our HIPAA Notice of Privacy Practices, which governs protected health information.",
+      "sections": [
+        {
+          "heading": "Information we collect",
+          "body": "When you submit the appointment-request form, we collect the contact information you provide: your name, email, phone, preferred contact method, preferred time window, and a non-medical reason for your visit. Please do not submit medical details through this website."
+        },
+        {
+          "heading": "How we use information",
+          "body": "We use this information only to respond to your request, schedule and confirm appointments, and contact you about your inquiry."
+        },
+        {
+          "heading": "How information is stored and shared",
+          "body": "Submissions are stored in our secure database and may be shared with our scheduling team and the service providers that help us operate this website (for example, our hosting, database, and spreadsheet providers). We do not sell your personal information. [Confirm vendors — TODO.]"
+        },
+        {
+          "heading": "Cookies and analytics",
+          "body": "This website uses only essential cookies by default. If analytics or other non-essential cookies are added, we will request your consent first. [Update if analytics are added — TODO.]"
+        },
+        {
+          "heading": "Your choices",
+          "body": "You may contact us to ask about, update, or request deletion of the information you submitted, subject to applicable law and our record-keeping obligations."
+        },
+        {
+          "heading": "Children's privacy",
+          "body": "This website is not directed to children, and we do not knowingly collect information from children through it."
+        },
+        {
+          "heading": "Changes and contact",
+          "body": "We may update this policy from time to time. If you have questions, contact us at [contact — TODO]."
+        }
+      ]
+    },
+    "hipaa": {
+      "intro": "THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY. [Placeholder — must be completed and reviewed by counsel.]",
+      "sections": [
+        {
+          "heading": "Our duties",
+          "body": "We are required by law to maintain the privacy of your protected health information (PHI), to provide you this Notice of our legal duties and privacy practices, and to follow the terms of the Notice currently in effect."
+        },
+        {
+          "heading": "How we may use and disclose your health information",
+          "body": "We may use and disclose your PHI for treatment, payment, and health care operations, and as otherwise permitted or required by law. [Detail — TODO.]"
+        },
+        {
+          "heading": "Your rights",
+          "body": "You have the right to inspect and copy your PHI, request amendments, request restrictions, request confidential communications, receive an accounting of certain disclosures, and obtain a paper copy of this Notice. [Detail — TODO.]"
+        },
+        {
+          "heading": "Complaints",
+          "body": "If you believe your privacy rights have been violated, you may file a complaint with us and with the U.S. Department of Health and Human Services. You will not be retaliated against for filing a complaint."
+        },
+        {
+          "heading": "Contact and effective date",
+          "body": "For questions or to exercise your rights, contact our Privacy Officer at [contact — TODO]. Effective date: [Date — TODO]."
+        }
+      ]
+    },
+    "terms": {
+      "intro": "These Terms of Use govern your use of this website. By using the site, you agree to these terms. [Placeholder — review by counsel.]",
+      "sections": [
+        {
+          "heading": "Informational purpose",
+          "body": "The content on this website is provided for general informational purposes only and is not medical advice. Please see our Medical Disclaimer."
+        },
+        {
+          "heading": "No doctor–patient relationship",
+          "body": "Using this website or submitting the appointment-request form does not create a doctor–patient relationship."
+        },
+        {
+          "heading": "Acceptable use",
+          "body": "You agree not to misuse the website, submit false information, or attempt to disrupt its operation or security."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "The website's content, branding, and design are owned by Sanos Medical Group or its licensors and may not be used without permission."
+        },
+        {
+          "heading": "Third-party links",
+          "body": "The website may link to third-party sites, such as the patient portal. We are not responsible for the content or practices of those sites."
+        },
+        {
+          "heading": "Disclaimers and limitation of liability",
+          "body": "The website is provided \"as is\" without warranties of any kind, to the fullest extent permitted by law. [Detail — TODO.]"
+        },
+        {
+          "heading": "Changes and governing law",
+          "body": "We may update these terms at any time. These terms are governed by the laws of the State of Florida. [Confirm — TODO.]"
+        }
+      ]
+    },
+    "accessibility": {
+      "intro": "Sanos Medical Group is committed to making this website accessible to everyone, including people with disabilities.",
+      "sections": [
+        {
+          "heading": "Our commitment",
+          "body": "We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA and to follow accessible design practices such as semantic structure, keyboard navigation, visible focus indicators, descriptive alternative text, and sufficient color contrast."
+        },
+        {
+          "heading": "Ongoing effort",
+          "body": "Accessibility is an ongoing effort, and we continue to improve the site. [Confirm audit status before launch — TODO.]"
+        },
+        {
+          "heading": "Feedback and contact",
+          "body": "If you encounter an accessibility barrier or need assistance, please contact us at [contact — TODO] and we will work to provide the information or service you need."
+        },
+        {
+          "heading": "Alternative access",
+          "body": "We are glad to assist by phone with anything you are unable to access on the website."
+        }
+      ]
+    },
+    "medicalDisclaimer": {
+      "intro": "The information on this website is provided for general educational and informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.",
+      "sections": [
+        {
+          "heading": "Not medical advice",
+          "body": "Content on this website does not constitute medical advice and should not be relied upon for medical decisions. Always seek the advice of your physician or another qualified health provider with any questions about a medical condition."
+        },
+        {
+          "heading": "No doctor–patient relationship",
+          "body": "Viewing this website or contacting us through it does not establish a doctor–patient relationship. That relationship begins only after an established clinical evaluation."
+        },
+        {
+          "heading": "Individual results vary",
+          "body": "Descriptions of services, including weight management and GLP-1 therapy, are general. Treatment requires evaluation by a licensed provider, eligibility is determined individually, and results vary. We make no guarantees of specific outcomes."
+        },
+        {
+          "heading": "Medications",
+          "body": "Prescription medications, including GLP-1 medications, are provided only after a clinical evaluation and at the discretion of a licensed provider. Talk to your provider about the benefits and risks."
+        },
+        {
+          "heading": "Emergencies",
+          "body": "Do not use this website for medical emergencies. If you have a medical emergency, call 911 or go to the nearest emergency room immediately."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Comprehensive, bilingual primary care in the Miami area.",
+    "navHeading": "Explore",
+    "legalHeading": "Legal",
+    "contactHeading": "Contact",
+    "addressPlaceholder": "14024 SW 8th St, Unit B1",
+    "cityPlaceholder": "Miami, FL 33184",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "(786) 292-1402",
+    "hoursHeading": "Hours",
+    "hoursPlaceholder": "Mon–Fri 9 AM–5 PM · Sat 10 AM–3 PM · Sun closed",
+    "disclaimer": "The information on this website is for general informational purposes only and is not medical advice. It does not create a doctor–patient relationship. Individual results vary, and all treatment requires evaluation by a licensed provider. In an emergency, call 911 or go to the nearest emergency room.",
+    "rights": "All rights reserved."
+  }
+}
