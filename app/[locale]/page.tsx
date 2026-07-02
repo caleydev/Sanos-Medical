@@ -13,7 +13,6 @@ import {
   Search,
   Scale,
   ShieldCheck,
-  Star,
   Stethoscope,
   Syringe,
   type LucideIcon,
@@ -399,14 +398,11 @@ export default async function HomePage({
                 <p className="text-ink mt-5 text-sm leading-relaxed">
                   {card.quote}
                 </p>
-                <div className="mt-5 flex gap-1 text-yellow-500" aria-hidden>
-                  {[0, 1, 2, 3, 4].map((star) => (
-                    <Star
-                      key={star}
-                      className="h-4 w-4 fill-current"
-                    />
-                  ))}
-                </div>
+                {/* COMPLIANCE (FTC 16 CFR Part 465): star ratings were removed
+                    on legal review — fabricated uniform 5-star rows are a
+                    civil-penalty violation. Reintroduce stars ONLY driven by a
+                    real per-testimonial rating from a documented rating
+                    system, or a sourced/dated aggregate. */}
                 <div className="mt-6 flex items-center gap-3">
                   <span className="bg-surface text-secondary inline-flex h-11 w-11 items-center justify-center rounded-full">
                     <Stethoscope aria-hidden className="h-5 w-5" />

@@ -3,8 +3,8 @@ import { Languages, ShieldCheck, BadgeCheck, type LucideIcon } from "lucide-reac
 
 const TRUST_ITEMS: { key: string; icon: LucideIcon }[] = [
   { key: "bilingual", icon: Languages },
-  // COMPLIANCE (SPEC §6): "board-certified" is placeholder trust copy pending
-  // verification of provider credentials — tracked in content/TODO.md.
+  // COMPLIANCE (SPEC §6): copy deliberately says "Licensed providers" — do NOT
+  // upgrade to "board-certified"/"specialist" unless independently verified.
   { key: "providers", icon: BadgeCheck },
   { key: "insurance", icon: ShieldCheck },
 ];

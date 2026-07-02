@@ -27,7 +27,7 @@
     "heroCta": "Request an appointment",
     "heroSecondaryCta": "Explore our services",
     "searchLabel": "Search services",
-    "searchPlaceholder": "Search a service...",
+    "searchPlaceholder": "Search a service…",
     "searchButton": "Search",
     "heroMediaAlt": "Illustration placeholder for a Sanos Medical clinician",
     "stats": [
@@ -280,8 +280,8 @@
     },
     "labs": {
       "eyebrow": "Blood Testing & Labs",
-      "title": "Clear answers start with the right tests",
-      "intro": "Lab work helps your provider understand your health, catch issues early, and track how a treatment plan is working. We make testing convenient with in-office collection and trusted laboratory partners.",
+      "title": "Testing that helps guide your care",
+      "intro": "Lab work helps your provider understand your health, catch issues early, and track how a treatment plan is working. We make testing convenient with in-office collection and our partner laboratory.",
       "featuresHeading": "Common testing",
       "features": [
         "Comprehensive diagnostic panels",
@@ -372,7 +372,7 @@
         },
         {
           "heading": "Cookies and analytics",
-          "body": "This website uses only essential cookies by default. If analytics or other non-essential cookies are added, we will request your consent first. [Update if analytics are added — TODO.]"
+          "body": "This website does not use analytics or advertising cookies. The map on our contact page is loaded from Google Maps, which may set Google cookies when the page loads — see Google's privacy policy for details. If analytics or other non-essential cookies are ever added, we will request your consent first. [Confirm scope with counsel — TODO.]"
         },
         {
           "heading": "Your choices",
@@ -380,7 +380,7 @@
         },
         {
           "heading": "Children's privacy",
-          "body": "This website is not directed to children, and we do not knowingly collect information from children through it."
+          "body": "This website is not directed to children under 13, and we do not knowingly collect information from children under 13 through it. If you are requesting an appointment for a minor, a parent or guardian should submit the request."
         },
         {
           "heading": "Changes and contact",

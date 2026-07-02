@@ -27,7 +27,7 @@
     "heroCta": "Solicitar una cita",
     "heroSecondaryCta": "Conozca nuestros servicios",
     "searchLabel": "Buscar servicios",
-    "searchPlaceholder": "Buscar un servicio...",
+    "searchPlaceholder": "Buscar un servicio…",
     "searchButton": "Buscar",
     "heroMediaAlt": "Ilustración provisional de un profesional clínico de Sanos Medical",
     "stats": [
@@ -37,7 +37,7 @@
     ],
     "pillarsEyebrow": "Lo que ofrecemos",
     "pillarsTitle": "Atención para cada etapa de su salud",
-    "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe le acompaña con una atención personalizada y basada en la evidencia.",
+    "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe está a su lado con una atención personalizada y basada en la evidencia.",
     "specialtiesTitle": "Atención coordinada según sus necesidades",
     "specialtiesBody": "Comience con atención primaria y conecte con análisis, seguimiento y opciones de tratamiento cuando sea clínicamente apropiado.",
     "specialtyPills": [
@@ -61,10 +61,10 @@
       },
       "insurance": {
         "title": "Aceptamos seguros",
-        "description": "Trabajamos con muchos planes de seguro principales — pregúntenos por su cobertura."
+        "description": "Trabajamos con muchos de los principales planes de seguro — pregúntenos por su cobertura."
       }
     },
-    "whyTitle": "Una forma más tranquila de coordinar su atención",
+    "whyTitle": "Coordinar su atención, sin complicaciones",
     "whyBody": "Hacemos que la programación, el seguimiento y la comunicación sean claros para que su visita se sienta organizada desde la primera solicitud.",
     "whyItems": [
       "Solicitudes de cita revisadas por el equipo de atención",
@@ -78,24 +78,24 @@
     "testimonialsNote": "Las historias aprobadas de pacientes se agregarán aquí antes del lanzamiento.",
     "testimonialCards": [
       {
-        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
-        "name": "Historia de paciente",
+        "quote": "Testimonio de paciente pendiente de aprobación del consultorio.",
+        "name": "Testimonio de paciente",
         "role": "Paciente"
       },
       {
-        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
-        "name": "Historia de paciente",
+        "quote": "Testimonio de paciente pendiente de aprobación del consultorio.",
+        "name": "Testimonio de paciente",
         "role": "Paciente"
       },
       {
-        "quote": "Testimonio de paciente pendiente de aprobación de la práctica.",
-        "name": "Historia de paciente",
+        "quote": "Testimonio de paciente pendiente de aprobación del consultorio.",
+        "name": "Testimonio de paciente",
         "role": "Paciente"
       }
     ]
   },
   "cta": {
-    "title": "¿Listo para su consulta?",
+    "title": "¿Le gustaría programar su consulta?",
     "body": "Solicite una cita y un miembro de nuestro equipo se comunicará con usted para confirmar su visita.",
     "button": "Solicitar una cita"
   },
@@ -149,14 +149,14 @@
   "about": {
     "eyebrow": "Nosotros",
     "title": "Atención integral y bilingüe para Miami",
-    "intro": "Sanos Medical Group es una práctica de atención primaria dedicada a cuidar la salud de las familias de Miami con una atención personalizada y basada en la evidencia, en inglés y en español.",
+    "intro": "Sanos Medical Group es un consultorio de atención primaria dedicado a cuidar la salud de las familias de Miami con una atención personalizada y basada en la evidencia, en inglés y en español.",
     "story": {
       "heading": "Nuestra historia",
       "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a la comunidad de Miami. [Historia de la práctica — POR DEFINIR: reemplazar con la historia real de la práctica.] Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad."
     },
     "mission": {
       "heading": "Nuestra misión",
-      "body": "Brindar una atención primaria cercana y de alta calidad que ayude a nuestra comunidad a vivir más saludablemente — atendiendo a cada paciente con respeto, comunicación clara y cuidado en el idioma que prefiera."
+      "body": "Brindar una atención primaria cercana y de alta calidad que ayude a nuestra comunidad a vivir una vida más saludable — atendiendo a cada paciente con respeto, comunicación clara y cuidado en el idioma que prefiera."
     },
     "expect": {
       "heading": "Qué esperar",
@@ -193,7 +193,7 @@
       },
       {
         "name": "[Nombre completo y título/credencial — VERIFICAR]",
-        "credentials": "[Cargo — p. ej. Enfermera especializada (NP)] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
+        "credentials": "[Cargo — p. ej. Enfermera practicante (NP)] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
         "bio": "[2–3 oraciones — VERIFICAR: trayectoria; enfoque en atención preventiva, pruebas de detección y seguimiento de análisis de laboratorio; enfoque en la educación del paciente en inglés y español.]",
         "languages": "Inglés, Español [confirmar]"
       }
@@ -210,11 +210,11 @@
     },
     "insurance": {
       "heading": "Seguros aceptados",
-      "body": "Trabajamos con muchos de los principales planes de seguro y con gusto verificamos sus beneficios antes de su visita, para que sepa qué esperar. Comuníquese con nuestro equipo con su tarjeta del seguro a mano y confirmaremos su cobertura. ¿No tiene seguro? Pregúntenos por las visitas de pago directo."
+      "body": "Trabajamos con muchos de los principales planes de seguro y con gusto verificamos sus beneficios antes de su visita, para que sepa qué esperar. Comuníquese con nuestro equipo con su tarjeta del seguro a mano y confirmaremos su cobertura. ¿Prefiere pagar sin seguro? Pregúntenos por las visitas de pago particular."
     },
     "newPatient": {
       "heading": "Pacientes nuevos",
-      "body": "¡Bienvenido! Para que su primera visita sea más cómoda, llegue unos 15 minutos antes y traiga una identificación con foto, su tarjeta del seguro y una lista de los medicamentos y suplementos que toma. Su proveedor se tomará el tiempo para revisar con usted su historial de salud y sus objetivos — en inglés o en español, según prefiera."
+      "body": "¡Le damos la bienvenida! Para que su primera visita sea más cómoda, llegue unos 15 minutos antes y traiga una identificación con foto, su tarjeta del seguro y una lista de los medicamentos y suplementos que toma. Su proveedor se tomará el tiempo para revisar con usted su historial de salud y sus objetivos — en inglés o en español, según prefiera."
     },
     "forms": {
       "heading": "Formularios para pacientes",
@@ -222,14 +222,14 @@
     },
     "telehealth": {
       "heading": "Telemedicina",
-      "body": "Si se ofrece telemedicina, se aplica un consentimiento de telemedicina antes de cualquier visita virtual. [Nota de consentimiento de telemedicina — POR DEFINIR; incluir solo si se ofrece telemedicina.]"
+      "body": "Si se ofrece telemedicina, se requiere un consentimiento de telemedicina antes de cualquier visita virtual. [Nota de consentimiento de telemedicina — POR DEFINIR; incluir solo si se ofrece telemedicina.]"
     }
   },
   "services": {
     "learnMore": "Más información",
     "search": {
       "resultsFor": "Resultados para “{query}”",
-      "noResults": "Ningún servicio coincidió con “{query}” — esto es todo lo que ofrecemos:",
+      "noResults": "No encontramos servicios que coincidan con “{query}”. Aquí tiene todos nuestros servicios:",
       "clear": "Borrar búsqueda"
     },
     "disclaimer": "Esta información tiene únicamente fines educativos generales y no constituye un consejo médico. No reemplaza la evaluación de un proveedor con licencia. Los resultados varían según cada persona, y todo tratamiento depende de una evaluación clínica. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
@@ -249,7 +249,7 @@
       },
       "weightManagement": {
         "title": "Control de peso",
-        "summary": "Apoyo individualizado y bajo supervisión médica que combina la atención clínica y el estilo de vida."
+        "summary": "Apoyo individualizado y bajo supervisión médica que combina la atención clínica con el apoyo en el estilo de vida."
       },
       "glp1": {
         "title": "Terapia con GLP-1",
@@ -260,11 +260,11 @@
       "primaryCare": "Profesional clínico con uniforme azul que representa la atención primaria e integral",
       "labs": "Materiales de laboratorio que representan análisis de sangre y servicios de laboratorio",
       "weightManagement": "Comida saludable y cinta métrica que representan el apoyo para el control de peso",
-      "glp1": "Profesional clínico con pluma de medicamento que representa la terapia GLP-1 bajo supervisión médica"
+      "glp1": "Profesional clínico con pluma inyectora que representa la terapia GLP-1 bajo supervisión médica"
     },
     "primaryCare": {
       "eyebrow": "Atención primaria e integral",
-      "title": "Atención diaria que crece con usted",
+      "title": "Atención para el día a día que crece con usted",
       "intro": "Su equipo de atención primaria es su primer punto de contacto para mantenerse sano y atender cualquier inquietud a medida que surja. Nos enfocamos en la prevención, la detección temprana y una relación a largo plazo en el cuidado de su salud.",
       "featuresHeading": "Lo que ofrecemos",
       "features": [
@@ -276,18 +276,18 @@
         "Vacunas de rutina y orientación sobre inmunizaciones"
       ],
       "expectHeading": "Qué esperar",
-      "expectBody": "En su consulta, su proveedor revisa su historial, escucha sus inquietudes y trabaja con usted en un plan adaptado a sus necesidades. Nos tomamos el tiempo para responder sus preguntas en el idioma con el que se sienta más cómodo."
+      "expectBody": "En su consulta, su proveedor revisa su historial, escucha sus inquietudes y trabaja con usted en un plan adaptado a sus necesidades. Nos tomamos el tiempo para responder sus preguntas en el idioma que prefiera."
     },
     "labs": {
       "eyebrow": "Análisis de sangre y laboratorio",
-      "title": "Las respuestas claras comienzan con las pruebas adecuadas",
-      "intro": "Los análisis de laboratorio ayudan a su proveedor a comprender su salud, detectar problemas a tiempo y dar seguimiento a la evolución de un plan de tratamiento. Facilitamos las pruebas con la toma de muestras en el consultorio y laboratorios asociados de confianza.",
+      "title": "Pruebas que ayudan a orientar su atención",
+      "intro": "Los análisis de laboratorio ayudan a su proveedor a comprender su salud, detectar problemas a tiempo y dar seguimiento a la evolución de un plan de tratamiento. Facilitamos las pruebas con la toma de muestras en el consultorio y laboratorios asociados.",
       "featuresHeading": "Pruebas comunes",
       "features": [
         "Paneles de diagnóstico completos",
         "Pruebas preventivas y de bienestar",
         "Monitoreo de enfermedades crónicas",
-        "Toma de sangre en el consultorio con un laboratorio asociado"
+        "Extracción de sangre en el consultorio con un laboratorio asociado"
       ],
       "processHeading": "Cómo funciona",
       "processBody": "Su proveedor determina qué pruebas son apropiadas según su evaluación. Las muestras se toman en el consultorio y son procesadas por nuestro laboratorio asociado. Los resultados se revisan con usted para que comprenda qué significan para su atención. Las recomendaciones de pruebas son individualizadas — esta página no garantiza pruebas ni resultados específicos."
@@ -310,7 +310,7 @@
     "glp1": {
       "eyebrow": "Terapia con GLP-1",
       "title": "Tratamiento con GLP-1 bajo supervisión médica",
-      "intro": "Los medicamentos GLP-1 pueden ofrecerse como una parte de un plan integral de control de peso bajo supervisión médica. Son medicamentos recetados que se usan únicamente después de una evaluación clínica y se prescriben a criterio de un proveedor con licencia.",
+      "intro": "Los medicamentos GLP-1 pueden ofrecerse como parte de un plan integral de control de peso bajo supervisión médica. Son medicamentos recetados que se usan únicamente después de una evaluación clínica y se prescriben a criterio de un proveedor con licencia.",
       "featuresHeading": "Cómo funciona la atención con GLP-1 en Sanos",
       "features": [
         "Una evaluación clínica para revisar su historial de salud y sus objetivos",
@@ -322,7 +322,7 @@
       "howBody": "Los medicamentos GLP-1 son medicamentos recetados que se dispensan únicamente después de una evaluación clínica. La elegibilidad la determina un proveedor con licencia, y el tratamiento no está garantizado. Su proveedor conversará con usted sobre si la terapia con GLP-1 se ajusta a su plan individual.",
       "safetyHeading": "Seguridad y efectos secundarios",
       "safetyBody": "Como todos los medicamentos, los tratamientos con GLP-1 pueden tener efectos secundarios, que pueden incluir náuseas y molestias digestivas, entre otros. Su proveedor revisará con usted los posibles beneficios y riesgos. Hable siempre con su proveedor antes de comenzar, cambiar o suspender cualquier medicamento.",
-      "fdaNote": "Durante su evaluación conversaremos sobre el medicamento específico que pueda ser apropiado para usted, incluido su estado regulatorio. Esta página no hace afirmaciones sobre marcas específicas ni sobre la aprobación de la FDA."
+      "fdaNote": "Durante su evaluación conversaremos sobre el medicamento específico que pueda ser apropiado para usted, incluido su estado regulatorio. Esta página no hace afirmaciones sobre marcas específicas ni sobre el estado de aprobación de la FDA."
     }
   },
   "common": {
@@ -351,7 +351,7 @@
     }
   },
   "legal": {
-    "metaDescription": "{document} de Sanos Medical Group, una práctica de atención primaria bilingüe en Miami, FL.",
+    "metaDescription": "{document} de Sanos Medical Group, un consultorio de atención primaria bilingüe en Miami, FL.",
     "reviewNotice": "Contenido provisional — REVISAR POR UN ASESOR LEGAL ANTES DEL LANZAMIENTO.",
     "lastUpdatedLabel": "Última actualización",
     "lastUpdated": "[Fecha — POR DEFINIR]",
@@ -372,7 +372,7 @@
         },
         {
           "heading": "Cookies y análisis",
-          "body": "Este sitio web utiliza únicamente cookies esenciales de forma predeterminada. Si se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Actualizar si se agregan análisis — POR DEFINIR.]"
+          "body": "Este sitio web no utiliza cookies de análisis ni de publicidad. El mapa de nuestra página de contacto se carga desde Google Maps, que puede establecer cookies de Google al cargarse la página — consulte la política de privacidad de Google para más detalles. Si en el futuro se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Confirmar el alcance con el asesor legal — POR DEFINIR.]"
         },
         {
           "heading": "Sus opciones",
@@ -380,7 +380,7 @@
         },
         {
           "heading": "Privacidad de los menores",
-          "body": "Este sitio web no está dirigido a menores y no recopilamos a sabiendas información de menores a través de él."
+          "body": "Este sitio web no está dirigido a niños menores de 13 años y no recopilamos a sabiendas información de niños menores de 13 años a través de él. Si solicita una cita para un menor, la solicitud debe hacerla el padre, la madre o el tutor."
         },
         {
           "heading": "Cambios y contacto",
@@ -437,7 +437,7 @@
           "body": "El sitio web puede enlazar a sitios de terceros, como el portal del paciente. No somos responsables del contenido ni de las prácticas de esos sitios."
         },
         {
-          "heading": "Renuncias y limitación de responsabilidad",
+          "heading": "Exención de garantías y limitación de responsabilidad",
           "body": "El sitio web se proporciona \"tal cual\", sin garantías de ningún tipo, en la máxima medida permitida por la ley. [Detalle — POR DEFINIR.]"
         },
         {
@@ -463,7 +463,7 @@
         },
         {
           "heading": "Acceso alternativo",
-          "body": "Con gusto le ayudaremos por teléfono con cualquier cosa que no pueda acceder en el sitio web."
+          "body": "Con gusto le ayudaremos por teléfono con cualquier contenido del sitio web al que no pueda acceder."
         }
       ]
     },
