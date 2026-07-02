@@ -16,7 +16,7 @@ const data = {
   url: SITE_URL,
   telephone: "+1-786-292-1402",
   image: `${SITE_URL}/og.png`,
-  logo: `${SITE_URL}/sano-logo.png`,
+  logo: `${SITE_URL}/sanos-logo-transparent.png`,
   address: {
     "@type": "PostalAddress",
     streetAddress: "14024 SW 8th St, Unit B1",

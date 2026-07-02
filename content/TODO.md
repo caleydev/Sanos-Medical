@@ -50,7 +50,12 @@ practice-approved information before launch. Search the codebase for `TODO` and
 
 ## Insurance & resources
 
-- [ ] Accepted insurance carriers — Patient Resources page
+- [ ] Accepted insurance carriers — Patient Resources page. The live copy now
+      says "we work with many major plans" and offers benefit verification —
+      confirm this is accurate and add the actual carrier list when available.
+- [ ] Confirm operational claims in the new-patient / insurance copy
+      (`resources.newPatient`, `resources.insurance`): 15-minute early-arrival
+      guidance, benefit verification before visits, and self-pay availability.
 - [ ] New-patient forms (downloadable) — currently placeholder
 - [ ] Patient portal URL — `NEXT_PUBLIC_PORTAL_URL`
 - [ ] Telehealth consent note (only if telemedicine is offered)
@@ -92,8 +97,9 @@ showing a "REVIEW BY LEGAL COUNSEL BEFORE LAUNCH" banner. Before launch:
 
 ## Brand assets
 
-- [x] Sanos logo asset — `public/sano-logo.png` (trimmed from `sano.png`), used
-      in the header and footer via next/image. Source `sano.png` kept at repo root.
+- [x] Sanos logo asset — `public/sanos-logo-transparent.png`, used in the
+      header, footer, and JSON-LD via next/image. Source `sano.png` kept at
+      repo root (also feeds the favicon/app icons).
 - [x] Favicon / app icons — `app/favicon.ico`, `app/icon.png`,
       `app/apple-icon.png` derived from the logo's shield mark. OG/social image
       at `public/og.png`.

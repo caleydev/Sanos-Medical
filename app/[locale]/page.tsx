@@ -58,6 +58,13 @@ const PILLARS: {
 
 const STAT_ICONS = [Languages, CalendarDays, MapPinned];
 
+// COMPLIANCE (FTC endorsement rules / SPEC §6): the testimonial cards are
+// placeholders with fabricated 5-star ratings. Rendering fake reviews on a
+// medical site is an endorsement-liability risk, so the section stays hidden
+// until real, practice-approved patient stories replace the placeholder copy
+// in messages/*.json → home.testimonialCards. Flip this flag once they land.
+const SHOW_TESTIMONIALS: boolean = false;
+
 type HomeStat = {
   value: string;
   label: string;
@@ -145,10 +152,9 @@ export default async function HomePage({
           <div className="relative min-h-[360px]">
             <div className="absolute inset-8 rounded-full bg-secondary/20 blur-2xl" />
             <div className="topographic soft-panel relative mx-auto flex aspect-square max-w-md items-center justify-center overflow-hidden rounded-full">
-              {/* TODO: replace placeholder media with approved clinician photography. */}
               <div
-                role="img"
                 aria-label={t("heroMediaAlt")}
+                role="img"
                 className="flex h-[78%] w-[78%] items-center justify-center rounded-full bg-background/95"
               >
                 <Stethoscope aria-hidden className="text-secondary h-28 w-28" />
@@ -361,7 +367,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Testimonials placeholder — real patient stories land in a later pass (SPEC §3). */}
+      {/* Testimonials — gated until real approved patient stories exist (see SHOW_TESTIMONIALS). */}
+      {SHOW_TESTIMONIALS ? (
       <section className="bg-surface overflow-hidden">
         <div className="mx-auto w-full max-w-6xl px-6 py-20">
           <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
@@ -416,6 +423,7 @@ export default async function HomePage({
           </div>
         </div>
       </section>
+      ) : null}
 
       <CTASection />
 

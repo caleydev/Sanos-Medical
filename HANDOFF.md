@@ -38,7 +38,7 @@ self-hosted on EC2 (Docker + Nginx).
   Zod validation client+server, honeypot, in-memory rate limit, insert-only RLS.
 - Lead also appended to a Google Sheet (`lib/google-sheets.ts`), best-effort.
 - Real NAP/hours + live Google Maps embed on Contact.
-- Logo wired in header/footer (`public/sano-logo.png`); favicon/app icons +
+- Logo wired in header/footer (`public/sanos-logo-transparent.png`); favicon/app icons +
   `public/og.png` generated from the logo.
 - SEO: per-page metadata + canonical/hreflang (`lib/seo.ts`), `MedicalClinic`
   JSON-LD (`components/structured-data.tsx`), `app/sitemap.ts`, `app/robots.ts`.

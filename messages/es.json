@@ -180,22 +180,22 @@
     "placeholderNote": "Los nombres, las credenciales y las biografías que se muestran aquí son provisionales y se reemplazarán con información verificada antes del lanzamiento.",
     "list": [
       {
-        "name": "[Nombre del proveedor — POR DEFINIR]",
-        "credentials": "[Credenciales / NPI — verificar]",
-        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
-        "languages": "Inglés, Español"
+        "name": "[Nombre completo y título — p. ej. \"Ana Martínez, MD\" — VERIFICAR]",
+        "credentials": "[Cargo — p. ej. Médico de medicina familiar] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
+        "bio": "[2–3 oraciones — VERIFICAR: años de experiencia; enfoque en atención primaria e integral (exámenes anuales, prevención, enfermedades crónicas); filosofía de atención. Sin afirmaciones de especialista o certificación de la junta que no estén verificadas de forma independiente.]",
+        "languages": "Inglés, Español [confirmar]"
       },
       {
-        "name": "[Nombre del proveedor — POR DEFINIR]",
-        "credentials": "[Credenciales / NPI — verificar]",
-        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
-        "languages": "Inglés, Español"
+        "name": "[Nombre completo y título/credencial — VERIFICAR]",
+        "credentials": "[Cargo — p. ej. Médico o APRN] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
+        "bio": "[2–3 oraciones — VERIFICAR: trayectoria; enfoque en el control de peso bajo supervisión médica y el programa de GLP-1; énfasis en planes individualizados y evaluados por el proveedor. Sin promesas de resultados.]",
+        "languages": "Inglés, Español [confirmar]"
       },
       {
-        "name": "[Nombre del proveedor — POR DEFINIR]",
-        "credentials": "[Credenciales / NPI — verificar]",
-        "bio": "[Biografía breve — POR DEFINIR. Describa el enfoque y la forma de atención del proveedor, sin afirmaciones no verificadas de especialista o certificación de la junta.]",
-        "languages": "Inglés, Español"
+        "name": "[Nombre completo y título/credencial — VERIFICAR]",
+        "credentials": "[Cargo — p. ej. Enfermera especializada (NP)] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
+        "bio": "[2–3 oraciones — VERIFICAR: trayectoria; enfoque en atención preventiva, pruebas de detección y seguimiento de análisis de laboratorio; enfoque en la educación del paciente en inglés y español.]",
+        "languages": "Inglés, Español [confirmar]"
       }
     ]
   },
@@ -210,11 +210,11 @@
     },
     "insurance": {
       "heading": "Seguros aceptados",
-      "body": "Trabajamos con muchos planes de seguro principales. [Aseguradoras aceptadas — POR DEFINIR.] ¿No está seguro de su cobertura? Comuníquese con nosotros y le ayudaremos a verificarla."
+      "body": "Trabajamos con muchos de los principales planes de seguro y con gusto verificamos sus beneficios antes de su visita, para que sepa qué esperar. Comuníquese con nuestro equipo con su tarjeta del seguro a mano y confirmaremos su cobertura. ¿No tiene seguro? Pregúntenos por las visitas de pago directo."
     },
     "newPatient": {
       "heading": "Pacientes nuevos",
-      "body": "¡Bienvenido! Para que su primera visita sea más cómoda, llegue unos minutos antes con su identificación con foto, su tarjeta del seguro y una lista de los medicamentos que toma actualmente. [Detalles para pacientes nuevos — POR DEFINIR.]"
+      "body": "¡Bienvenido! Para que su primera visita sea más cómoda, llegue unos 15 minutos antes y traiga una identificación con foto, su tarjeta del seguro y una lista de los medicamentos y suplementos que toma. Su proveedor se tomará el tiempo para revisar con usted su historial de salud y sus objetivos — en inglés o en español, según prefiera."
     },
     "forms": {
       "heading": "Formularios para pacientes",
@@ -227,6 +227,11 @@
   },
   "services": {
     "learnMore": "Más información",
+    "search": {
+      "resultsFor": "Resultados para “{query}”",
+      "noResults": "Ningún servicio coincidió con “{query}” — esto es todo lo que ofrecemos:",
+      "clear": "Borrar búsqueda"
+    },
     "disclaimer": "Esta información tiene únicamente fines educativos generales y no constituye un consejo médico. No reemplaza la evaluación de un proveedor con licencia. Los resultados varían según cada persona, y todo tratamiento depende de una evaluación clínica. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
     "overview": {
       "eyebrow": "Nuestros servicios",

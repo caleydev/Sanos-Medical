@@ -24,10 +24,10 @@ export async function SiteHeader() {
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" className="flex items-center">
           <Image
-            src="/sano-logo.png"
+            src="/sanos-logo-transparent.png"
             alt={t("brandWordmark")}
-            width={764}
-            height={286}
+            width={794}
+            height={317}
             priority
             className="h-9 w-auto sm:h-10"
           />

@@ -180,22 +180,22 @@
     "placeholderNote": "Provider names, credentials, and bios shown here are placeholders to be replaced with verified information before launch.",
     "list": [
       {
-        "name": "[Provider Name — TODO]",
-        "credentials": "[Credentials / NPI — verify]",
-        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
-        "languages": "English, Spanish"
+        "name": "[Full name, degree — e.g. \"Ana Martínez, MD\" — VERIFY]",
+        "credentials": "[Role — e.g. Family Medicine Physician] · [FL license # — VERIFY] · [NPI — VERIFY]",
+        "bio": "[2–3 sentences — VERIFY: years in practice; focus on primary and comprehensive care (annual physicals, prevention, chronic conditions); care philosophy. No specialist or board-certification claims unless independently verified.]",
+        "languages": "English, Spanish [confirm]"
       },
       {
-        "name": "[Provider Name — TODO]",
-        "credentials": "[Credentials / NPI — verify]",
-        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
-        "languages": "English, Spanish"
+        "name": "[Full name, degree/credential — VERIFY]",
+        "credentials": "[Role — e.g. Physician or APRN] · [FL license # — VERIFY] · [NPI — VERIFY]",
+        "bio": "[2–3 sentences — VERIFY: background; focus on medically supervised weight management and the GLP-1 program; emphasis on individualized, provider-evaluated plans. No outcome promises.]",
+        "languages": "English, Spanish [confirm]"
       },
       {
-        "name": "[Provider Name — TODO]",
-        "credentials": "[Credentials / NPI — verify]",
-        "bio": "[Short bio — TODO. Describe the provider's focus and approach to care, without unverified specialist or board-certification claims.]",
-        "languages": "English, Spanish"
+        "name": "[Full name, degree/credential — VERIFY]",
+        "credentials": "[Role — e.g. Nurse Practitioner] · [FL license # — VERIFY] · [NPI — VERIFY]",
+        "bio": "[2–3 sentences — VERIFY: background; focus on preventive care, screenings, and lab work follow-up; approach to patient education in English and Spanish.]",
+        "languages": "English, Spanish [confirm]"
       }
     ]
   },
@@ -210,11 +210,11 @@
     },
     "insurance": {
       "heading": "Accepted insurance",
-      "body": "We work with many major insurance plans. [Accepted carriers — TODO.] Not sure about your coverage? Contact us and we'll help you check."
+      "body": "We work with many major insurance plans, and we're glad to verify your benefits before your visit so you know what to expect. Contact our team with your insurance card handy and we'll confirm your coverage. Paying without insurance? Ask us about self-pay visits."
     },
     "newPatient": {
       "heading": "New patients",
-      "body": "Welcome! To make your first visit smooth, please arrive a few minutes early with your photo ID, insurance card, and a list of any current medications. [New-patient details — TODO.]"
+      "body": "Welcome! To make your first visit smooth, arrive about 15 minutes early and bring a photo ID, your insurance card, and a list of the medications and supplements you take. Your provider will take time to review your health history and goals with you — in English or Spanish, whichever you prefer."
     },
     "forms": {
       "heading": "Patient forms",
@@ -227,6 +227,11 @@
   },
   "services": {
     "learnMore": "Learn more",
+    "search": {
+      "resultsFor": "Results for “{query}”",
+      "noResults": "No services matched “{query}” — here's everything we offer:",
+      "clear": "Clear search"
+    },
     "disclaimer": "This information is for general educational purposes only and is not medical advice. It does not replace evaluation by a licensed provider. Individual results vary, and all treatment depends on a clinical assessment. In an emergency, call 911 or go to the nearest emergency room.",
     "overview": {
       "eyebrow": "Our services",

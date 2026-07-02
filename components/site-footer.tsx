@@ -31,10 +31,10 @@ export async function SiteFooter() {
         {/* NAP — name / address / phone (SPEC §3 global footer). */}
         <div>
           <Image
-            src="/sano-logo.png"
+            src="/sanos-logo-transparent.png"
             alt={tNav("brandWordmark")}
-            width={764}
-            height={286}
+            width={794}
+            height={317}
             className="h-10 w-auto"
           />
           <p className="text-muted mt-3 text-sm">{t("tagline")}</p>

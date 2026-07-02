@@ -6,6 +6,7 @@ import {
   Syringe,
   type LucideIcon,
 } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { ServiceCard } from "@/components/service-card";
 import { Disclaimer } from "@/components/disclaimer";
 import { CTASection } from "@/components/cta-section";
@@ -62,14 +63,42 @@ const SERVICES: {
   },
 ];
 
+/** Case- and accent-insensitive match ("analisis" finds "análisis"). */
+function normalize(value: string): string {
+  return value
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 export default async function ServicesPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ q?: string | string[] }>;
 }) {
-  const { locale } = await params;
+  const [{ locale }, { q }] = await Promise.all([params, searchParams]);
   setRequestLocale(locale);
   const t = await getTranslations("services");
+
+  // Filter by the ?q= query submitted from the home hero search (matched
+  // against each service's localized title + summary). Next delivers repeated
+  // params (?q=a&q=b) as an array — take the first.
+  const raw = Array.isArray(q) ? q[0] : q;
+  const query = raw?.trim() ?? "";
+  const needle = normalize(query);
+  const matches = needle
+    ? SERVICES.filter(({ key }) =>
+        normalize(
+          `${t(`cards.${key}.title`)} ${t(`cards.${key}.summary`)}`,
+        ).includes(needle),
+      )
+    : SERVICES;
+  // On no matches, fall back to the full list so the page is never empty —
+  // the heading tells the visitor nothing matched.
+  const hasMatches = matches.length > 0;
+  const visibleServices = hasMatches ? matches : SERVICES;
 
   return (
     <main id="main" className="flex-1">
@@ -88,8 +117,23 @@ export default async function ServicesPage({
       </header>
 
       <div className="mx-auto w-full max-w-6xl px-6 py-16">
+        {query ? (
+          <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-primary text-xl font-semibold">
+              {hasMatches
+                ? t("search.resultsFor", { query })
+                : t("search.noResults", { query })}
+            </h2>
+            <Link
+              href="/services"
+              className="text-secondary text-sm font-semibold underline-offset-4 hover:underline"
+            >
+              {t("search.clear")}
+            </Link>
+          </div>
+        ) : null}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {SERVICES.map(({ key, href, icon, imageSrc }) => (
+          {visibleServices.map(({ key, href, icon, imageSrc }) => (
             <ServiceCard
               key={key}
               icon={icon}
