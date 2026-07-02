@@ -22,14 +22,34 @@
   },
   "home": {
     "heroEyebrow": "Sanos Medical Group",
-    "heroTitle": "Care for you and your family",
+    "heroTitle": "Care for <accent>you and your family</accent>",
     "heroSubtitle": "Bilingual primary care in Miami, from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
     "heroCta": "Request an appointment",
     "heroSecondaryCta": "Explore our services",
     "searchLabel": "Search services",
     "searchPlaceholder": "Search a service…",
     "searchButton": "Search",
-    "heroMediaAlt": "Illustration placeholder for a Sanos Medical clinician",
+    "heroMediaAlt": "A clinician reviewing an appointment plan with a patient",
+    "heroBadgeBooking": "Easy appointment booking",
+    "heroBadgeBilingual": "English & Español",
+    "steps": {
+      "title": "Request an appointment in 3 simple steps",
+      "items": [
+        {
+          "title": "Share your contact info",
+          "description": "Name, phone, and email — no medical details needed."
+        },
+        {
+          "title": "Choose what works for you",
+          "description": "Pick a reason for the visit and your preferred time."
+        },
+        {
+          "title": "We confirm your visit",
+          "description": "Our team follows up to schedule and confirm."
+        }
+      ],
+      "cta": "Request now"
+    },
     "stats": [
       { "value": "English / Spanish", "label": "Bilingual care" },
       { "value": "Mon-Sat", "label": "Office hours" },

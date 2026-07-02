@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
+import { NavLinks } from "@/components/nav-links";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -37,15 +38,7 @@ export async function SiteHeader() {
           aria-label={t("home")}
           className="hidden items-center gap-6 md:flex"
         >
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.key}
-              href={link.href}
-              className="text-ink hover:text-secondary text-sm font-medium transition"
-            >
-              {t(link.key)}
-            </Link>
-          ))}
+          <NavLinks links={mobileLinks} />
         </nav>
 
         <div className="flex items-center gap-3">

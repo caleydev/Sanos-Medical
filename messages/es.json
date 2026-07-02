@@ -22,14 +22,34 @@
   },
   "home": {
     "heroEyebrow": "Sanos Medical Group",
-    "heroTitle": "Cuidado para usted y su familia",
+    "heroTitle": "Cuidado para <accent>usted y su familia</accent>",
     "heroSubtitle": "Atención primaria bilingüe en Miami, desde exámenes físicos anuales y análisis de laboratorio hasta control de peso y terapia con GLP-1 bajo supervisión médica.",
     "heroCta": "Solicitar una cita",
     "heroSecondaryCta": "Conozca nuestros servicios",
     "searchLabel": "Buscar servicios",
     "searchPlaceholder": "Buscar un servicio…",
     "searchButton": "Buscar",
-    "heroMediaAlt": "Ilustración provisional de un profesional clínico de Sanos Medical",
+    "heroMediaAlt": "Profesional clínico revisando un plan de cita con una paciente",
+    "heroBadgeBooking": "Programación de citas sencilla",
+    "heroBadgeBilingual": "English y Español",
+    "steps": {
+      "title": "Solicite una cita en 3 simples pasos",
+      "items": [
+        {
+          "title": "Comparta sus datos de contacto",
+          "description": "Nombre, teléfono y correo — sin detalles médicos."
+        },
+        {
+          "title": "Elija lo que le convenga",
+          "description": "Seleccione el motivo de la visita y su horario preferido."
+        },
+        {
+          "title": "Confirmamos su visita",
+          "description": "Nuestro equipo se comunicará para programar y confirmar."
+        }
+      ],
+      "cta": "Solicitar ahora"
+    },
     "stats": [
       { "value": "Inglés / Español", "label": "Atención bilingüe" },
       { "value": "Lun-Sáb", "label": "Horario de atención" },

@@ -52,6 +52,9 @@ practice-approved information before launch. Search the codebase for `TODO` and
       provider language instead.
 - [ ] Real patient testimonials — the Home "What our patients say" section is a
       placeholder (`home.testimonialsNote`).
+- [ ] Hero + service-card imagery is stock (`public/images/services/*`) —
+      replace with approved practice photography before launch, or confirm
+      stock licensing. The hero arch photo is `doctorBlue.png`.
 
 ## Insurance & resources
 

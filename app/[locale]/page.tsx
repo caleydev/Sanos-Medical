@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
@@ -8,7 +9,6 @@ import {
   FlaskConical,
   Languages,
   MapPinned,
-  Play,
   Quote,
   Search,
   Scale,
@@ -87,6 +87,7 @@ export default async function HomePage({
     getTranslations("services"),
   ]);
   const stats = t.raw("stats") as HomeStat[];
+  const steps = t.raw("steps.items") as { title: string; description: string }[];
   const specialtyPills = t.raw("specialtyPills") as string[];
   const whyItems = t.raw("whyItems") as string[];
   const testimonialCards = t.raw("testimonialCards") as TestimonialCard[];
@@ -100,7 +101,11 @@ export default async function HomePage({
               {t("heroEyebrow")}
             </p>
             <h1 className="text-primary mt-4 max-w-2xl text-5xl font-bold tracking-tight text-balance sm:text-6xl">
-              {t("heroTitle")}
+              {t.rich("heroTitle", {
+                accent: (chunks) => (
+                  <span className="text-secondary">{chunks}</span>
+                ),
+              })}
             </h1>
             <p className="text-muted mt-6 max-w-xl text-xl leading-relaxed text-pretty">
               {t("heroSubtitle")}
@@ -148,24 +153,73 @@ export default async function HomePage({
             </div>
           </div>
 
-          <div className="relative min-h-[360px]">
-            <div className="absolute inset-8 rounded-full bg-secondary/20 blur-2xl" />
-            <div className="topographic soft-panel relative mx-auto flex aspect-square max-w-md items-center justify-center overflow-hidden rounded-full">
-              <div
-                aria-label={t("heroMediaAlt")}
-                role="img"
-                className="flex h-[78%] w-[78%] items-center justify-center rounded-full bg-background/95"
-              >
-                <Stethoscope aria-hidden className="text-secondary h-28 w-28" />
-              </div>
-              <span className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/40" />
-              <span className="absolute right-[18%] bottom-[28%] inline-flex h-16 w-16 items-center justify-center rounded-full bg-background shadow-lg">
-                <Play
-                  aria-hidden
-                  className="text-secondary ml-1 h-7 w-7 fill-current"
-                />
-              </span>
+          <div className="relative mx-auto w-full max-w-md">
+            {/* Decorative dotted accents (mockup-style), hidden from AT. */}
+            <span
+              aria-hidden
+              className="dot-grid absolute -top-6 -left-8 h-24 w-24"
+            />
+            <span
+              aria-hidden
+              className="dot-grid absolute -right-6 bottom-10 h-28 w-20"
+            />
+            <div className="absolute inset-x-10 top-10 bottom-0 rounded-t-full bg-secondary/15 blur-2xl" />
+
+            {/* Arch-framed photo. NOTE: stock imagery — replace with approved
+                practice photography before launch (content/TODO.md). */}
+            <div className="soft-panel relative aspect-[4/5] overflow-hidden rounded-t-full rounded-b-3xl">
+              <Image
+                src="/images/services/doctorBlue.png"
+                alt={t("heroMediaAlt")}
+                fill
+                priority
+                sizes="(min-width: 1024px) 40vw, 90vw"
+                className="object-cover"
+              />
             </div>
+
+            {/* Floating badges — real facts only (no fabricated stats/ratings). */}
+            <span className="soft-panel bg-background text-primary absolute top-8 -left-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold sm:-left-10">
+              <Languages aria-hidden className="text-secondary h-4 w-4" />
+              {t("heroBadgeBilingual")}
+            </span>
+            <span className="soft-panel bg-background text-primary absolute -right-2 bottom-12 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold sm:-right-8">
+              <CalendarDays aria-hidden className="text-secondary h-4 w-4" />
+              {t("heroBadgeBooking")}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick "3 simple steps" strip — anchors to the real form below. */}
+      <section className="relative z-10 mx-auto w-full max-w-6xl px-6">
+        <div className="soft-panel border-border -mt-8 rounded-3xl border bg-background p-8 sm:p-10">
+          <h2 className="text-primary text-2xl font-bold tracking-tight text-balance">
+            {t("steps.title")}
+          </h2>
+          <div className="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_1fr_1fr_auto]">
+            {steps.map((step, index) => (
+              <div key={step.title} className="flex items-start gap-4">
+                <span className="bg-surface text-secondary inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-bold">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="text-primary text-sm font-semibold">
+                    {step.title}
+                  </h3>
+                  <p className="text-muted mt-1 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+            <a
+              href="#appointment"
+              className="bg-secondary text-secondary-foreground inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition hover:opacity-90"
+            >
+              {t("steps.cta")}
+              <ArrowRight aria-hidden className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </section>
@@ -423,7 +477,7 @@ export default async function HomePage({
 
       <CTASection />
 
-      <section className="topographic">
+      <section id="appointment" className="topographic scroll-mt-20">
         <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="text-primary-foreground/85 text-sm font-semibold tracking-widest uppercase">
