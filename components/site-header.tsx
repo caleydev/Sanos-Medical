@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { Clock, MapPin, Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
@@ -14,14 +15,39 @@ const NAV_LINKS = [
 ] as const;
 
 export async function SiteHeader() {
-  const t = await getTranslations("nav");
+  const [t, tFooter] = await Promise.all([
+    getTranslations("nav"),
+    getTranslations("footer"),
+  ]);
   const mobileLinks = NAV_LINKS.map((link) => ({
     href: link.href,
     label: t(link.key),
   }));
 
   return (
-    <header className="border-border bg-background/90 sticky top-0 z-40 border-b backdrop-blur-xl">
+    <header className="border-border bg-background/90 sticky top-0 z-40 border-b shadow-[0_10px_30px_rgb(28_44_89_/_0.04)] backdrop-blur-xl">
+      {/* Utility bar: phone / hours / address at a glance (desktop only). */}
+      <div className="bg-secondary text-secondary-foreground hidden text-xs md:block">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-2">
+          <div className="flex items-center gap-6">
+            <a
+              href="tel:+17862921402"
+              className="flex items-center gap-1.5 font-medium transition hover:opacity-80"
+            >
+              <Phone aria-hidden className="h-3.5 w-3.5 opacity-75" />
+              {tFooter("phonePlaceholder")}
+            </a>
+            <span className="flex items-center gap-1.5 opacity-90">
+              <Clock aria-hidden className="h-3.5 w-3.5 opacity-75" />
+              {tFooter("hoursPlaceholder")}
+            </span>
+          </div>
+          <span className="hidden items-center gap-1.5 opacity-90 lg:flex">
+            <MapPin aria-hidden className="h-3.5 w-3.5 opacity-75" />
+            {tFooter("addressPlaceholder")}, {tFooter("cityPlaceholder")}
+          </span>
+        </div>
+      </div>
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" className="flex items-center">
           <Image
@@ -45,7 +71,7 @@ export async function SiteHeader() {
           <LanguageToggle />
           <Link
             href="/contact"
-            className="bg-secondary text-secondary-foreground hidden rounded-full px-4 py-2 text-sm font-semibold transition hover:opacity-90 sm:inline-flex"
+            className="bg-secondary text-secondary-foreground shadow-secondary/25 hidden rounded-full px-4 py-2 text-sm font-semibold shadow-md transition hover:-translate-y-0.5 hover:opacity-95 sm:inline-flex"
           >
             {t("requestAppointment")}
           </Link>

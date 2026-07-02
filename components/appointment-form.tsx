@@ -170,11 +170,7 @@ export function AppointmentForm() {
             ))}
           </select>
         </Field>
-        <Field
-          id="reason"
-          label={t("reason")}
-          error={errors.reason?.message}
-        >
+        <Field id="reason" label={t("reason")} error={errors.reason?.message}>
           <select
             id="reason"
             defaultValue=""
@@ -231,7 +227,7 @@ export function AppointmentForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 font-semibold transition hover:opacity-90 disabled:opacity-60"
+        className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95 disabled:translate-y-0 disabled:opacity-60"
       >
         {isSubmitting ? t("submitting") : t("submit")}
       </button>
@@ -249,7 +245,7 @@ export function AppointmentForm() {
 }
 
 const inputClass =
-  "border-border focus:border-secondary w-full rounded-xl border bg-background px-4 py-3 text-ink outline-none transition";
+  "border-border focus:border-secondary focus:ring-secondary/15 w-full rounded-xl border bg-background px-4 py-3 text-ink outline-none transition focus:ring-4";
 
 function Field({
   id,
@@ -274,7 +270,11 @@ function Field({
       </label>
       <div className="mt-1.5">{children}</div>
       {error ? (
-        <p id={`${id}-error`} role="alert" className="mt-1 text-sm text-red-600">
+        <p
+          id={`${id}-error`}
+          role="alert"
+          className="mt-1 text-sm text-red-600"
+        >
           {error}
         </p>
       ) : null}

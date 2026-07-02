@@ -26,7 +26,10 @@ export default async function Glp1Page({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("services.glp1");
+  const [t, tServices] = await Promise.all([
+    getTranslations("services.glp1"),
+    getTranslations("services"),
+  ]);
 
   return (
     <ServiceLayout
@@ -35,6 +38,10 @@ export default async function Glp1Page({
       intro={t("intro")}
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
+      // TODO (content/TODO.md): pen imagery implies a branded product — swap
+      // if the practice dispenses compounded GLP-1.
+      imageSrc="/images/services/glp.png"
+      imageAlt={tServices("cardImages.glp1")}
       // COMPLIANCE (SPEC §6): prescription-only + provider-evaluated framing,
       // common-side-effects "talk to your provider" disclaimer.
       sections={[

@@ -27,7 +27,7 @@ export async function SiteFooter() {
 
   return (
     <footer className="border-border bg-surface mt-auto border-t">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 pt-12 pb-12 sm:grid-cols-2 lg:grid-cols-4">
         {/* NAP — name / address / phone (SPEC §3 global footer). */}
         <div>
           <Image
@@ -62,7 +62,7 @@ export async function SiteFooter() {
               <li key={link.key}>
                 <Link
                   href={link.href}
-                  className="text-ink hover:text-secondary transition"
+                  className="text-ink hover:text-secondary inline-flex transition hover:translate-x-0.5"
                 >
                   {tNav(link.key)}
                 </Link>
@@ -80,7 +80,7 @@ export async function SiteFooter() {
               <li key={link.key}>
                 <Link
                   href={link.href}
-                  className="text-ink hover:text-secondary transition"
+                  className="text-ink hover:text-secondary inline-flex transition hover:translate-x-0.5"
                 >
                   {tLegal(`${link.key}.title`)}
                 </Link>

@@ -52,9 +52,17 @@ practice-approved information before launch. Search the codebase for `TODO` and
       provider language instead.
 - [ ] Real patient testimonials — the Home "What our patients say" section is a
       placeholder (`home.testimonialsNote`).
-- [ ] Hero + service-card imagery is stock (`public/images/services/*`) —
+- [ ] Hero + service-card imagery is stock (`public/images/services/*`, hero
+      cutout `public/doctortransparent.png`, "why" section photo
+      `doctorBlue.png`; service sub-page heroes reuse the card photos) —
       replace with approved practice photography before launch, or confirm
-      stock licensing. The hero arch photo is `doctorBlue.png`.
+      stock licensing.
+
+## About page
+
+- [ ] "Our story" (`about.story.body`, both locales) is generic founding copy —
+      replace with the practice's real, verified history. (The inline
+      "[TODO]" marker was removed from the public page 2026-07-02.)
 
 ## Insurance & resources
 
@@ -64,9 +72,14 @@ practice-approved information before launch. Search the codebase for `TODO` and
 - [ ] Confirm operational claims in the new-patient / insurance copy
       (`resources.newPatient`, `resources.insurance`): 15-minute early-arrival
       guidance, benefit verification before visits, and self-pay availability.
-- [ ] New-patient forms (downloadable) — currently placeholder
+- [ ] New-patient forms (downloadable) — the public card now says "coming
+      soon" and that the front desk has everything ready at the first visit;
+      confirm that operational claim and add the real downloads.
 - [ ] Patient portal URL — `NEXT_PUBLIC_PORTAL_URL`
-- [ ] Telehealth consent note (only if telemedicine is offered)
+- [ ] Telehealth — the card is hidden behind `SHOW_TELEHEALTH` in
+      `app/[locale]/patient-resources/page.tsx`. If telemedicine is offered,
+      write the real consent copy (`resources.telehealth`, both locales) and
+      flip the flag.
 
 ## SEO
 

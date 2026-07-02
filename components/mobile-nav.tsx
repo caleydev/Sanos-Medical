@@ -30,7 +30,7 @@ export function MobileNav({
         aria-expanded={isOpen}
         aria-controls="mobile-navigation"
         onClick={() => setIsOpen((value) => !value)}
-        className="border-border text-primary inline-flex h-11 w-11 items-center justify-center rounded-full border bg-background shadow-sm"
+        className="border-border text-primary bg-background hover:bg-surface inline-flex h-11 w-11 items-center justify-center rounded-full border shadow-sm transition"
       >
         {isOpen ? (
           <X aria-hidden className="h-5 w-5" />
@@ -62,7 +62,7 @@ export function MobileNav({
           <Link
             href="/contact"
             onClick={() => setIsOpen(false)}
-            className="bg-secondary text-secondary-foreground mt-4 block rounded-full px-5 py-3 text-center text-sm font-semibold transition hover:opacity-90"
+            className="bg-secondary text-secondary-foreground mt-4 block rounded-full px-5 py-3 text-center text-sm font-semibold transition hover:opacity-95"
           >
             {ctaLabel}
           </Link>

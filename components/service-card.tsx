@@ -27,7 +27,7 @@ export function ServiceCard({
   return (
     <Link
       href={href}
-      className="lift-card group border-border bg-background rounded-2xl flex flex-col border p-3"
+      className="lift-card group border-border bg-background flex h-full flex-col rounded-2xl border p-3 focus-visible:scale-[1.01]"
     >
       <div className="bg-surface relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-xl">
         {imageSrc && imageAlt ? (
@@ -42,7 +42,7 @@ export function ServiceCard({
           <>
             {/* TODO: replace placeholder media with approved service photography. */}
             <div className="absolute -top-12 -right-10 h-28 w-28 rounded-full bg-white/70" />
-            <div className="absolute -bottom-14 -left-10 h-32 w-32 rounded-full bg-secondary/10" />
+            <div className="bg-secondary/10 absolute -bottom-14 -left-10 h-32 w-32 rounded-full" />
             <span className="bg-background text-secondary relative inline-flex h-16 w-16 items-center justify-center rounded-2xl shadow-sm">
               <Icon aria-hidden className="h-8 w-8" />
             </span>
@@ -50,7 +50,9 @@ export function ServiceCard({
         )}
       </div>
       <div className="flex flex-1 flex-col p-3">
-        <h3 className="text-primary text-lg font-semibold leading-snug">{title}</h3>
+        <h3 className="text-primary text-lg leading-snug font-semibold">
+          {title}
+        </h3>
         <p className="text-muted mt-2 flex-1 text-sm leading-relaxed">
           {summary}
         </p>

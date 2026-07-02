@@ -25,7 +25,10 @@ export default async function LabsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("services.labs");
+  const [t, tServices] = await Promise.all([
+    getTranslations("services.labs"),
+    getTranslations("services"),
+  ]);
 
   return (
     <ServiceLayout
@@ -35,6 +38,8 @@ export default async function LabsPage({
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
       sections={[{ heading: t("processHeading"), body: t("processBody") }]}
+      imageSrc="/images/services/labwork.png"
+      imageAlt={tServices("cardImages.labs")}
     />
   );
 }

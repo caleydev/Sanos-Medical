@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
+import { Plus_Jakarta_Sans, Source_Sans_3 } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -13,6 +13,13 @@ import "../globals.css";
 // Humanist sans for readable, warm-but-professional medical copy (SPEC §7).
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+// Display face for headings (h1–h4 via globals.css); pairs with Source Sans.
+const jakarta = Plus_Jakarta_Sans({
+  variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
 });
@@ -70,7 +77,10 @@ export default async function LocaleLayout({
   const t = await getTranslations("common");
 
   return (
-    <html lang={locale} className={`${sourceSans.variable} h-full`}>
+    <html
+      lang={locale}
+      className={`${sourceSans.variable} ${jakarta.variable} h-full`}
+    >
       <body className="bg-background text-foreground flex min-h-full flex-col antialiased">
         <StructuredData />
         <NextIntlClientProvider>

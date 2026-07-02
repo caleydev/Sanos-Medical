@@ -25,7 +25,10 @@ export default async function WeightManagementPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("services.weightManagement");
+  const [t, tServices] = await Promise.all([
+    getTranslations("services.weightManagement"),
+    getTranslations("services"),
+  ]);
 
   return (
     <ServiceLayout
@@ -38,6 +41,8 @@ export default async function WeightManagementPage({
       sections={[
         { heading: t("eligibilityHeading"), body: t("eligibilityBody") },
       ]}
+      imageSrc="/images/services/weight-management-2.jpg"
+      imageAlt={tServices("cardImages.weightManagement")}
     />
   );
 }

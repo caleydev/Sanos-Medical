@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { MapPin, Phone, Clock } from "lucide-react";
+import { Clock, MapPin, Phone } from "lucide-react";
 import { AppointmentForm } from "@/components/appointment-form";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
@@ -37,7 +37,7 @@ export default async function ContactPage({
   return (
     <main id="main" className="flex-1">
       <header className="topographic">
-        <div className="mx-auto w-full max-w-5xl px-6 py-16 sm:py-20">
+        <div className="mx-auto w-full max-w-6xl px-6 py-16 sm:py-20">
           <p className="text-primary-foreground/80 text-sm font-semibold tracking-widest uppercase">
             {t("eyebrow")}
           </p>
@@ -50,59 +50,61 @@ export default async function ContactPage({
         </div>
       </header>
 
-      <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[0.9fr_1.35fr]">
+      <div className="mx-auto grid w-full max-w-6xl gap-8 px-6 py-16 lg:grid-cols-[0.85fr_1.15fr]">
         {/* Practice contact details (NAP + hours). Values are placeholders — TODO. */}
-        <aside className="bg-surface rounded-2xl p-6">
-          <div className="space-y-8">
-            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
-              <MapPin aria-hidden className="text-secondary h-5 w-5" />
-              {t("visitHeading")}
-            </h2>
-            <address className="text-ink mt-3 text-sm not-italic">
-              <p>{tFooter("addressPlaceholder")}</p>
-              <p>{tFooter("cityPlaceholder")}</p>
-            </address>
+        <aside className="border-border bg-surface rounded-2xl border p-6">
+          <div className="space-y-6">
+            <div className="bg-background rounded-2xl p-5">
+              <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+                <MapPin aria-hidden className="text-secondary h-5 w-5" />
+                {t("visitHeading")}
+              </h2>
+              <address className="text-ink mt-3 text-sm leading-relaxed not-italic">
+                <p>{tFooter("addressPlaceholder")}</p>
+                <p>{tFooter("cityPlaceholder")}</p>
+              </address>
+            </div>
 
-          <div>
-            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
-              <Phone aria-hidden className="text-secondary h-5 w-5" />
-              {t("callHeading")}
-            </h2>
-            <p className="mt-3 text-sm">
-              <a
-                href="tel:+17862921402"
-                className="text-secondary font-medium hover:underline"
-              >
-                {tFooter("phonePlaceholder")}
-              </a>
-            </p>
-          </div>
+            <div className="bg-background rounded-2xl p-5">
+              <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+                <Phone aria-hidden className="text-secondary h-5 w-5" />
+                {t("callHeading")}
+              </h2>
+              <p className="mt-3 text-sm">
+                <a
+                  href="tel:+17862921402"
+                  className="text-secondary font-medium hover:underline"
+                >
+                  {tFooter("phonePlaceholder")}
+                </a>
+              </p>
+            </div>
 
-          <div>
-            <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
-              <Clock aria-hidden className="text-secondary h-5 w-5" />
-              {tFooter("hoursHeading")}
-            </h2>
-            <p className="text-ink mt-3 text-sm">
-              {tFooter("hoursPlaceholder")}
-            </p>
-          </div>
+            <div className="bg-background rounded-2xl p-5">
+              <h2 className="text-primary flex items-center gap-2 text-lg font-semibold">
+                <Clock aria-hidden className="text-secondary h-5 w-5" />
+                {tFooter("hoursHeading")}
+              </h2>
+              <p className="text-ink mt-3 text-sm">
+                {tFooter("hoursPlaceholder")}
+              </p>
+            </div>
 
-          {/* Live Google Maps embed (keyless). Note: this sets third-party
+            {/* Live Google Maps embed (keyless). Note: this sets third-party
               cookies; if a cookie-consent banner is added later, gate it. */}
-          <iframe
-            title={t("mapTitle")}
-            src="https://www.google.com/maps?q=14024%20SW%208th%20St%2C%20Miami%2C%20FL%2033184&output=embed"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="border-border rounded-2xl h-72 w-full border"
-          />
+            <iframe
+              title={t("mapTitle")}
+              src="https://www.google.com/maps?q=14024%20SW%208th%20St%2C%20Miami%2C%20FL%2033184&output=embed"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="border-border h-72 w-full rounded-2xl border"
+            />
           </div>
         </aside>
 
         <section
           aria-labelledby="form-heading"
-          className="soft-panel rounded-2xl border border-border bg-background p-6 sm:p-8"
+          className="soft-panel border-border bg-background rounded-2xl border p-6 sm:p-8"
         >
           <h2 id="form-heading" className="sr-only">
             {t("formHeading")}

@@ -25,7 +25,10 @@ export default async function PrimaryCarePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("services.primaryCare");
+  const [t, tServices] = await Promise.all([
+    getTranslations("services.primaryCare"),
+    getTranslations("services"),
+  ]);
 
   return (
     <ServiceLayout
@@ -35,6 +38,8 @@ export default async function PrimaryCarePage({
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
       sections={[{ heading: t("expectHeading"), body: t("expectBody") }]}
+      imageSrc="/images/services/doctorBlue.png"
+      imageAlt={tServices("cardImages.primaryCare")}
     />
   );
 }

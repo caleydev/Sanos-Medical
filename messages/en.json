@@ -93,7 +93,7 @@
     ],
     "whyPrimaryCta": "Learn more",
     "whySecondaryCta": "Contact us",
-    "clinicMediaAlt": "Placeholder for Sanos Medical clinic interior",
+    "clinicMediaAlt": "A clinician talking with a patient during a visit",
     "testimonialsTitle": "Patient feedback",
     "testimonialsNote": "Approved patient stories will be added here before launch.",
     "testimonialCards": [
@@ -172,7 +172,7 @@
     "intro": "Sanos Medical Group is a primary care practice dedicated to keeping Miami families healthy with personalized, evidence-based care in English and Spanish.",
     "story": {
       "heading": "Our story",
-      "body": "Sanos Medical Group was founded to bring accessible, relationship-centered primary care to the Miami community. [Practice story — TODO: replace with the practice's real history.] We focus on building lasting relationships with our patients and caring for the whole person."
+      "body": "Sanos Medical Group was founded to bring accessible, relationship-centered primary care to the Miami community. We focus on building lasting relationships with our patients and caring for the whole person — with clear communication in English and Spanish at every step."
     },
     "mission": {
       "heading": "Our mission",
@@ -238,7 +238,7 @@
     },
     "forms": {
       "heading": "Patient forms",
-      "body": "Downloadable new-patient forms will be available here soon. [Forms — TODO.]"
+      "body": "Downloadable new-patient forms are coming soon. Until then, there's nothing to prepare — our front desk will have everything ready at your first visit, or call us and we'll gladly walk you through it."
     },
     "telehealth": {
       "heading": "Telehealth",
@@ -522,6 +522,7 @@
     "cityPlaceholder": "Miami, FL 33184",
     "phoneLabel": "Phone",
     "phonePlaceholder": "(786) 292-1402",
+    "directionsLabel": "Get directions",
     "hoursHeading": "Hours",
     "hoursPlaceholder": "Mon–Fri 9 AM–5 PM · Sat 10 AM–3 PM · Sun closed",
     "disclaimer": "The information on this website is for general informational purposes only and is not medical advice. It does not create a doctor–patient relationship. Individual results vary, and all treatment requires evaluation by a licensed provider. In an emergency, call 911 or go to the nearest emergency room.",

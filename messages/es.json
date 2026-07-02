@@ -93,7 +93,7 @@
     ],
     "whyPrimaryCta": "Conozca más",
     "whySecondaryCta": "Contáctenos",
-    "clinicMediaAlt": "Imagen provisional del interior de la clínica Sanos Medical",
+    "clinicMediaAlt": "Un profesional clínico conversando con una paciente durante una consulta",
     "testimonialsTitle": "Comentarios de pacientes",
     "testimonialsNote": "Las historias aprobadas de pacientes se agregarán aquí antes del lanzamiento.",
     "testimonialCards": [
@@ -172,7 +172,7 @@
     "intro": "Sanos Medical Group es un consultorio de atención primaria dedicado a cuidar la salud de las familias de Miami con una atención personalizada y basada en la evidencia, en inglés y en español.",
     "story": {
       "heading": "Nuestra historia",
-      "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a la comunidad de Miami. [Historia de la práctica — POR DEFINIR: reemplazar con la historia real de la práctica.] Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad."
+      "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a la comunidad de Miami. Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad, con una comunicación clara en inglés y en español en cada paso."
     },
     "mission": {
       "heading": "Nuestra misión",
@@ -238,7 +238,7 @@
     },
     "forms": {
       "heading": "Formularios para pacientes",
-      "body": "Pronto estarán disponibles aquí los formularios descargables para pacientes nuevos. [Formularios — POR DEFINIR.]"
+      "body": "Los formularios descargables para pacientes nuevos estarán disponibles pronto. Mientras tanto, no necesita preparar nada: nuestra recepción tendrá todo listo en su primera visita, o llámenos y con gusto le orientamos."
     },
     "telehealth": {
       "heading": "Telemedicina",
@@ -522,6 +522,7 @@
     "cityPlaceholder": "Miami, FL 33184",
     "phoneLabel": "Teléfono",
     "phonePlaceholder": "(786) 292-1402",
+    "directionsLabel": "Cómo llegar",
     "hoursHeading": "Horario",
     "hoursPlaceholder": "Lun–Vie 9 a. m.–5 p. m. · Sáb 10 a. m.–3 p. m. · Dom cerrado",
     "disclaimer": "La información de este sitio web tiene únicamente fines informativos generales y no constituye consejo médico ni crea una relación médico-paciente. Los resultados varían según cada persona y todo tratamiento requiere la evaluación de un proveedor con licencia. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
