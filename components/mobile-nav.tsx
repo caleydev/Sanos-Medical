@@ -12,11 +12,13 @@ type NavLink = {
 export function MobileNav({
   links,
   ctaLabel,
+  navLabel,
   openLabel,
   closeLabel,
 }: {
   links: NavLink[];
   ctaLabel: string;
+  navLabel: string;
   openLabel: string;
   closeLabel: string;
 }) {
@@ -44,7 +46,7 @@ export function MobileNav({
           id="mobile-navigation"
           className="border-border bg-background absolute inset-x-4 top-20 z-50 rounded-2xl border p-4 shadow-xl"
         >
-          <nav aria-label={openLabel}>
+          <nav aria-label={navLabel}>
             <ul className="space-y-1">
               {links.map((link) => (
                 <li key={link.href}>
@@ -60,9 +62,9 @@ export function MobileNav({
             </ul>
           </nav>
           <Link
-            href="/contact"
+            href="/get-started"
             onClick={() => setIsOpen(false)}
-            className="bg-secondary text-secondary-foreground mt-4 block rounded-full px-5 py-3 text-center text-sm font-semibold transition hover:opacity-95"
+            className="bg-cta text-cta-foreground mt-4 block rounded-full px-5 py-3 text-center text-sm font-semibold transition hover:opacity-95"
           >
             {ctaLabel}
           </Link>

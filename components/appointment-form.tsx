@@ -12,7 +12,13 @@ import {
   REASONS,
 } from "@/lib/appointment-schema";
 
-export function AppointmentForm() {
+export function AppointmentForm({
+  ariaLabel,
+  ariaLabelledBy,
+}: {
+  ariaLabel?: string;
+  ariaLabelledBy?: string;
+}) {
   const t = useTranslations("contact.form");
   const tCommon = useTranslations("common");
   const locale = useLocale();
@@ -80,7 +86,13 @@ export function AppointmentForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      noValidate
+      aria-label={ariaLabelledBy ? undefined : ariaLabel}
+      aria-labelledby={ariaLabelledBy}
+      className="space-y-5"
+    >
       {/* COMPLIANCE (SPEC §5): no medical detail in any public form. */}
       <p className="text-muted bg-surface rounded-xl p-3 text-sm">
         {t("medicalDetailHelp")}
@@ -227,7 +239,7 @@ export function AppointmentForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95 disabled:translate-y-0 disabled:opacity-60"
+        className="bg-cta text-cta-foreground rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95 disabled:translate-y-0 disabled:opacity-60"
       >
         {isSubmitting ? t("submitting") : t("submit")}
       </button>

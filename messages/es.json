@@ -7,10 +7,11 @@
     "home": "Inicio",
     "about": "Nosotros",
     "services": "Servicios",
-    "providers": "Proveedores",
+    "getStarted": "Citas",
     "resources": "Recursos para pacientes",
     "contact": "Contacto",
     "requestAppointment": "Solicitar una cita",
+    "primaryLabel": "Navegación principal",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú",
     "brandWordmark": "Sanos Medical Group"
@@ -192,33 +193,6 @@
       "body": "Será un gusto darle la bienvenida. Consulte nuestra ubicación y horario a continuación, o solicite una cita y nuestro equipo se comunicará con usted."
     }
   },
-  "providers": {
-    "eyebrow": "Nuestro equipo",
-    "title": "Conozca a nuestros proveedores",
-    "intro": "Nuestros proveedores con licencia aportan experiencia y un compromiso con una atención bilingüe y centrada en el paciente.",
-    "languagesLabel": "Idiomas",
-    "placeholderNote": "Los nombres, las credenciales y las biografías que se muestran aquí son provisionales y se reemplazarán con información verificada antes del lanzamiento.",
-    "list": [
-      {
-        "name": "[Nombre completo y título — p. ej. \"Ana Martínez, MD\" — VERIFICAR]",
-        "credentials": "[Cargo — p. ej. Médico de medicina familiar] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
-        "bio": "[2–3 oraciones — VERIFICAR: años de experiencia; enfoque en atención primaria e integral (exámenes anuales, prevención, enfermedades crónicas); filosofía de atención. Sin afirmaciones de especialista o certificación de la junta que no estén verificadas de forma independiente.]",
-        "languages": "Inglés, Español [confirmar]"
-      },
-      {
-        "name": "[Nombre completo y título/credencial — VERIFICAR]",
-        "credentials": "[Cargo — p. ej. Médico o APRN] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
-        "bio": "[2–3 oraciones — VERIFICAR: trayectoria; enfoque en el control de peso bajo supervisión médica y el programa de GLP-1; énfasis en planes individualizados y evaluados por el proveedor. Sin promesas de resultados.]",
-        "languages": "Inglés, Español [confirmar]"
-      },
-      {
-        "name": "[Nombre completo y título/credencial — VERIFICAR]",
-        "credentials": "[Cargo — p. ej. Enfermera practicante (NP)] · [Licencia de FL n.º — VERIFICAR] · [NPI — VERIFICAR]",
-        "bio": "[2–3 oraciones — VERIFICAR: trayectoria; enfoque en atención preventiva, pruebas de detección y seguimiento de análisis de laboratorio; enfoque en la educación del paciente en inglés y español.]",
-        "languages": "Inglés, Español [confirmar]"
-      }
-    ]
-  },
   "resources": {
     "eyebrow": "Recursos para pacientes",
     "title": "Información útil para nuestros pacientes",
@@ -247,6 +221,8 @@
   },
   "services": {
     "learnMore": "Más información",
+    "faqHeading": "Preguntas frecuentes",
+    "breadcrumbLabel": "Ruta de navegación",
     "search": {
       "resultsFor": "Resultados para “{query}”",
       "noResults": "No encontramos servicios que coincidan con “{query}”. Aquí tiene todos nuestros servicios:",
@@ -284,6 +260,22 @@
     },
     "primaryCare": {
       "eyebrow": "Atención primaria e integral",
+      "seoTitle": "Médico de atención primaria en Miami",
+      "seoDescription": "Atención primaria bilingüe en Miami: exámenes físicos anuales, atención preventiva y manejo de enfermedades crónicas con proveedores con licencia. Solicite una cita.",
+      "faqs": [
+        {
+          "q": "¿Qué incluye un examen físico anual?",
+          "a": "Su proveedor revisa su historial de salud, controla sus signos vitales, conversa sobre sus inquietudes y recomienda las pruebas preventivas que correspondan a su edad y factores de riesgo. También es un buen momento para hacer preguntas y fijar metas de salud."
+        },
+        {
+          "q": "¿Aceptan mi seguro?",
+          "a": "Trabajamos con muchos planes de seguro importantes. Como la cobertura varía según el plan, la forma más rápida de confirmar el suyo es comunicarse con nuestra oficina: nuestro equipo puede verificar sus beneficios antes de su visita. También hay opciones de pago propio."
+        },
+        {
+          "q": "¿Cómo puedo hacerme paciente nuevo?",
+          "a": "Envíe una solicitud de cita a través de nuestro formulario de contacto y nuestro equipo lo llamará para programar su primera visita. La atención está disponible en inglés y español."
+        }
+      ],
       "title": "Atención para el día a día que crece con usted",
       "intro": "Su equipo de atención primaria es su primer punto de contacto para mantenerse sano y atender cualquier inquietud a medida que surja. Nos enfocamos en la prevención, la detección temprana y una relación a largo plazo en el cuidado de su salud.",
       "featuresHeading": "Lo que ofrecemos",
@@ -300,6 +292,22 @@
     },
     "labs": {
       "eyebrow": "Análisis de sangre y laboratorio",
+      "seoTitle": "Análisis de sangre y laboratorio en Miami",
+      "seoDescription": "Análisis de sangre y pruebas de laboratorio con toma de muestras en el consultorio en Miami. Paneles diagnósticos y estudios preventivos ordenados por un proveedor con licencia. Solicite una cita.",
+      "faqs": [
+        {
+          "q": "¿Necesito estar en ayunas antes de mi análisis de sangre?",
+          "a": "Algunas pruebas requieren ayuno y otras no. Cuando su proveedor ordene los análisis, nuestro equipo le indicará exactamente cómo prepararse, incluido si debe ayunar y por cuánto tiempo."
+        },
+        {
+          "q": "¿Dónde se toma la muestra de sangre?",
+          "a": "Las muestras se toman en el consultorio para su comodidad y son procesadas por nuestro laboratorio asociado. Luego su proveedor revisa los resultados con usted."
+        },
+        {
+          "q": "¿Cómo recibiré mis resultados?",
+          "a": "Su proveedor revisa los resultados de sus análisis con usted y le explica qué significan para su atención y los próximos pasos. Las pruebas y el seguimiento son individualizados."
+        }
+      ],
       "title": "Pruebas que ayudan a orientar su atención",
       "intro": "Los análisis de laboratorio ayudan a su proveedor a comprender su salud, detectar problemas a tiempo y dar seguimiento a la evolución de un plan de tratamiento. Facilitamos las pruebas con la toma de muestras en el consultorio y laboratorios asociados.",
       "featuresHeading": "Pruebas comunes",
@@ -314,6 +322,22 @@
     },
     "weightManagement": {
       "eyebrow": "Control de peso",
+      "seoTitle": "Control de peso bajo supervisión médica en Miami",
+      "seoDescription": "Control de peso bajo supervisión médica en Miami: planes individualizados dirigidos por un proveedor que combinan supervisión clínica y apoyo en el estilo de vida. Solicite una evaluación.",
+      "faqs": [
+        {
+          "q": "¿Cómo funciona el programa de control de peso?",
+          "a": "La atención comienza con una evaluación clínica de su historial de salud y sus metas. Luego su proveedor crea un plan individualizado y supervisado que combina orientación sobre estilo de vida, nutrición y actividad con seguimiento continuo."
+        },
+        {
+          "q": "¿Es el programa adecuado para mí?",
+          "a": "La elegibilidad la determina un proveedor con licencia según su perfil de salud individual. El programa no es igual para todos y no prometemos resultados específicos: su proveedor conversará con usted sobre qué esperar."
+        },
+        {
+          "q": "¿El programa incluye medicamentos?",
+          "a": "Cuando es clínicamente apropiado, su proveedor puede conversar sobre opciones de tratamiento, incluidos medicamentos, como una parte de un plan supervisado. Cualquier medicamento se receta solo después de una evaluación."
+        }
+      ],
       "title": "Control de peso bajo supervisión médica",
       "intro": "Nuestro programa de control de peso combina la supervisión clínica con un apoyo práctico en el estilo de vida. La atención es individualizada y comienza con una evaluación del proveedor para determinar si el programa es apropiado para usted.",
       "featuresHeading": "Qué incluye",
@@ -329,6 +353,22 @@
     },
     "glp1": {
       "eyebrow": "Terapia con GLP-1",
+      "seoTitle": "Terapia con GLP-1 en Miami",
+      "seoDescription": "Terapia con GLP-1 evaluada por un proveedor en Miami, ofrecida como parte de un plan de control de peso bajo supervisión médica. Solo con receta, después de una evaluación clínica.",
+      "faqs": [
+        {
+          "q": "¿Quién es elegible para el tratamiento con GLP-1?",
+          "a": "Los medicamentos GLP-1 son solo con receta y se consideran después de una evaluación clínica. Un proveedor con licencia determina si el tratamiento es apropiado para usted; no está garantizado."
+        },
+        {
+          "q": "¿Cuáles son los efectos secundarios comunes de los medicamentos GLP-1?",
+          "a": "Como todos los medicamentos, los tratamientos con GLP-1 pueden tener efectos secundarios, que pueden incluir náuseas y molestias digestivas, entre otros. Consulte siempre a su proveedor antes de comenzar, cambiar o suspender cualquier medicamento."
+        },
+        {
+          "q": "¿Cómo encaja el GLP-1 en un plan de control de peso?",
+          "a": "Cuando es apropiado, la terapia con GLP-1 se ofrece como una parte de un plan integral bajo supervisión médica que también incluye apoyo en estilo de vida y nutrición, con monitoreo continuo."
+        }
+      ],
       "title": "Tratamiento con GLP-1 bajo supervisión médica",
       "intro": "Los medicamentos GLP-1 pueden ofrecerse como parte de un plan integral de control de peso bajo supervisión médica. Son medicamentos recetados que se usan únicamente después de una evaluación clínica y se prescriben a criterio de un proveedor con licencia.",
       "featuresHeading": "Cómo funciona la atención con GLP-1 en Sanos",
@@ -345,12 +385,38 @@
       "fdaNote": "Durante su evaluación conversaremos sobre el medicamento específico que pueda ser apropiado para usted, incluido su estado regulatorio. Esta página no hace afirmaciones sobre marcas específicas ni sobre el estado de aprobación de la FDA."
     }
   },
+  "getStarted": {
+    "eyebrow": "Comenzar",
+    "title": "Atención primaria bilingüe en Miami — solicite su cita",
+    "subtitle": "Atención primaria, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica — solicite una cita y nuestro equipo se comunica para confirmar. No hace falta compartir detalles médicos.",
+    "trustBullets": [
+      "Equipo médico con licencia y bilingüe (inglés y español)",
+      "Atención primaria, laboratorio y control de peso en un mismo lugar",
+      "No hace falta compartir detalles médicos — solo para programar",
+      "Nuestro equipo se comunica para confirmar su cita"
+    ],
+    "founder": {
+      "name": "Angel Leyva",
+      "role": "Fundador, Sanos Medical Group",
+      "email": "angel@sanosmedical.com",
+      "emailNote": "Solo preguntas sobre citas; no envíe detalles médicos por correo electrónico."
+    },
+    "formHeading": "Solicitar una cita",
+    "formSubhead": "Solo para programar — no hace falta compartir detalles médicos.",
+    "servicesHeading": "Lo que ofrecemos",
+    "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
+    "seoTitle": "Solicitar una cita en Miami",
+    "seoDescription": "Solicite una cita con Sanos Medical Group en Miami: atención primaria bilingüe, análisis de laboratorio y control de peso bajo supervisión médica. Nos comunicamos para confirmar."
+  },
   "common": {
     "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",
     "skipToContent": "Saltar al contenido principal",
     "backToHome": "Volver al inicio",
     "notFound": "No encontramos la página que buscaba.",
-    "emergencyNotice": "No es para emergencias. Si se trata de una emergencia médica, llame al 911 o acuda a la sala de emergencias más cercana."
+    "emergencyNotice": "No es para emergencias. Si se trata de una emergencia médica, llame al 911 o acuda a la sala de emergencias más cercana.",
+    "callNow": "Llamar ahora",
+    "requestShort": "Solicitar cita",
+    "mobileActionsLabel": "Acciones rápidas"
   },
   "pages": {
     "about": { "title": "Acerca de Sanos Medical Group" },
@@ -359,7 +425,6 @@
     "labs": { "title": "Análisis de sangre y laboratorio" },
     "weightManagement": { "title": "Control de peso" },
     "glp1": { "title": "Terapia con GLP-1" },
-    "providers": { "title": "Nuestros proveedores" },
     "resources": { "title": "Recursos para pacientes" },
     "contact": { "title": "Contacto y solicitud de citas" },
     "legal": {

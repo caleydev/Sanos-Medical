@@ -13,8 +13,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/services/labs",
-    title: t("cards.labs.title"),
-    description: t("labs.intro"),
+    title: t("labs.seoTitle"),
+    description: t("labs.seoDescription"),
   });
 }
 
@@ -35,8 +35,10 @@ export default async function LabsPage({
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
+      path="/services/labs"
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
+      faqs={t.raw("faqs") as { q: string; a: string }[]}
       sections={[{ heading: t("processHeading"), body: t("processBody") }]}
       imageSrc="/images/services/labwork.png"
       imageAlt={tServices("cardImages.labs")}

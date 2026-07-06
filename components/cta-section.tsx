@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 
 /**
  * Recurring "Request an appointment" band shown at the foot of content pages.
- * Routes to the contact form — it does not collect any data itself (SPEC §5).
+ * Routes to the focused appointment funnel; it does not collect any data itself.
  */
 export async function CTASection() {
   const t = await getTranslations("cta");
@@ -21,8 +21,8 @@ export async function CTASection() {
           </p>
         </div>
         <Link
-          href="/contact"
-          className="bg-background text-secondary inline-flex shrink-0 items-center gap-2 rounded-full px-6 py-3 font-semibold shadow-lg shadow-black/10 transition hover:translate-x-0.5 hover:opacity-95"
+          href="/get-started"
+          className="bg-background text-cta inline-flex shrink-0 items-center gap-2 rounded-full px-6 py-3 font-semibold shadow-lg shadow-black/10 transition hover:translate-x-0.5 hover:opacity-95"
         >
           {t("button")}
           <ArrowRight aria-hidden className="h-4 w-4" />

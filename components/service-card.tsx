@@ -56,7 +56,7 @@ export function ServiceCard({
         <p className="text-muted mt-2 flex-1 text-sm leading-relaxed">
           {summary}
         </p>
-        <span className="text-secondary mt-5 inline-flex items-center gap-1 text-sm font-semibold">
+        <span className="text-cta mt-5 inline-flex items-center gap-1 text-sm font-semibold">
           {cta}
           <ArrowRight
             aria-hidden

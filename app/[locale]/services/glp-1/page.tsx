@@ -14,8 +14,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/services/glp-1",
-    title: t("cards.glp1.title"),
-    description: t("glp1.intro"),
+    title: t("glp1.seoTitle"),
+    description: t("glp1.seoDescription"),
   });
 }
 
@@ -36,8 +36,10 @@ export default async function Glp1Page({
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
+      path="/services/glp-1"
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
+      faqs={t.raw("faqs") as { q: string; a: string }[]}
       // TODO (content/TODO.md): pen imagery implies a branded product — swap
       // if the practice dispenses compounded GLP-1.
       imageSrc="/images/services/glp.png"

@@ -10,8 +10,14 @@
   --color-primary: #1c2c59; /* deep navy — wordmark, headings */
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #2d7dc1; /* Sanos blue — CTAs, links, accents */
+  --color-secondary: #2d7dc1; /* Sanos blue — decorative surfaces, icons, accents */
   --color-secondary-foreground: #ffffff;
+
+  /* AA-safe interactive blue for buttons + text links (white on it = 6.6:1;
+     it on white = 6.6:1). Brand blue #2d7dc1 is only 4.36:1 and fails WCAG AA
+     for normal-size text/CTAs, so anything readable uses this darker token. */
+  --color-cta: #1a5f9e;
+  --color-cta-foreground: #ffffff;
 
   --color-surface: #eaf4fc; /* light blue tint — section backgrounds */
   --color-ink: #0b1020; /* near-black — primary text */
@@ -67,10 +73,17 @@ h4 {
   color: var(--color-secondary-foreground);
 }
 
-/* Visible keyboard focus for all interactive elements (WCAG 2.4.7). */
+/* Visible keyboard focus for all interactive elements (WCAG 2.4.7). A dual
+   white+navy ring stays visible on ANY background — white pages, the brand-blue
+   .topographic panels, and navy surfaces alike (fixes the old blue-on-blue
+   invisible ring). The transparent outline keeps focus visible in Windows
+   forced-colors / high-contrast mode, where box-shadows are dropped. */
 :focus-visible {
-  outline: 2px solid var(--color-secondary);
+  outline: 2px solid transparent;
   outline-offset: 2px;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px var(--color-primary);
   border-radius: 3px;
 }
 

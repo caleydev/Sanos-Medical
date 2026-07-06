@@ -6,13 +6,13 @@ import { routing } from "@/i18n/routing";
 // with hreflang alternates pointing at its siblings.
 const PATHS = [
   "",
+  "/get-started",
   "/about",
   "/services",
   "/services/primary-care",
   "/services/labs",
   "/services/weight-management",
   "/services/glp-1",
-  "/providers",
   "/patient-resources",
   "/contact",
   "/legal/privacy",

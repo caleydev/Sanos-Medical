@@ -6,6 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { MobileCallBar } from "@/components/mobile-call-bar";
 import { StructuredData } from "@/components/structured-data";
 import { SITE_URL, BRAND, buildAlternates } from "@/lib/seo";
 import "../globals.css";
@@ -93,6 +94,7 @@ export default async function LocaleLayout({
           <SiteHeader />
           {children}
           <SiteFooter />
+          <MobileCallBar />
         </NextIntlClientProvider>
       </body>
     </html>

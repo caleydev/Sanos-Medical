@@ -5,7 +5,7 @@ import { Link } from "@/i18n/navigation";
 const NAV_LINKS = [
   { href: "/about", key: "about" },
   { href: "/services", key: "services" },
-  { href: "/providers", key: "providers" },
+  { href: "/get-started", key: "getStarted" },
   { href: "/patient-resources", key: "resources" },
   { href: "/contact", key: "contact" },
 ] as const;
@@ -45,7 +45,7 @@ export async function SiteFooter() {
               {t("phoneLabel")}:{" "}
               <a
                 href="tel:+17862921402"
-                className="text-secondary font-medium hover:underline"
+                className="text-cta font-medium hover:underline"
               >
                 {t("phonePlaceholder")}
               </a>
@@ -62,7 +62,7 @@ export async function SiteFooter() {
               <li key={link.key}>
                 <Link
                   href={link.href}
-                  className="text-ink hover:text-secondary inline-flex transition hover:translate-x-0.5"
+                  className="text-ink hover:text-cta inline-flex transition hover:translate-x-0.5"
                 >
                   {tNav(link.key)}
                 </Link>
@@ -80,7 +80,7 @@ export async function SiteFooter() {
               <li key={link.key}>
                 <Link
                   href={link.href}
-                  className="text-ink hover:text-secondary inline-flex transition hover:translate-x-0.5"
+                  className="text-ink hover:text-cta inline-flex transition hover:translate-x-0.5"
                 >
                   {tLegal(`${link.key}.title`)}
                 </Link>

@@ -1,8 +1,16 @@
 import Image from "next/image";
-import { getTranslations } from "next-intl/server";
-import { CheckCircle2 } from "lucide-react";
+import { getLocale, getTranslations } from "next-intl/server";
+import { CheckCircle2, ChevronDown } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import { Disclaimer } from "@/components/disclaimer";
 import { CTASection } from "@/components/cta-section";
+import { JsonLd } from "@/components/json-ld";
+import {
+  buildBreadcrumbLd,
+  buildFaqLd,
+  buildServiceLd,
+  type Faq,
+} from "@/lib/schema";
 
 type Section = { heading: string; body: string };
 
@@ -18,9 +26,11 @@ export async function ServiceLayout({
   eyebrow,
   title,
   intro,
+  path,
   featuresHeading,
   features,
   sections = [],
+  faqs = [],
   extra,
   imageSrc,
   imageAlt,
@@ -28,21 +38,68 @@ export async function ServiceLayout({
   eyebrow: string;
   title: string;
   intro: string;
+  /** Locale-agnostic route (e.g. "/services/labs") for breadcrumb + Service schema. */
+  path: string;
   featuresHeading: string;
   features: string[];
   sections?: Section[];
+  faqs?: Faq[];
   extra?: React.ReactNode;
   imageSrc?: string;
   imageAlt?: string;
 }) {
-  const t = await getTranslations("services");
+  const [t, tNav, locale] = await Promise.all([
+    getTranslations("services"),
+    getTranslations("nav"),
+    getLocale(),
+  ]);
+
+  const crumbs = [
+    { name: tNav("home"), path: "/" },
+    { name: tNav("services"), path: "/services" },
+    { name: title, path },
+  ];
 
   return (
     <main id="main" className="flex-1">
+      {/* SEO: Service tied to the clinic + breadcrumb trail; FAQ markup below. */}
+      <JsonLd data={buildBreadcrumbLd(locale, crumbs)} />
+      <JsonLd
+        data={buildServiceLd({ locale, path, name: title, description: intro })}
+      />
+      {faqs.length > 0 ? <JsonLd data={buildFaqLd(faqs)} /> : null}
+
       <header className="bg-surface overflow-hidden">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[1fr_0.7fr]">
           <div>
-            <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+            <nav
+              aria-label={t("breadcrumbLabel")}
+              className="text-muted mb-5 text-sm"
+            >
+              <ol className="flex flex-wrap items-center gap-2">
+                <li>
+                  <Link href="/" className="hover:text-cta hover:underline">
+                    {tNav("home")}
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li>
+                  <Link
+                    href="/services"
+                    className="hover:text-cta hover:underline"
+                  >
+                    {tNav("services")}
+                  </Link>
+                </li>
+                <li aria-hidden="true">/</li>
+                <li>
+                  <span aria-current="page" className="text-ink font-medium">
+                    {title}
+                  </span>
+                </li>
+              </ol>
+            </nav>
+            <p className="text-cta text-sm font-semibold tracking-widest uppercase">
               {eyebrow}
             </p>
             <h1 className="text-primary mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
@@ -121,6 +178,34 @@ export async function ServiceLayout({
         ) : null}
 
         {extra}
+
+        {faqs.length > 0 ? (
+          <section aria-labelledby="faq-heading" className="mt-14">
+            <h2
+              id="faq-heading"
+              className="text-primary text-2xl font-bold tracking-tight"
+            >
+              {t("faqHeading")}
+            </h2>
+            <div className="mt-6 space-y-3">
+              {faqs.map((faq) => (
+                <details
+                  key={faq.q}
+                  className="group border-border bg-surface rounded-2xl border p-5"
+                >
+                  <summary className="text-ink flex cursor-pointer list-none items-center justify-between gap-4 font-semibold">
+                    {faq.q}
+                    <ChevronDown
+                      aria-hidden
+                      className="text-secondary h-5 w-5 shrink-0 transition group-open:rotate-180"
+                    />
+                  </summary>
+                  <p className="text-muted mt-3 leading-relaxed">{faq.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         {/* COMPLIANCE (SPEC §6): every service page carries the medical disclaimer. */}
         <Disclaimer className="mt-12">{t("disclaimer")}</Disclaimer>

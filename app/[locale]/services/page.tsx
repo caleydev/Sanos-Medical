@@ -165,7 +165,7 @@ export default async function ServicesPage({
           </div>
           <button
             type="submit"
-            className="bg-secondary text-secondary-foreground rounded-full px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
+            className="bg-cta text-cta-foreground rounded-full px-6 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
           >
             {tHome("searchButton")}
           </button>
@@ -180,7 +180,7 @@ export default async function ServicesPage({
             </h2>
             <Link
               href="/services"
-              className="text-secondary text-sm font-semibold underline-offset-4 hover:underline"
+              className="text-cta text-sm font-semibold underline-offset-4 hover:underline"
             >
               {t("search.clear")}
             </Link>

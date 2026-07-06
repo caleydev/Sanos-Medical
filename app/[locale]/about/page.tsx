@@ -46,7 +46,7 @@ export default async function AboutPage({
       <header className="bg-surface overflow-hidden">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[1fr_0.75fr]">
           <div>
-            <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+            <p className="text-cta text-sm font-semibold tracking-widest uppercase">
               {t("eyebrow")}
             </p>
             <h1 className="text-primary mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">

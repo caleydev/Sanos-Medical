@@ -62,7 +62,7 @@ export default async function PatientResourcesPage({
       <header className="bg-surface overflow-hidden">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 py-16 sm:py-20 lg:grid-cols-[1fr_0.7fr]">
           <div>
-            <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+            <p className="text-cta text-sm font-semibold tracking-widest uppercase">
               {t("eyebrow")}
             </p>
             <h1 className="text-primary mt-3 text-4xl font-bold tracking-tight text-balance sm:text-5xl">
@@ -104,7 +104,7 @@ export default async function PatientResourcesPage({
             href={portalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-background text-secondary inline-flex shrink-0 items-center gap-2 rounded-full px-5 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
+            className="bg-background text-cta inline-flex shrink-0 items-center gap-2 rounded-full px-5 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
           >
             {t("portal.button")}
             <ExternalLink aria-hidden className="h-4 w-4" />

@@ -24,8 +24,8 @@ export function NavLinks({ links }: { links: NavLink[] }) {
             aria-current={isActive ? "page" : undefined}
             className={`relative text-sm font-medium transition ${
               isActive
-                ? "text-secondary"
-                : "text-ink hover:text-secondary"
+                ? "text-cta"
+                : "text-ink hover:text-cta"
             }`}
           >
             {link.label}

@@ -7,10 +7,11 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
-    "providers": "Providers",
+    "getStarted": "Appointments",
     "resources": "Patient Resources",
     "contact": "Contact",
     "requestAppointment": "Request an appointment",
+    "primaryLabel": "Primary navigation",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "brandWordmark": "Sanos Medical Group"
@@ -192,33 +193,6 @@
       "body": "We look forward to welcoming you. See our location and hours below, or request an appointment and our team will follow up."
     }
   },
-  "providers": {
-    "eyebrow": "Our team",
-    "title": "Meet our providers",
-    "intro": "Our licensed providers bring experience and a commitment to bilingual, patient-centered care.",
-    "languagesLabel": "Languages",
-    "placeholderNote": "Provider names, credentials, and bios shown here are placeholders to be replaced with verified information before launch.",
-    "list": [
-      {
-        "name": "[Full name, degree — e.g. \"Ana Martínez, MD\" — VERIFY]",
-        "credentials": "[Role — e.g. Family Medicine Physician] · [FL license # — VERIFY] · [NPI — VERIFY]",
-        "bio": "[2–3 sentences — VERIFY: years in practice; focus on primary and comprehensive care (annual physicals, prevention, chronic conditions); care philosophy. No specialist or board-certification claims unless independently verified.]",
-        "languages": "English, Spanish [confirm]"
-      },
-      {
-        "name": "[Full name, degree/credential — VERIFY]",
-        "credentials": "[Role — e.g. Physician or APRN] · [FL license # — VERIFY] · [NPI — VERIFY]",
-        "bio": "[2–3 sentences — VERIFY: background; focus on medically supervised weight management and the GLP-1 program; emphasis on individualized, provider-evaluated plans. No outcome promises.]",
-        "languages": "English, Spanish [confirm]"
-      },
-      {
-        "name": "[Full name, degree/credential — VERIFY]",
-        "credentials": "[Role — e.g. Nurse Practitioner] · [FL license # — VERIFY] · [NPI — VERIFY]",
-        "bio": "[2–3 sentences — VERIFY: background; focus on preventive care, screenings, and lab work follow-up; approach to patient education in English and Spanish.]",
-        "languages": "English, Spanish [confirm]"
-      }
-    ]
-  },
   "resources": {
     "eyebrow": "Patient resources",
     "title": "Helpful information for our patients",
@@ -247,6 +221,8 @@
   },
   "services": {
     "learnMore": "Learn more",
+    "faqHeading": "Frequently asked questions",
+    "breadcrumbLabel": "Breadcrumb",
     "search": {
       "resultsFor": "Results for “{query}”",
       "noResults": "No services matched “{query}” — here's everything we offer:",
@@ -284,6 +260,22 @@
     },
     "primaryCare": {
       "eyebrow": "Primary & Comprehensive Care",
+      "seoTitle": "Primary Care Doctor in Miami",
+      "seoDescription": "Bilingual primary care in Miami: annual physicals, preventive care, and chronic condition management from licensed providers. Request an appointment.",
+      "faqs": [
+        {
+          "q": "What happens during an annual physical?",
+          "a": "Your provider reviews your health history, checks your vital signs, discusses any concerns, and recommends preventive screenings that fit your age and risk factors. It is also a good time to ask questions and set health goals."
+        },
+        {
+          "q": "Do you accept my insurance?",
+          "a": "We work with many major insurance plans. Because coverage varies by plan, the fastest way to confirm yours is to contact our office — our team can verify your benefits before your visit. Self-pay options are also available."
+        },
+        {
+          "q": "How do I become a new patient?",
+          "a": "Submit an appointment request through our contact form and our team will call you to schedule your first visit. Care is available in English and Spanish."
+        }
+      ],
       "title": "Everyday care that grows with you",
       "intro": "Your primary care team is your first point of contact for staying healthy and managing concerns as they arise. We focus on prevention, early detection, and a long-term partnership in your care.",
       "featuresHeading": "What we provide",
@@ -300,6 +292,22 @@
     },
     "labs": {
       "eyebrow": "Blood Testing & Labs",
+      "seoTitle": "Blood Testing & Lab Work in Miami",
+      "seoDescription": "Convenient in-office blood testing and lab work in Miami. Diagnostic panels and preventive screenings ordered by a licensed provider. Request an appointment.",
+      "faqs": [
+        {
+          "q": "Do I need to fast before my blood test?",
+          "a": "Some tests require fasting and others do not. When your provider orders labs, our team will tell you exactly how to prepare, including whether to fast and for how long."
+        },
+        {
+          "q": "Where is my blood drawn?",
+          "a": "Samples are collected in-office for your convenience and processed by our laboratory partner. Your provider then reviews the results with you."
+        },
+        {
+          "q": "How will I get my results?",
+          "a": "Your provider reviews your lab results with you and explains what they mean for your care and any next steps. Testing and follow-up are individualized."
+        }
+      ],
       "title": "Testing that helps guide your care",
       "intro": "Lab work helps your provider understand your health, catch issues early, and track how a treatment plan is working. We make testing convenient with in-office collection and our partner laboratory.",
       "featuresHeading": "Common testing",
@@ -314,6 +322,22 @@
     },
     "weightManagement": {
       "eyebrow": "Weight Management",
+      "seoTitle": "Medical Weight Management in Miami",
+      "seoDescription": "Medically supervised weight management in Miami — individualized, provider-led plans that combine clinical oversight with lifestyle care. Request an evaluation.",
+      "faqs": [
+        {
+          "q": "How does the weight-management program work?",
+          "a": "Care begins with a clinical evaluation of your health history and goals. Your provider then builds an individualized, supervised plan that combines lifestyle, nutrition, and activity guidance with ongoing follow-up."
+        },
+        {
+          "q": "Is the program right for me?",
+          "a": "Eligibility is determined by a licensed provider based on your individual health profile. The program is not one-size-fits-all, and we do not promise specific outcomes — your provider will discuss what to expect."
+        },
+        {
+          "q": "Does the program include medication?",
+          "a": "When clinically appropriate, your provider may discuss treatment options — including medication — as one part of a supervised plan. Any medication is prescribed only after an evaluation."
+        }
+      ],
       "title": "Medically supervised weight management",
       "intro": "Our weight-management program combines clinical oversight with practical lifestyle support. Care is individualized and begins with a provider evaluation to determine whether the program is appropriate for you.",
       "featuresHeading": "What's included",
@@ -329,6 +353,22 @@
     },
     "glp1": {
       "eyebrow": "GLP-1 Therapy",
+      "seoTitle": "GLP-1 Therapy in Miami",
+      "seoDescription": "Provider-evaluated GLP-1 therapy in Miami, offered as part of a medically supervised weight-management plan. Prescription only, after a clinical evaluation.",
+      "faqs": [
+        {
+          "q": "Who is eligible for GLP-1 treatment?",
+          "a": "GLP-1 medications are prescription only and are considered after a clinical evaluation. A licensed provider determines whether treatment is appropriate for you; it is not guaranteed."
+        },
+        {
+          "q": "What are common side effects of GLP-1 medications?",
+          "a": "Like all medications, GLP-1 treatments can have side effects, which may include nausea and digestive discomfort, among others. Always talk to your provider before starting, changing, or stopping any medication."
+        },
+        {
+          "q": "How does GLP-1 fit into a weight-management plan?",
+          "a": "When appropriate, GLP-1 therapy is offered as one part of a comprehensive, medically supervised plan that also includes lifestyle and nutrition support, with ongoing monitoring."
+        }
+      ],
       "title": "Medically supervised GLP-1 treatment",
       "intro": "GLP-1 medications may be offered as one part of a comprehensive, medically supervised weight-management plan. They are prescription medications used only after a clinical evaluation and prescribed at the discretion of a licensed provider.",
       "featuresHeading": "How GLP-1 care works with us",
@@ -345,12 +385,38 @@
       "fdaNote": "We will discuss the specific medication that may be appropriate for you, including its regulatory status, during your evaluation. This page makes no claims about specific brands or FDA-approval status."
     }
   },
+  "getStarted": {
+    "eyebrow": "Get started",
+    "title": "Bilingual primary care in Miami — request your appointment",
+    "subtitle": "Primary care, lab work, weight management, and medically supervised GLP-1 therapy — request a visit and our team follows up to confirm. No medical details needed.",
+    "trustBullets": [
+      "Licensed, bilingual care team (English & Spanish)",
+      "Primary care, labs, and weight management in one place",
+      "No medical details needed to request — scheduling only",
+      "Our team follows up to confirm your visit"
+    ],
+    "founder": {
+      "name": "Angel Leyva",
+      "role": "Founder, Sanos Medical Group",
+      "email": "angel@sanosmedical.com",
+      "emailNote": "Scheduling questions only — please do not email medical details."
+    },
+    "formHeading": "Request an appointment",
+    "formSubhead": "Scheduling only — no medical details needed.",
+    "servicesHeading": "What we offer",
+    "callPrompt": "Prefer to talk to someone? Call us at",
+    "seoTitle": "Request an Appointment in Miami",
+    "seoDescription": "Request an appointment with Sanos Medical Group in Miami — bilingual primary care, lab work, and medically supervised weight management. We follow up to confirm."
+  },
   "common": {
     "underConstruction": "This page is being prepared. Content is coming soon.",
     "skipToContent": "Skip to main content",
     "backToHome": "Back to home",
     "notFound": "We couldn't find the page you were looking for.",
-    "emergencyNotice": "Not for emergencies. If this is a medical emergency, call 911 or go to the nearest emergency room."
+    "emergencyNotice": "Not for emergencies. If this is a medical emergency, call 911 or go to the nearest emergency room.",
+    "callNow": "Call now",
+    "requestShort": "Request visit",
+    "mobileActionsLabel": "Quick actions"
   },
   "pages": {
     "about": { "title": "About Sanos Medical Group" },
@@ -359,7 +425,6 @@
     "labs": { "title": "Blood Testing & Labs" },
     "weightManagement": { "title": "Weight Management" },
     "glp1": { "title": "GLP-1 Therapy" },
-    "providers": { "title": "Our Providers" },
     "resources": { "title": "Patient Resources" },
     "contact": { "title": "Contact & Appointment Requests" },
     "legal": {

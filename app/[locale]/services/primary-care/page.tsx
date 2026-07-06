@@ -13,8 +13,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/services/primary-care",
-    title: t("cards.primaryCare.title"),
-    description: t("primaryCare.intro"),
+    title: t("primaryCare.seoTitle"),
+    description: t("primaryCare.seoDescription"),
   });
 }
 
@@ -35,8 +35,10 @@ export default async function PrimaryCarePage({
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
+      path="/services/primary-care"
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
+      faqs={t.raw("faqs") as { q: string; a: string }[]}
       sections={[{ heading: t("expectHeading"), body: t("expectBody") }]}
       imageSrc="/images/services/doctorBlue.png"
       imageAlt={tServices("cardImages.primaryCare")}

@@ -3,10 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
   CheckCircle2,
-  Clock,
   HeartPulse,
   FlaskConical,
-  Phone,
   Quote,
   Search,
   Scale,
@@ -18,7 +16,6 @@ import { Link } from "@/i18n/navigation";
 import { ServiceCard } from "@/components/service-card";
 import { TrustBand } from "@/components/trust-band";
 import { CTASection } from "@/components/cta-section";
-import { AppointmentForm } from "@/components/appointment-form";
 
 const PILLARS: {
   key: string;
@@ -72,11 +69,9 @@ export default async function HomePage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const [t, tServices, tContact, tFooter] = await Promise.all([
+  const [t, tServices] = await Promise.all([
     getTranslations("home"),
     getTranslations("services"),
-    getTranslations("contact"),
-    getTranslations("footer"),
   ]);
   const steps = t.raw("steps.items") as {
     title: string;
@@ -91,7 +86,7 @@ export default async function HomePage({
       <section className="bg-surface overflow-hidden">
         <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-6 py-16 lg:grid-cols-[1fr_0.9fr] lg:py-24">
           <div>
-            <p className="text-secondary text-sm font-semibold tracking-widest uppercase">
+            <p className="text-cta text-sm font-semibold tracking-widest uppercase">
               {t("heroEyebrow")}
             </p>
             <h1 className="text-primary mt-4 max-w-2xl text-5xl font-bold tracking-tight text-balance sm:text-6xl">
@@ -128,7 +123,7 @@ export default async function HomePage({
               </div>
               <button
                 type="submit"
-                className="bg-secondary text-secondary-foreground shadow-secondary/25 rounded-full px-6 py-3 text-sm font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+                className="bg-cta text-cta-foreground shadow-cta/25 rounded-full px-6 py-3 text-sm font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 {t("searchButton")}
               </button>
@@ -136,8 +131,8 @@ export default async function HomePage({
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Link
-                href="/contact"
-                className="bg-secondary text-secondary-foreground shadow-secondary/25 inline-flex justify-center rounded-full px-6 py-3 font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+                href="/get-started"
+                className="bg-cta text-cta-foreground shadow-cta/25 inline-flex justify-center rounded-full px-6 py-3 font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
               >
                 {t("heroCta")}
               </Link>
@@ -201,7 +196,7 @@ export default async function HomePage({
           <div className="mt-8 grid items-center gap-8 lg:grid-cols-[1fr_1fr_1fr_auto]">
             {steps.map((step, index) => (
               <div key={step.title} className="flex items-start gap-4">
-                <span className="bg-surface text-secondary inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-bold">
+                <span className="bg-surface text-cta inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-base font-bold">
                   {index + 1}
                 </span>
                 <div>
@@ -214,13 +209,13 @@ export default async function HomePage({
                 </div>
               </div>
             ))}
-            <a
-              href="#appointment"
-              className="bg-secondary text-secondary-foreground shadow-secondary/25 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
+            <Link
+              href="/get-started"
+              className="bg-cta text-cta-foreground shadow-cta/25 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold shadow-lg transition hover:-translate-y-0.5 hover:opacity-95"
             >
               {t("steps.cta")}
               <ArrowRight aria-hidden className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -294,8 +289,8 @@ export default async function HomePage({
               {t("whyPrimaryCta")}
             </Link>
             <Link
-              href="/contact"
-              className="bg-secondary text-secondary-foreground inline-flex justify-center rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
+              href="/get-started"
+              className="bg-cta text-cta-foreground inline-flex justify-center rounded-full px-6 py-3 font-semibold transition hover:-translate-y-0.5 hover:opacity-95"
             >
               {t("whySecondaryCta")}
             </Link>
@@ -373,58 +368,6 @@ export default async function HomePage({
       ) : null}
 
       <CTASection />
-
-      <section id="appointment" className="topographic scroll-mt-20">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-16 lg:grid-cols-[0.8fr_1.2fr] lg:py-20">
-          <div>
-            <p className="text-primary-foreground/85 text-sm font-semibold tracking-widest uppercase">
-              {t("heroEyebrow")}
-            </p>
-            <h2 className="text-primary-foreground mt-3 text-4xl font-bold tracking-tight">
-              {t("heroCta")}
-            </h2>
-            <p className="text-primary-foreground/85 mt-4 text-lg">
-              {t("heroSubtitle")}
-            </p>
-
-            {/* Prefer-to-call panel: same details as the footer, in context. */}
-            <div className="mt-8 space-y-4">
-              <a
-                href="tel:+17862921402"
-                className="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur transition hover:bg-white/15"
-              >
-                <span className="text-primary-foreground inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/15">
-                  <Phone aria-hidden className="h-5 w-5" />
-                </span>
-                <span>
-                  <span className="text-primary-foreground/85 block text-xs font-semibold tracking-wide uppercase">
-                    {tContact("callHeading")}
-                  </span>
-                  <span className="text-primary-foreground font-semibold">
-                    {tFooter("phonePlaceholder")}
-                  </span>
-                </span>
-              </a>
-              <div className="flex items-center gap-4 rounded-2xl border border-white/15 bg-white/10 p-4 backdrop-blur">
-                <span className="text-primary-foreground inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white/15">
-                  <Clock aria-hidden className="h-5 w-5" />
-                </span>
-                <span>
-                  <span className="text-primary-foreground/85 block text-xs font-semibold tracking-wide uppercase">
-                    {tFooter("hoursHeading")}
-                  </span>
-                  <span className="text-primary-foreground font-semibold">
-                    {tFooter("hoursPlaceholder")}
-                  </span>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="soft-panel bg-background rounded-3xl p-6 sm:p-8">
-            <AppointmentForm />
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

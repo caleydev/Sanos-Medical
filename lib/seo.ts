@@ -11,7 +11,16 @@ export const SITE_URL = (
 
 export const BRAND = "Sanos Medical Group";
 
-function localizedUrl(locale: string, path: string): string {
+/**
+ * The Group is the parent brand/organization; each physical location is a
+ * "Center". This name is the LOCAL entity (this address/phone/GBP) and must
+ * match the Google Business Profile exactly for local-SEO entity matching. As
+ * more centers open, each gets its own location page + MedicalClinic/@id, all
+ * under `parentOrganization` = BRAND.
+ */
+export const LOCATION_NAME = "Sanos Medical Center";
+
+export function localizedUrl(locale: string, path: string): string {
   return `${SITE_URL}/${locale}${path === "/" ? "" : path}`;
 }
 

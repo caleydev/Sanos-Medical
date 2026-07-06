@@ -73,7 +73,7 @@ export default async function ContactPage({
               <p className="mt-3 text-sm">
                 <a
                   href="tel:+17862921402"
-                  className="text-secondary font-medium hover:underline"
+                  className="text-cta font-medium hover:underline"
                 >
                   {tFooter("phonePlaceholder")}
                 </a>

@@ -13,8 +13,8 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "/services/weight-management",
-    title: t("cards.weightManagement.title"),
-    description: t("weightManagement.intro"),
+    title: t("weightManagement.seoTitle"),
+    description: t("weightManagement.seoDescription"),
   });
 }
 
@@ -35,8 +35,10 @@ export default async function WeightManagementPage({
       eyebrow={t("eyebrow")}
       title={t("title")}
       intro={t("intro")}
+      path="/services/weight-management"
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
+      faqs={t.raw("faqs") as { q: string; a: string }[]}
       // COMPLIANCE (SPEC §6): eligibility-by-evaluation framing, no outcome promises.
       sections={[
         { heading: t("eligibilityHeading"), body: t("eligibilityBody") },

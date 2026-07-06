@@ -9,7 +9,6 @@ import { NavLinks } from "@/components/nav-links";
 const NAV_LINKS = [
   { href: "/about", key: "about" },
   { href: "/services", key: "services" },
-  { href: "/providers", key: "providers" },
   { href: "/patient-resources", key: "resources" },
   { href: "/contact", key: "contact" },
 ] as const;
@@ -27,7 +26,7 @@ export async function SiteHeader() {
   return (
     <header className="border-border bg-background/90 sticky top-0 z-40 border-b shadow-[0_10px_30px_rgb(28_44_89_/_0.04)] backdrop-blur-xl">
       {/* Utility bar: phone / hours / address at a glance (desktop only). */}
-      <div className="bg-secondary text-secondary-foreground hidden text-xs md:block">
+      <div className="bg-cta text-cta-foreground hidden text-xs md:block">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-2">
           <div className="flex items-center gap-6">
             <a
@@ -61,7 +60,7 @@ export async function SiteHeader() {
         </Link>
 
         <nav
-          aria-label={t("home")}
+          aria-label={t("primaryLabel")}
           className="hidden items-center gap-6 md:flex"
         >
           <NavLinks links={mobileLinks} />
@@ -70,14 +69,15 @@ export async function SiteHeader() {
         <div className="flex items-center gap-3">
           <LanguageToggle />
           <Link
-            href="/contact"
-            className="bg-secondary text-secondary-foreground shadow-secondary/25 hidden rounded-full px-4 py-2 text-sm font-semibold shadow-md transition hover:-translate-y-0.5 hover:opacity-95 sm:inline-flex"
+            href="/get-started"
+            className="bg-cta text-cta-foreground shadow-cta/25 hidden rounded-full px-4 py-2 text-sm font-semibold shadow-md transition hover:-translate-y-0.5 hover:opacity-95 sm:inline-flex"
           >
             {t("requestAppointment")}
           </Link>
           <MobileNav
             links={mobileLinks}
             ctaLabel={t("requestAppointment")}
+            navLabel={t("primaryLabel")}
             openLabel={t("openMenu")}
             closeLabel={t("closeMenu")}
           />
