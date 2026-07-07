@@ -40,9 +40,7 @@ export default async function Glp1Page({
       featuresHeading={t("featuresHeading")}
       features={t.raw("features") as string[]}
       faqs={t.raw("faqs") as { q: string; a: string }[]}
-      // TODO (content/TODO.md): pen imagery implies a branded product — swap
-      // if the practice dispenses compounded GLP-1.
-      imageSrc="/images/services/glp.png"
+      imageSrc="/images/services/glp-consult.jpg"
       imageAlt={tServices("cardImages.glp1")}
       // COMPLIANCE (SPEC §6): prescription-only + provider-evaluated framing,
       // common-side-effects "talk to your provider" disclaimer.

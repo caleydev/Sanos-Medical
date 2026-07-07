@@ -47,6 +47,23 @@ export async function SiteHeader() {
           </span>
         </div>
       </div>
+      {/* Compact utility bar for mobile: tap-to-call phone + the clinic address
+          so location is visible near the top of every page on small screens. */}
+      <div className="bg-cta text-cta-foreground text-[11px] md:hidden">
+        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-0.5 px-6 py-1.5">
+          <a
+            href="tel:+17862921402"
+            className="flex items-center gap-1 font-medium transition hover:opacity-80"
+          >
+            <Phone aria-hidden className="h-3 w-3 opacity-75" />
+            {tFooter("phonePlaceholder")}
+          </a>
+          <span className="flex items-center gap-1 text-center opacity-90">
+            <MapPin aria-hidden className="h-3 w-3 shrink-0 opacity-75" />
+            {tFooter("addressPlaceholder")}, {tFooter("cityPlaceholder")}
+          </span>
+        </div>
+      </div>
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-3">
         <Link href="/" className="flex items-center">
           <Image

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Sanos Medical Group | Atención primaria en Miami",
-    "description": "Atención primaria bilingüe, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica en el área de Miami. Solicite una cita con Sanos Medical Group."
+    "description": "Atención primaria, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica en Miami y por visita virtual en toda la Florida. Solicite una cita con Sanos Medical Group."
   },
   "nav": {
     "home": "Inicio",
@@ -24,7 +24,7 @@
   "home": {
     "heroEyebrow": "Sanos Medical Group",
     "heroTitle": "Cuidado para <accent>usted y su familia</accent>",
-    "heroSubtitle": "Atención primaria bilingüe en Miami, desde exámenes físicos anuales y análisis de laboratorio hasta control de peso y terapia con GLP-1 bajo supervisión médica.",
+    "heroSubtitle": "Atención primaria en Miami y visitas virtuales en toda la Florida, desde exámenes físicos anuales y análisis de laboratorio hasta control de peso y terapia con GLP-1 bajo supervisión médica.",
     "heroCta": "Solicitar una cita",
     "heroSecondaryCta": "Conozca nuestros servicios",
     "searchLabel": "Buscar servicios",
@@ -32,13 +32,13 @@
     "searchButton": "Buscar",
     "heroMediaAlt": "Profesional clínico revisando un plan de cita con una paciente",
     "heroBadgeBooking": "Programación de citas sencilla",
-    "heroBadgeBilingual": "English y Español",
+    "heroBadgeVirtual": "Visitas virtuales en toda la Florida",
     "steps": {
       "title": "Solicite una cita en 3 simples pasos",
       "items": [
         {
           "title": "Comparta sus datos de contacto",
-          "description": "Nombre, teléfono y correo — sin detalles médicos."
+          "description": "Nombre, teléfono y correo. Sin detalles médicos."
         },
         {
           "title": "Elija lo que le convenga",
@@ -52,13 +52,13 @@
       "cta": "Solicitar ahora"
     },
     "stats": [
-      { "value": "Inglés / Español", "label": "Atención bilingüe" },
+      { "value": "Virtual + presencial", "label": "Atención en toda la Florida" },
       { "value": "Lun-Sáb", "label": "Horario de atención" },
       { "value": "Miami", "label": "Atención primaria local" }
     ],
     "pillarsEyebrow": "Lo que ofrecemos",
     "pillarsTitle": "Atención para cada etapa de su salud",
-    "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo bilingüe está a su lado con una atención personalizada y basada en la evidencia.",
+    "pillarsSubtitle": "Desde chequeos preventivos hasta tratamientos continuos, nuestro equipo de atención está a su lado con una atención personalizada y basada en la evidencia.",
     "specialtiesTitle": "Atención coordinada según sus necesidades",
     "specialtiesBody": "Comience con atención primaria y conecte con análisis, seguimiento y opciones de tratamiento cuando sea clínicamente apropiado.",
     "specialtyPills": [
@@ -67,14 +67,14 @@
       "Análisis de laboratorio",
       "Control de peso",
       "Evaluación GLP-1",
-      "Visitas bilingües"
+      "Visitas virtuales"
     ],
     "viewAllServices": "Ver todos los servicios",
     "trustTitle": "Por qué los pacientes eligen Sanos",
     "trust": {
-      "bilingual": {
-        "title": "Atención bilingüe",
-        "description": "Nuestro equipo atiende a la diversa comunidad de Miami en inglés y en español."
+      "virtual": {
+        "title": "Atención virtual y presencial",
+        "description": "Vea a un proveedor en nuestra oficina de Miami o por videollamada segura desde cualquier lugar de la Florida."
       },
       "providers": {
         "title": "Proveedores con licencia",
@@ -82,7 +82,7 @@
       },
       "insurance": {
         "title": "Aceptamos seguros",
-        "description": "Trabajamos con muchos de los principales planes de seguro — pregúntenos por su cobertura."
+        "description": "Trabajamos con muchos de los principales planes de seguro. Pregúntenos por su cobertura."
       }
     },
     "whyTitle": "Coordinar su atención, sin complicaciones",
@@ -90,7 +90,7 @@
     "whyItems": [
       "Solicitudes de cita revisadas por el equipo de atención",
       "Planes personalizados basados en la evaluación del proveedor",
-      "Apoyo en inglés y español para las familias de Miami"
+      "Visitas virtuales para pacientes en toda la Florida"
     ],
     "whyPrimaryCta": "Conozca más",
     "whySecondaryCta": "Contáctenos",
@@ -139,11 +139,13 @@
       "timeWindowPlaceholder": "p. ej. mañanas entre semana",
       "optional": "opcional",
       "selectPlaceholder": "Seleccione…",
-      "medicalDetailHelp": "Por favor, no comparta detalles médicos aquí — los recopilaremos de forma segura en su visita.",
+      "medicalDetailHelp": "Por favor, no comparta detalles médicos aquí. Los recopilaremos de forma segura en su visita.",
+      "phoneHelp": "Solo lo usaremos para programar su visita.",
+      "selfPayNote": "Aceptamos muchos planes de seguro principales y ofrecemos pago propio (self-pay).",
       "submit": "Solicitar cita",
       "submitting": "Enviando…",
       "submitError": "Lo sentimos, ocurrió un error. Inténtelo de nuevo o llámenos.",
-      "successTitle": "Gracias — hemos recibido su solicitud.",
+      "successTitle": "Gracias. Hemos recibido su solicitud.",
       "successBody": "Un miembro de nuestro equipo se comunicará con usted para confirmar su cita.",
       "contactMethodOptions": {
         "email": "Correo electrónico",
@@ -155,6 +157,7 @@
         "annualPhysical": "Examen físico anual",
         "weightManagement": "Control de peso",
         "labWork": "Análisis de laboratorio",
+        "costInsurance": "Pregunta sobre costo / seguro",
         "other": "Otro"
       },
       "errors": {
@@ -162,6 +165,8 @@
         "lastName": "Por favor, ingrese su apellido.",
         "email": "Por favor, ingrese un correo electrónico válido.",
         "phone": "Por favor, ingrese un número de teléfono válido.",
+        "emailRequired": "Por favor, ingrese su correo electrónico para poder comunicarnos con usted.",
+        "phoneRequired": "Por favor, ingrese su número de teléfono para poder comunicarnos con usted.",
         "contactMethod": "Por favor, elija un método de contacto preferido.",
         "reason": "Por favor, elija un motivo para su visita."
       }
@@ -169,20 +174,20 @@
   },
   "about": {
     "eyebrow": "Nosotros",
-    "title": "Atención integral y bilingüe para Miami",
-    "intro": "Sanos Medical Group es un consultorio de atención primaria dedicado a cuidar la salud de las familias de Miami con una atención personalizada y basada en la evidencia, en inglés y en español.",
+    "title": "Atención integral para Miami y toda la Florida",
+    "intro": "Sanos Medical Group es un consultorio de atención primaria dedicado a cuidar la salud de los pacientes con una atención personalizada y basada en la evidencia, en nuestra oficina de Miami y por visita virtual en toda la Florida.",
     "story": {
       "heading": "Nuestra historia",
-      "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a la comunidad de Miami. Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad, con una comunicación clara en inglés y en español en cada paso."
+      "body": "Sanos Medical Group nació para ofrecer una atención primaria accesible y centrada en la relación con el paciente a nuestra comunidad. Nos enfocamos en construir relaciones duraderas con nuestros pacientes y en cuidar a la persona en su totalidad, ya sea que nos visite en Miami o se conecte por videollamada segura desde cualquier lugar de la Florida."
     },
     "mission": {
       "heading": "Nuestra misión",
-      "body": "Brindar una atención primaria cercana y de alta calidad que ayude a nuestra comunidad a vivir una vida más saludable — atendiendo a cada paciente con respeto, comunicación clara y cuidado en el idioma que prefiera."
+      "body": "Brindar una atención primaria cercana y de alta calidad que ayude a nuestra comunidad a vivir una vida más saludable, atendiendo a cada paciente con respeto, comunicación clara y una atención que se adapta a su vida."
     },
     "expect": {
       "heading": "Qué esperar",
       "items": [
-        "Un equipo bilingüe que le da la bienvenida",
+        "Un equipo atento que le da la bienvenida",
         "Tiempo para conversar sobre su salud y sus preguntas",
         "Un plan personalizado basado en una evaluación del proveedor",
         "Coordinación de análisis, referidos y atención de seguimiento"
@@ -208,7 +213,7 @@
     },
     "newPatient": {
       "heading": "Pacientes nuevos",
-      "body": "¡Le damos la bienvenida! Para que su primera visita sea más cómoda, llegue unos 15 minutos antes y traiga una identificación con foto, su tarjeta del seguro y una lista de los medicamentos y suplementos que toma. Su proveedor se tomará el tiempo para revisar con usted su historial de salud y sus objetivos — en inglés o en español, según prefiera."
+      "body": "¡Le damos la bienvenida! Para que su primera visita sea más cómoda, llegue unos 15 minutos antes y traiga una identificación con foto, su tarjeta del seguro y una lista de los medicamentos y suplementos que toma. Su proveedor se tomará el tiempo para revisar con usted su historial de salud y sus objetivos, en inglés o en español, según prefiera."
     },
     "forms": {
       "heading": "Formularios para pacientes",
@@ -216,7 +221,7 @@
     },
     "telehealth": {
       "heading": "Telemedicina",
-      "body": "Si se ofrece telemedicina, se requiere un consentimiento de telemedicina antes de cualquier visita virtual. [Nota de consentimiento de telemedicina — POR DEFINIR; incluir solo si se ofrece telemedicina.]"
+      "body": "Las visitas virtuales están disponibles para pacientes ubicados en la Florida. Se requiere un consentimiento de telemedicina antes de su primera visita virtual. [Detalles del consentimiento de telemedicina — POR DEFINIR: finalizar con asesoría legal.]"
     }
   },
   "services": {
@@ -256,12 +261,12 @@
       "primaryCare": "Profesional clínico con uniforme azul que representa la atención primaria e integral",
       "labs": "Materiales de laboratorio que representan análisis de sangre y servicios de laboratorio",
       "weightManagement": "Comida saludable y cinta métrica que representan el apoyo para el control de peso",
-      "glp1": "Profesional clínico con pluma inyectora que representa la terapia GLP-1 bajo supervisión médica"
+      "glp1": "Profesional clínico conversando sobre la terapia GLP-1 bajo supervisión médica con una paciente"
     },
     "primaryCare": {
       "eyebrow": "Atención primaria e integral",
       "seoTitle": "Médico de atención primaria en Miami",
-      "seoDescription": "Atención primaria bilingüe en Miami: exámenes físicos anuales, atención preventiva y manejo de enfermedades crónicas con proveedores con licencia. Solicite una cita.",
+      "seoDescription": "Atención primaria en Miami y visitas virtuales en toda la Florida: exámenes físicos anuales, atención preventiva y manejo de enfermedades crónicas con proveedores con licencia. Solicite una cita.",
       "faqs": [
         {
           "q": "¿Qué incluye un examen físico anual?",
@@ -273,7 +278,7 @@
         },
         {
           "q": "¿Cómo puedo hacerme paciente nuevo?",
-          "a": "Envíe una solicitud de cita a través de nuestro formulario de contacto y nuestro equipo lo llamará para programar su primera visita. La atención está disponible en inglés y español."
+          "a": "Envíe una solicitud de cita a través de nuestro formulario de contacto y nuestro equipo lo llamará para programar su primera visita. Las visitas están disponibles de forma presencial en Miami o por videollamada segura en toda la Florida."
         }
       ],
       "title": "Atención para el día a día que crece con usted",
@@ -288,7 +293,7 @@
         "Vacunas de rutina y orientación sobre inmunizaciones"
       ],
       "expectHeading": "Qué esperar",
-      "expectBody": "En su consulta, su proveedor revisa su historial, escucha sus inquietudes y trabaja con usted en un plan adaptado a sus necesidades. Nos tomamos el tiempo para responder sus preguntas en el idioma que prefiera."
+      "expectBody": "En su consulta, su proveedor revisa su historial, escucha sus inquietudes y trabaja con usted en un plan adaptado a sus necesidades. Nos tomamos el tiempo para responder sus preguntas y asegurarnos de que se sienta cómodo con el plan."
     },
     "labs": {
       "eyebrow": "Análisis de sangre y laboratorio",
@@ -318,7 +323,7 @@
         "Extracción de sangre en el consultorio con un laboratorio asociado"
       ],
       "processHeading": "Cómo funciona",
-      "processBody": "Su proveedor determina qué pruebas son apropiadas según su evaluación. Las muestras se toman en el consultorio y son procesadas por nuestro laboratorio asociado. Los resultados se revisan con usted para que comprenda qué significan para su atención. Las recomendaciones de pruebas son individualizadas — esta página no garantiza pruebas ni resultados específicos."
+      "processBody": "Su proveedor determina qué pruebas son apropiadas según su evaluación. Las muestras se toman en el consultorio y son procesadas por nuestro laboratorio asociado. Los resultados se revisan con usted para que comprenda qué significan para su atención. Las recomendaciones de pruebas son individualizadas. Esta página no garantiza pruebas ni resultados específicos."
     },
     "weightManagement": {
       "eyebrow": "Control de peso",
@@ -387,26 +392,27 @@
   },
   "getStarted": {
     "eyebrow": "Comenzar",
-    "title": "Atención primaria bilingüe en Miami — solicite su cita",
-    "subtitle": "Atención primaria, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica — solicite una cita y nuestro equipo se comunica para confirmar. No hace falta compartir detalles médicos.",
+    "title": "Atención primaria en Miami y en toda la Florida. Solicite su cita.",
+    "subtitle": "Atención primaria, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica. Solicite una cita y nuestro equipo se comunica para confirmar.",
     "trustBullets": [
-      "Equipo médico con licencia y bilingüe (inglés y español)",
+      "Visitas presenciales en Miami o visitas virtuales en toda la Florida",
       "Atención primaria, laboratorio y control de peso en un mismo lugar",
-      "No hace falta compartir detalles médicos — solo para programar",
       "Nuestro equipo se comunica para confirmar su cita"
     ],
     "founder": {
-      "name": "Angel Leyva",
-      "role": "Fundador, Sanos Medical Group",
-      "email": "angel@sanosmedical.com",
+      "name": "Barbara Patino",
+      "role": "Gerente de oficina, Sanos Medical Group",
+      "email": "officemanager@sanosmedical.com",
       "emailNote": "Solo preguntas sobre citas; no envíe detalles médicos por correo electrónico."
     },
     "formHeading": "Solicitar una cita",
-    "formSubhead": "Solo para programar — no hace falta compartir detalles médicos.",
+    "formSubhead": "Solo para programar.",
+    "insuranceHeading": "Seguro y pago propio",
+    "insuranceBody": "Aceptamos muchos planes principales y ofrecemos pago propio (self-pay). Pídanos verificar su cobertura antes de su visita.",
     "servicesHeading": "Lo que ofrecemos",
     "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
     "seoTitle": "Solicitar una cita en Miami",
-    "seoDescription": "Solicite una cita con Sanos Medical Group en Miami: atención primaria bilingüe, análisis de laboratorio y control de peso bajo supervisión médica. Nos comunicamos para confirmar."
+    "seoDescription": "Solicite una cita con Sanos Medical Group: atención primaria, análisis de laboratorio y control de peso bajo supervisión médica, en Miami o por visita virtual en toda la Florida. Nos comunicamos para confirmar."
   },
   "common": {
     "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",
@@ -436,8 +442,8 @@
     }
   },
   "legal": {
-    "metaDescription": "{document} de Sanos Medical Group, un consultorio de atención primaria bilingüe en Miami, FL.",
-    "reviewNotice": "Contenido provisional — REVISAR POR UN ASESOR LEGAL ANTES DEL LANZAMIENTO.",
+    "metaDescription": "{document} de Sanos Medical Group, un consultorio de atención primaria en Miami, FL.",
+    "reviewNotice": "Contenido provisional. REVISAR POR UN ASESOR LEGAL ANTES DEL LANZAMIENTO.",
     "lastUpdatedLabel": "Última actualización",
     "lastUpdated": "[Fecha — POR DEFINIR]",
     "privacy": {
@@ -457,7 +463,7 @@
         },
         {
           "heading": "Cookies y análisis",
-          "body": "Este sitio web no utiliza cookies de análisis ni de publicidad. El mapa de nuestra página de contacto se carga desde Google Maps, que puede establecer cookies de Google al cargarse la página — consulte la política de privacidad de Google para más detalles. Si en el futuro se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Confirmar el alcance con el asesor legal — POR DEFINIR.]"
+          "body": "Este sitio web no utiliza cookies de análisis ni de publicidad. El mapa de nuestra página de contacto se carga desde Google Maps, que puede establecer cookies de Google al cargarse la página. Consulte la política de privacidad de Google para más detalles. Si en el futuro se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Confirmar el alcance con el asesor legal — POR DEFINIR.]"
         },
         {
           "heading": "Sus opciones",
@@ -579,7 +585,7 @@
     }
   },
   "footer": {
-    "tagline": "Atención primaria integral y bilingüe en el área de Miami.",
+    "tagline": "Atención primaria integral en Miami y visitas virtuales en toda la Florida.",
     "navHeading": "Explorar",
     "legalHeading": "Legal",
     "contactHeading": "Contacto",

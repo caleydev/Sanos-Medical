@@ -1,15 +1,15 @@
 import { getTranslations } from "next-intl/server";
-import { Languages, ShieldCheck, BadgeCheck, type LucideIcon } from "lucide-react";
+import { Video, ShieldCheck, BadgeCheck, type LucideIcon } from "lucide-react";
 
 const TRUST_ITEMS: { key: string; icon: LucideIcon }[] = [
-  { key: "bilingual", icon: Languages },
+  { key: "virtual", icon: Video },
   // COMPLIANCE (SPEC §6): copy deliberately says "Licensed providers" — do NOT
   // upgrade to "board-certified"/"specialist" unless independently verified.
   { key: "providers", icon: BadgeCheck },
   { key: "insurance", icon: ShieldCheck },
 ];
 
-/** Home-page trust band: bilingual care, providers, insurance accepted (SPEC §3). */
+/** Home-page trust band: virtual & in-person care, providers, insurance accepted (SPEC §3). */
 export async function TrustBand() {
   const t = await getTranslations("home");
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Sanos Medical Group | Primary Care in Miami",
-    "description": "Bilingual primary care, lab testing, weight management, and medically supervised GLP-1 therapy in the Miami area. Request an appointment with Sanos Medical Group."
+    "description": "Primary care, lab testing, weight management, and medically supervised GLP-1 therapy in Miami and by virtual visit across Florida. Request an appointment with Sanos Medical Group."
   },
   "nav": {
     "home": "Home",
@@ -24,7 +24,7 @@
   "home": {
     "heroEyebrow": "Sanos Medical Group",
     "heroTitle": "Care for <accent>you and your family</accent>",
-    "heroSubtitle": "Bilingual primary care in Miami, from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
+    "heroSubtitle": "Primary care in Miami and virtual visits across Florida, from annual physicals and lab work to weight management and medically supervised GLP-1 therapy.",
     "heroCta": "Request an appointment",
     "heroSecondaryCta": "Explore our services",
     "searchLabel": "Search services",
@@ -32,13 +32,13 @@
     "searchButton": "Search",
     "heroMediaAlt": "A clinician reviewing an appointment plan with a patient",
     "heroBadgeBooking": "Easy appointment booking",
-    "heroBadgeBilingual": "English & Español",
+    "heroBadgeVirtual": "Virtual visits across Florida",
     "steps": {
       "title": "Request an appointment in 3 simple steps",
       "items": [
         {
           "title": "Share your contact info",
-          "description": "Name, phone, and email — no medical details needed."
+          "description": "Name, phone, and email. No medical details needed."
         },
         {
           "title": "Choose what works for you",
@@ -52,13 +52,13 @@
       "cta": "Request now"
     },
     "stats": [
-      { "value": "English / Spanish", "label": "Bilingual care" },
+      { "value": "Virtual + In-person", "label": "Care across Florida" },
       { "value": "Mon-Sat", "label": "Office hours" },
       { "value": "Miami", "label": "Local primary care" }
     ],
     "pillarsEyebrow": "What we offer",
     "pillarsTitle": "Care for every stage of your health",
-    "pillarsSubtitle": "From preventive checkups to ongoing treatment, our bilingual team supports you with personalized, evidence-based care.",
+    "pillarsSubtitle": "From preventive checkups to ongoing treatment, our care team supports you with personalized, evidence-based care.",
     "specialtiesTitle": "Coordinated care around your needs",
     "specialtiesBody": "Start with primary care and connect to labs, follow-up support, and treatment options when clinically appropriate.",
     "specialtyPills": [
@@ -67,14 +67,14 @@
       "Lab work",
       "Weight management",
       "GLP-1 evaluation",
-      "Bilingual visits"
+      "Virtual visits"
     ],
     "viewAllServices": "View all services",
     "trustTitle": "Why patients choose Sanos",
     "trust": {
-      "bilingual": {
-        "title": "Bilingual care",
-        "description": "Our team serves Miami's diverse community in both English and Spanish."
+      "virtual": {
+        "title": "Virtual & in-person care",
+        "description": "See a provider at our Miami office or by secure video visit anywhere in Florida."
       },
       "providers": {
         "title": "Licensed providers",
@@ -82,7 +82,7 @@
       },
       "insurance": {
         "title": "Insurance accepted",
-        "description": "We work with many major insurance plans — ask us about your coverage."
+        "description": "We work with many major insurance plans. Ask us about your coverage."
       }
     },
     "whyTitle": "A calmer way to coordinate care",
@@ -90,7 +90,7 @@
     "whyItems": [
       "Appointment requests reviewed by the care team",
       "Personalized plans based on provider evaluation",
-      "English and Spanish support for Miami families"
+      "Virtual visits for patients across Florida"
     ],
     "whyPrimaryCta": "Learn more",
     "whySecondaryCta": "Contact us",
@@ -139,11 +139,13 @@
       "timeWindowPlaceholder": "e.g. weekday mornings",
       "optional": "optional",
       "selectPlaceholder": "Please select…",
-      "medicalDetailHelp": "Please don't share medical details here — we'll collect those securely at your visit.",
+      "medicalDetailHelp": "Please don't share medical details here. We'll collect those securely at your visit.",
+      "phoneHelp": "We'll only use this to schedule your visit.",
+      "selfPayNote": "We accept many major insurance plans and offer self-pay.",
       "submit": "Request appointment",
       "submitting": "Sending…",
       "submitError": "Sorry, something went wrong. Please try again or call us.",
-      "successTitle": "Thank you — we've received your request.",
+      "successTitle": "Thank you. We've received your request.",
       "successBody": "A member of our team will follow up to confirm your appointment.",
       "contactMethodOptions": {
         "email": "Email",
@@ -155,6 +157,7 @@
         "annualPhysical": "Annual physical",
         "weightManagement": "Weight management",
         "labWork": "Lab work",
+        "costInsurance": "Cost / insurance question",
         "other": "Other"
       },
       "errors": {
@@ -162,6 +165,8 @@
         "lastName": "Please enter your last name.",
         "email": "Please enter a valid email address.",
         "phone": "Please enter a valid phone number.",
+        "emailRequired": "Please enter your email so we can reach you.",
+        "phoneRequired": "Please enter your phone number so we can reach you.",
         "contactMethod": "Please choose a preferred contact method.",
         "reason": "Please choose a reason for your visit."
       }
@@ -169,20 +174,20 @@
   },
   "about": {
     "eyebrow": "About us",
-    "title": "Comprehensive, bilingual care for Miami",
-    "intro": "Sanos Medical Group is a primary care practice dedicated to keeping Miami families healthy with personalized, evidence-based care in English and Spanish.",
+    "title": "Comprehensive care for Miami and across Florida",
+    "intro": "Sanos Medical Group is a primary care practice dedicated to keeping patients healthy with personalized, evidence-based care, in our Miami office and by virtual visit across Florida.",
     "story": {
       "heading": "Our story",
-      "body": "Sanos Medical Group was founded to bring accessible, relationship-centered primary care to the Miami community. We focus on building lasting relationships with our patients and caring for the whole person — with clear communication in English and Spanish at every step."
+      "body": "Sanos Medical Group was founded to bring accessible, relationship-centered primary care to our community. We focus on building lasting relationships with our patients and caring for the whole person, whether you visit us in Miami or connect by secure video from anywhere in Florida."
     },
     "mission": {
       "heading": "Our mission",
-      "body": "To provide compassionate, high-quality primary care that helps our community live healthier lives — meeting each patient with respect, clear communication, and care in the language they prefer."
+      "body": "To provide compassionate, high-quality primary care that helps our community live healthier lives, meeting each patient with respect, clear communication, and care that fits their life."
     },
     "expect": {
       "heading": "What to expect",
       "items": [
-        "A welcoming, bilingual team",
+        "A welcoming, attentive team",
         "Time to talk through your health and your questions",
         "A personalized plan based on a provider evaluation",
         "Coordination of labs, referrals, and follow-up care"
@@ -208,7 +213,7 @@
     },
     "newPatient": {
       "heading": "New patients",
-      "body": "Welcome! To make your first visit smooth, arrive about 15 minutes early and bring a photo ID, your insurance card, and a list of the medications and supplements you take. Your provider will take time to review your health history and goals with you — in English or Spanish, whichever you prefer."
+      "body": "Welcome! To make your first visit smooth, arrive about 15 minutes early and bring a photo ID, your insurance card, and a list of the medications and supplements you take. Your provider will take time to review your health history and goals with you, in English or Spanish, whichever you prefer."
     },
     "forms": {
       "heading": "Patient forms",
@@ -216,7 +221,7 @@
     },
     "telehealth": {
       "heading": "Telehealth",
-      "body": "If telehealth is offered, a telehealth consent applies before any virtual visit. [Telehealth consent note — TODO; include only if telemedicine is offered.]"
+      "body": "Virtual visits are available for patients located in Florida. A telehealth consent applies before your first virtual visit. [Telehealth consent details — TODO: finalize with counsel.]"
     }
   },
   "services": {
@@ -225,7 +230,7 @@
     "breadcrumbLabel": "Breadcrumb",
     "search": {
       "resultsFor": "Results for “{query}”",
-      "noResults": "No services matched “{query}” — here's everything we offer:",
+      "noResults": "No services matched “{query}”. Here's everything we offer:",
       "clear": "Clear search"
     },
     "disclaimer": "This information is for general educational purposes only and is not medical advice. It does not replace evaluation by a licensed provider. Individual results vary, and all treatment depends on a clinical assessment. In an emergency, call 911 or go to the nearest emergency room.",
@@ -256,12 +261,12 @@
       "primaryCare": "Clinician in blue scrubs representing primary and comprehensive care",
       "labs": "Lab testing supplies representing blood testing and laboratory services",
       "weightManagement": "Healthy meal and measuring tape representing weight-management support",
-      "glp1": "Clinician with medication pen representing medically supervised GLP-1 therapy"
+      "glp1": "Clinician discussing medically supervised GLP-1 therapy with a patient"
     },
     "primaryCare": {
       "eyebrow": "Primary & Comprehensive Care",
       "seoTitle": "Primary Care Doctor in Miami",
-      "seoDescription": "Bilingual primary care in Miami: annual physicals, preventive care, and chronic condition management from licensed providers. Request an appointment.",
+      "seoDescription": "Primary care in Miami and virtual visits across Florida: annual physicals, preventive care, and chronic condition management from licensed providers. Request an appointment.",
       "faqs": [
         {
           "q": "What happens during an annual physical?",
@@ -269,11 +274,11 @@
         },
         {
           "q": "Do you accept my insurance?",
-          "a": "We work with many major insurance plans. Because coverage varies by plan, the fastest way to confirm yours is to contact our office — our team can verify your benefits before your visit. Self-pay options are also available."
+          "a": "We work with many major insurance plans. Because coverage varies by plan, the fastest way to confirm yours is to contact our office. Our team can verify your benefits before your visit. Self-pay options are also available."
         },
         {
           "q": "How do I become a new patient?",
-          "a": "Submit an appointment request through our contact form and our team will call you to schedule your first visit. Care is available in English and Spanish."
+          "a": "Submit an appointment request through our contact form and our team will call you to schedule your first visit. Visits are available in person in Miami or by secure video across Florida."
         }
       ],
       "title": "Everyday care that grows with you",
@@ -288,7 +293,7 @@
         "Routine immunizations and vaccine guidance"
       ],
       "expectHeading": "What to expect",
-      "expectBody": "At your visit, your provider reviews your history, listens to your concerns, and works with you on a plan tailored to your needs. We take the time to answer your questions in the language you are most comfortable with."
+      "expectBody": "At your visit, your provider reviews your history, listens to your concerns, and works with you on a plan tailored to your needs. We take the time to answer your questions and make sure you feel comfortable with the plan."
     },
     "labs": {
       "eyebrow": "Blood Testing & Labs",
@@ -318,12 +323,12 @@
         "In-office blood draw with a partner laboratory"
       ],
       "processHeading": "How it works",
-      "processBody": "Your provider determines which tests are appropriate based on your evaluation. Samples are collected in-office and processed by our laboratory partner. Results are reviewed with you so you understand what they mean for your care. Testing recommendations are individualized — this page does not guarantee specific tests or results."
+      "processBody": "Your provider determines which tests are appropriate based on your evaluation. Samples are collected in-office and processed by our laboratory partner. Results are reviewed with you so you understand what they mean for your care. Testing recommendations are individualized. This page does not guarantee specific tests or results."
     },
     "weightManagement": {
       "eyebrow": "Weight Management",
       "seoTitle": "Medical Weight Management in Miami",
-      "seoDescription": "Medically supervised weight management in Miami — individualized, provider-led plans that combine clinical oversight with lifestyle care. Request an evaluation.",
+      "seoDescription": "Medically supervised weight management in Miami: individualized, provider-led plans that combine clinical oversight with lifestyle care. Request an evaluation.",
       "faqs": [
         {
           "q": "How does the weight-management program work?",
@@ -331,11 +336,11 @@
         },
         {
           "q": "Is the program right for me?",
-          "a": "Eligibility is determined by a licensed provider based on your individual health profile. The program is not one-size-fits-all, and we do not promise specific outcomes — your provider will discuss what to expect."
+          "a": "Eligibility is determined by a licensed provider based on your individual health profile. The program is not one-size-fits-all, and we do not promise specific outcomes. Your provider will discuss what to expect."
         },
         {
           "q": "Does the program include medication?",
-          "a": "When clinically appropriate, your provider may discuss treatment options — including medication — as one part of a supervised plan. Any medication is prescribed only after an evaluation."
+          "a": "When clinically appropriate, your provider may discuss treatment options, including medication, as one part of a supervised plan. Any medication is prescribed only after an evaluation."
         }
       ],
       "title": "Medically supervised weight management",
@@ -387,26 +392,27 @@
   },
   "getStarted": {
     "eyebrow": "Get started",
-    "title": "Bilingual primary care in Miami — request your appointment",
-    "subtitle": "Primary care, lab work, weight management, and medically supervised GLP-1 therapy — request a visit and our team follows up to confirm. No medical details needed.",
+    "title": "Primary care in Miami and across Florida. Request your appointment.",
+    "subtitle": "Primary care, lab work, weight management, and medically supervised GLP-1 therapy. Request a visit and our team follows up to confirm.",
     "trustBullets": [
-      "Licensed, bilingual care team (English & Spanish)",
+      "In-person visits in Miami or virtual visits across Florida",
       "Primary care, labs, and weight management in one place",
-      "No medical details needed to request — scheduling only",
       "Our team follows up to confirm your visit"
     ],
     "founder": {
-      "name": "Angel Leyva",
-      "role": "Founder, Sanos Medical Group",
-      "email": "angel@sanosmedical.com",
-      "emailNote": "Scheduling questions only — please do not email medical details."
+      "name": "Barbara Patino",
+      "role": "Office Manager, Sanos Medical Group",
+      "email": "officemanager@sanosmedical.com",
+      "emailNote": "Scheduling questions only. Please do not email medical details."
     },
     "formHeading": "Request an appointment",
-    "formSubhead": "Scheduling only — no medical details needed.",
+    "formSubhead": "Scheduling only.",
+    "insuranceHeading": "Insurance & self-pay",
+    "insuranceBody": "We accept many major plans and offer self-pay. Ask us to verify your coverage before your visit.",
     "servicesHeading": "What we offer",
     "callPrompt": "Prefer to talk to someone? Call us at",
     "seoTitle": "Request an Appointment in Miami",
-    "seoDescription": "Request an appointment with Sanos Medical Group in Miami — bilingual primary care, lab work, and medically supervised weight management. We follow up to confirm."
+    "seoDescription": "Request an appointment with Sanos Medical Group: primary care, lab work, and medically supervised weight management, in Miami or by virtual visit across Florida. We follow up to confirm."
   },
   "common": {
     "underConstruction": "This page is being prepared. Content is coming soon.",
@@ -436,8 +442,8 @@
     }
   },
   "legal": {
-    "metaDescription": "{document} for Sanos Medical Group, a bilingual primary care practice in Miami, FL.",
-    "reviewNotice": "Placeholder content — REVIEW BY LEGAL COUNSEL BEFORE LAUNCH.",
+    "metaDescription": "{document} for Sanos Medical Group, a primary care practice in Miami, FL.",
+    "reviewNotice": "Placeholder content. REVIEW BY LEGAL COUNSEL BEFORE LAUNCH.",
     "lastUpdatedLabel": "Last updated",
     "lastUpdated": "[Date — TODO]",
     "privacy": {
@@ -457,7 +463,7 @@
         },
         {
           "heading": "Cookies and analytics",
-          "body": "This website does not use analytics or advertising cookies. The map on our contact page is loaded from Google Maps, which may set Google cookies when the page loads — see Google's privacy policy for details. If analytics or other non-essential cookies are ever added, we will request your consent first. [Confirm scope with counsel — TODO.]"
+          "body": "This website does not use analytics or advertising cookies. The map on our contact page is loaded from Google Maps, which may set Google cookies when the page loads. See Google's privacy policy for details. If analytics or other non-essential cookies are ever added, we will request your consent first. [Confirm scope with counsel — TODO.]"
         },
         {
           "heading": "Your choices",
@@ -579,7 +585,7 @@
     }
   },
   "footer": {
-    "tagline": "Comprehensive, bilingual primary care in the Miami area.",
+    "tagline": "Comprehensive primary care in Miami and virtual visits across Florida.",
     "navHeading": "Explore",
     "legalHeading": "Legal",
     "contactHeading": "Contact",

@@ -52,8 +52,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  const { firstName, lastName, email, phone, contactMethod, timeWindow, reason, locale } =
+  const { firstName, lastName, contactMethod, timeWindow, reason, locale } =
     parsed.data;
+  // One of email/phone is optional depending on contactMethod; the store
+  // columns are NOT NULL, so coerce a missing value to an empty string.
+  const email = parsed.data.email ?? "";
+  const phone = parsed.data.phone ?? "";
 
   const supabase = getSupabase();
   if (supabase) {

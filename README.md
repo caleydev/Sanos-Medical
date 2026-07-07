@@ -93,6 +93,13 @@ API route after the Supabase insert.
 
 ## Deployment (AWS EC2, Docker + Nginx)
 
+> ✅ **Already live.** The site is deployed and running in production on a
+> self-hosted **AWS EC2** instance (`52.22.30.154`) via `docker compose`, behind
+> Nginx, with **Supabase lead capture and the Google Sheet sink both provisioned
+> and live** (production `.env` set on the host). The steps below are the
+> setup/redeploy reference — the infrastructure is already provisioned, so
+> day-to-day you only need the **Updates** command at the bottom of this section.
+
 The app builds to a Next.js **standalone** server and runs in a container behind
 Nginx.
 

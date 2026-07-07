@@ -61,7 +61,7 @@ const SERVICES: {
     key: "glp1",
     href: "/services/glp-1",
     icon: Syringe,
-    imageSrc: "/images/services/glp.png",
+    imageSrc: "/images/services/glp-consult.jpg",
   },
 ];
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useLocale, useTranslations } from "next-intl";
 import { CircleCheck, TriangleAlert } from "lucide-react";
@@ -10,14 +10,20 @@ import {
   type AppointmentInput,
   CONTACT_METHODS,
   REASONS,
+  requiresEmail,
+  requiresPhone,
 } from "@/lib/appointment-schema";
 
 export function AppointmentForm({
   ariaLabel,
   ariaLabelledBy,
+  showCoverageNote = true,
 }: {
   ariaLabel?: string;
   ariaLabelledBy?: string;
+  // Some pages surface the insurance/self-pay reassurance in their own section;
+  // set false there so the copy isn't duplicated on the same page.
+  showCoverageNote?: boolean;
 }) {
   const t = useTranslations("contact.form");
   const tCommon = useTranslations("common");
@@ -32,6 +38,8 @@ export function AppointmentForm({
         lastName: t("errors.lastName"),
         email: t("errors.email"),
         phone: t("errors.phone"),
+        emailRequired: t("errors.emailRequired"),
+        phoneRequired: t("errors.phoneRequired"),
         contactMethod: t("errors.contactMethod"),
         reason: t("errors.reason"),
       }),
@@ -41,11 +49,21 @@ export function AppointmentForm({
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<AppointmentInput>({
     resolver: zodResolver(schema),
     defaultValues: { contactMethod: undefined, reason: undefined },
   });
+
+  // Mirror the schema's conditional requirement in the labels: mark the channel
+  // that isn't required for the chosen contact method as optional. `useWatch`
+  // (not `watch`) keeps this component React Compiler-friendly.
+  const contactMethod = useWatch({ control, name: "contactMethod" });
+  const emailOptional =
+    !!contactMethod && !requiresEmail(contactMethod) ? t("optional") : undefined;
+  const phoneOptional =
+    !!contactMethod && !requiresPhone(contactMethod) ? t("optional") : undefined;
 
   async function onSubmit(values: AppointmentInput) {
     setSubmitError(null);
@@ -132,7 +150,12 @@ export function AppointmentForm({
       </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field id="email" label={t("email")} error={errors.email?.message}>
+        <Field
+          id="email"
+          label={t("email")}
+          optional={emailOptional}
+          error={errors.email?.message}
+        >
           <input
             id="email"
             type="email"
@@ -143,16 +166,28 @@ export function AppointmentForm({
             {...register("email")}
           />
         </Field>
-        <Field id="phone" label={t("phone")} error={errors.phone?.message}>
+        <Field
+          id="phone"
+          label={t("phone")}
+          optional={phoneOptional}
+          error={errors.phone?.message}
+        >
           <input
             id="phone"
             type="tel"
             autoComplete="tel"
             aria-invalid={!!errors.phone}
-            aria-describedby={errors.phone ? "phone-error" : undefined}
+            aria-describedby={
+              [errors.phone ? "phone-error" : null, "phone-help"]
+                .filter(Boolean)
+                .join(" ") || undefined
+            }
             className={inputClass}
             {...register("phone")}
           />
+          <p id="phone-help" className="text-muted mt-1 text-xs">
+            {t("phoneHelp")}
+          </p>
         </Field>
       </div>
 
@@ -202,6 +237,12 @@ export function AppointmentForm({
           </select>
         </Field>
       </div>
+
+      {/* COMPLIANCE (SPEC §5): factual coverage statement only — no pricing
+          promises or outcome claims. */}
+      {showCoverageNote ? (
+        <p className="text-muted -mt-2 text-sm">{t("selfPayNote")}</p>
+      ) : null}
 
       <Field
         id="timeWindow"

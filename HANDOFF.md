@@ -49,8 +49,11 @@ self-hosted on EC2 (Docker + Nginx).
   vendors, governing law).
 - Confirm the practice name: site/logo say "Sanos Medical **Group**", Google
   profile says "Sanos Medical **Center**".
-- Provision Supabase + Google Sheet + EC2; set real `.env` values (all keys in
-  `.env.example`). Set `NEXT_PUBLIC_SITE_URL` to the prod domain (SEO depends on it).
+- ✅ **Live in production** — deployed and running on a self-hosted AWS EC2
+  instance (`52.22.30.154`) via `docker compose` behind Nginx, with **Supabase
+  lead capture and the Google Sheet sink both provisioned and live** (real `.env`
+  values set on the host). Redeploy with `git pull && docker compose up -d --build`.
+- Set `NEXT_PUBLIC_SITE_URL` to the prod domain if not already (SEO depends on it).
 - Replace remaining placeholders: provider data, insurances, testimonials,
   "board-certified" trust claim.
 - Optional/hardening: Resend email notification (commented hook in the API route),
