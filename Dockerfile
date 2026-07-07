@@ -2,19 +2,22 @@
 # Produces a small runtime image that serves the app on :3000. Put Nginx in
 # front for TLS / routing (see deploy/nginx.conf, docker-compose.yml).
 
-FROM node:20-alpine AS deps
+FROM node:22-alpine AS deps
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+# Use `npm install` rather than `npm ci`: styled-jsx declares an optional peer
+# `@swc/helpers >=0.5.17` while next pins exactly 0.5.15, which older npm
+# resolves strictly and fails `npm ci` on. install resolves this leniently.
+RUN npm install --no-audit --no-fund
 
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 RUN npm run build
 
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
