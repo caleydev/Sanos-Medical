@@ -24,6 +24,9 @@ export async function SiteFooter() {
     getTranslations("nav"),
     getTranslations("pages.legal"),
   ]);
+  // External patient portal (Healthie etc.) — link out, not a locale route.
+  const portalUrl =
+    process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.example.com";
 
   return (
     <footer className="border-border bg-surface mt-auto border-t">
@@ -68,6 +71,16 @@ export async function SiteFooter() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href={portalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink hover:text-cta inline-flex transition hover:translate-x-0.5"
+              >
+                {tNav("portal")}
+              </a>
+            </li>
           </ul>
         </nav>
 

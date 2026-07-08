@@ -15,12 +15,16 @@ export function MobileNav({
   navLabel,
   openLabel,
   closeLabel,
+  portalHref,
+  portalLabel,
 }: {
   links: NavLink[];
   ctaLabel: string;
   navLabel: string;
   openLabel: string;
   closeLabel: string;
+  portalHref: string;
+  portalLabel: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -61,6 +65,15 @@ export function MobileNav({
               ))}
             </ul>
           </nav>
+          <a
+            href={portalHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
+            className="text-ink hover:bg-surface mt-1 block rounded-xl px-4 py-3 text-sm font-semibold transition"
+          >
+            {portalLabel}
+          </a>
           <Link
             href="/get-started"
             onClick={() => setIsOpen(false)}

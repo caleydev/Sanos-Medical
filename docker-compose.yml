@@ -6,7 +6,15 @@
 
 services:
   app:
-    build: .
+    build:
+      context: .
+      # NEXT_PUBLIC_* must be baked in at build time. Compose interpolates these
+      # ${...} from the host .env; env_file below only covers runtime vars.
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-http://localhost:3000}
+        NEXT_PUBLIC_PORTAL_URL: ${NEXT_PUBLIC_PORTAL_URL:-https://portal.example.com}
+        NEXT_PUBLIC_SUPABASE_URL: ${NEXT_PUBLIC_SUPABASE_URL:-}
+        NEXT_PUBLIC_SUPABASE_ANON_KEY: ${NEXT_PUBLIC_SUPABASE_ANON_KEY:-}
     restart: unless-stopped
     env_file: .env
     environment:

@@ -22,6 +22,9 @@ export async function SiteHeader() {
     href: link.href,
     label: t(link.key),
   }));
+  // External patient portal (Healthie etc.) — link out, not a locale route.
+  const portalUrl =
+    process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.example.com";
 
   return (
     <header className="border-border bg-background/90 sticky top-0 z-40 border-b shadow-[0_10px_30px_rgb(28_44_89_/_0.04)] backdrop-blur-xl">
@@ -84,6 +87,14 @@ export async function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a
+            href={portalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-ink hover:text-cta hidden text-sm font-medium transition md:inline-flex"
+          >
+            {t("portal")}
+          </a>
           <LanguageToggle />
           <Link
             href="/get-started"
@@ -97,6 +108,8 @@ export async function SiteHeader() {
             navLabel={t("primaryLabel")}
             openLabel={t("openMenu")}
             closeLabel={t("closeMenu")}
+            portalHref={portalUrl}
+            portalLabel={t("portal")}
           />
         </div>
       </div>
