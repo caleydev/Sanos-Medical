@@ -9,10 +9,14 @@ import { z } from "zod";
  * `timeWindow` is a short scheduling note only. Do not add medical fields here.
  */
 export const CONTACT_METHODS = ["email", "phone", "text"] as const;
+// COMPLIANCE (SPEC §5): PHI-safe, non-medical category labels only. "recoveryRegen"
+// is a service-category label (like "weightManagement") for the recovery & regen
+// funnel — it carries no symptom, diagnosis, or clinical detail.
 export const REASONS = [
   "newPatient",
   "annualPhysical",
   "weightManagement",
+  "recoveryRegen",
   "labWork",
   "costInsurance",
   "other",

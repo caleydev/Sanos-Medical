@@ -157,6 +157,7 @@
         "newPatient": "Paciente nuevo",
         "annualPhysical": "Examen físico anual",
         "weightManagement": "Control de peso",
+        "recoveryRegen": "Cuidado de recuperación y medicina regenerativa",
         "labWork": "Análisis de laboratorio",
         "costInsurance": "Pregunta sobre costo / seguro",
         "other": "Otro"
@@ -394,10 +395,10 @@
   "getStarted": {
     "eyebrow": "Comenzar",
     "title": "Atención primaria en Miami y en toda la Florida. Solicite su cita.",
-    "subtitle": "Atención primaria, análisis de laboratorio, control de peso y terapia con GLP-1 bajo supervisión médica. Solicite una cita y nuestro equipo se comunica para confirmar.",
+    "subtitle": "Medicina familiar y atención primaria, análisis de laboratorio y medicina general, con el manejo del dolor próximamente. Solicite una cita y nuestro equipo se comunica para confirmar.",
     "trustBullets": [
       "Visitas presenciales en Miami o visitas virtuales en toda la Florida",
-      "Atención primaria, laboratorio y control de peso en un mismo lugar",
+      "Medicina familiar, atención primaria y laboratorio en un mismo lugar",
       "Nuestro equipo se comunica para confirmar su cita"
     ],
     "founder": {
@@ -411,9 +412,77 @@
     "insuranceHeading": "Seguro y pago propio",
     "insuranceBody": "Aceptamos muchos planes principales y ofrecemos pago propio (self-pay). Pídanos verificar su cobertura antes de su visita.",
     "servicesHeading": "Lo que ofrecemos",
+    "openingSoon": "Próximamente",
     "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
+    "crossLink": "¿Busca cuidado de recuperación y medicina regenerativa?",
+    "tiles": {
+      "familyMedicine": {
+        "title": "Medicina familiar y atención primaria",
+        "summary": "Su equipo de atención para el día a día: exámenes físicos anuales, atención preventiva y manejo de enfermedades crónicas.",
+        "imageAlt": "Profesional clínico con uniforme azul que representa la medicina familiar y la atención primaria"
+      },
+      "labs": {
+        "title": "Análisis de laboratorio",
+        "summary": "Paneles de diagnóstico y pruebas preventivas con una cómoda toma de muestras en el consultorio.",
+        "imageAlt": "Materiales de laboratorio que representan análisis de sangre y servicios de laboratorio"
+      },
+      "medicine": {
+        "title": "Medicina general",
+        "summary": "Evaluación y atención de problemas de salud comunes que no son de emergencia, con la orientación de un proveedor con licencia."
+      },
+      "painManagement": {
+        "title": "Manejo del dolor",
+        "summary": "Evaluación y atención del dolor persistente dirigidas por un proveedor. Este servicio estará disponible próximamente."
+      }
+    },
     "seoTitle": "Solicitar una cita en Miami",
-    "seoDescription": "Solicite una cita con Sanos Medical Group: atención primaria, análisis de laboratorio y control de peso bajo supervisión médica, en Miami o por visita virtual en toda la Florida. Nos comunicamos para confirmar."
+    "seoDescription": "Solicite una cita con Sanos Medical Group: medicina familiar, atención primaria, análisis de laboratorio y medicina general, en Miami o por visita virtual en toda la Florida. Nos comunicamos para confirmar."
+  },
+  "getStartedRegen": {
+    "eyebrow": "Cuidado de recuperación y regenerativo",
+    "title": "Cuidado de recuperación y medicina regenerativa en Miami. Solicite una evaluación con un proveedor.",
+    "subtitle": "Terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y péptidos de rendimiento, cada uno evaluado y recetado por un proveedor con licencia únicamente cuando es clínicamente apropiado. Solicite una cita y nuestro equipo se comunica para confirmar.",
+    "heroDisclaimer": "Las terapias con receta se proporcionan solo después de una evaluación de un proveedor con licencia. Los resultados individuales varían. No constituye consejo médico.",
+    "trustBullets": [
+      "Cada terapia es evaluada y recetada por un proveedor con licencia",
+      "Visitas presenciales en Miami o visitas virtuales en toda la Florida",
+      "Nada se dispensa sin una evaluación clínica"
+    ],
+    "founder": {
+      "name": "Barbara Patino",
+      "role": "Gerente de oficina, Sanos Medical Group",
+      "email": "officemanager@sanosmedical.com",
+      "emailNote": "Solo preguntas sobre citas; no envíe detalles médicos por correo electrónico."
+    },
+    "formHeading": "Solicitar una evaluación",
+    "formSubhead": "Solo para programar.",
+    "insuranceHeading": "Seguro y pago propio",
+    "insuranceBody": "Muchos de los servicios de recuperación y medicina regenerativa son de pago propio (self-pay). Pregúntenos sobre las opciones de cobertura y de pago propio antes de su visita.",
+    "servicesHeading": "Lo que evaluamos",
+    "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
+    "crossLink": "¿Busca atención primaria?",
+    "tiles": {
+      "growthHormones": {
+        "title": "Terapia con hormona de crecimiento",
+        "summary": "Terapia hormonal con receta que se considera únicamente después de una evaluación clínica y los análisis de laboratorio correspondientes, cuando un proveedor con licencia determina que es apropiada para usted."
+      },
+      "regen": {
+        "title": "Medicina regenerativa",
+        "summary": "Opciones de tratamiento regenerativo que un proveedor con licencia puede conversar y ofrecer cuando sea clínicamente apropiado para su caso individual."
+      },
+      "endurance": {
+        "title": "Apoyo para la resistencia",
+        "summary": "Una evaluación dirigida por un proveedor de los factores que afectan la resistencia y la recuperación, con cualquier tratamiento basado en una evaluación clínica."
+      },
+      "peptides": {
+        "title": "Péptidos de rendimiento",
+        "summary": "Terapias con péptidos que se recetan únicamente después de una evaluación del proveedor, cuando sea clínicamente apropiado para usted."
+      }
+    },
+    "disclaimer": "Esta información tiene únicamente fines educativos generales y no constituye un consejo médico, y no promete ningún resultado específico. Se trata de terapias con receta que se proporcionan solo después de una evaluación realizada por un proveedor con licencia que determina si un tratamiento es apropiado para usted. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
+    "regulatoryNote": "Esta página no afirma ni da a entender la aprobación por la FDA de ninguna terapia específica. [TODO — la práctica debe confirmar:] cuando una terapia sea compuesta (compounded), el texto debe indicar que es compuesta y que no está aprobada por la FDA; la práctica proporcionará estos detalles antes de cualquier tratamiento.",
+    "seoTitle": "Cuidado de recuperación y medicina regenerativa en Miami",
+    "seoDescription": "Cuidado de recuperación y medicina regenerativa en Miami y por visita virtual en toda la Florida: terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y péptidos de rendimiento, cada uno evaluado y recetado por un proveedor con licencia. Solicite una evaluación."
   },
   "common": {
     "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",

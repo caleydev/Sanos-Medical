@@ -157,6 +157,7 @@
         "newPatient": "New patient",
         "annualPhysical": "Annual physical",
         "weightManagement": "Weight management",
+        "recoveryRegen": "Recovery & regenerative care",
         "labWork": "Lab work",
         "costInsurance": "Cost / insurance question",
         "other": "Other"
@@ -394,10 +395,10 @@
   "getStarted": {
     "eyebrow": "Get started",
     "title": "Primary care in Miami and across Florida. Request your appointment.",
-    "subtitle": "Primary care, lab work, weight management, and medically supervised GLP-1 therapy. Request a visit and our team follows up to confirm.",
+    "subtitle": "Family medicine and primary care, lab work, and general medicine — with pain management opening soon. Request a visit and our team follows up to confirm.",
     "trustBullets": [
       "In-person visits in Miami or virtual visits across Florida",
-      "Primary care, labs, and weight management in one place",
+      "Family medicine, primary care, and labs in one place",
       "Our team follows up to confirm your visit"
     ],
     "founder": {
@@ -411,9 +412,77 @@
     "insuranceHeading": "Insurance & self-pay",
     "insuranceBody": "We accept many major plans and offer self-pay. Ask us to verify your coverage before your visit.",
     "servicesHeading": "What we offer",
+    "openingSoon": "Opening soon",
     "callPrompt": "Prefer to talk to someone? Call us at",
+    "crossLink": "Looking for recovery & regenerative care?",
+    "tiles": {
+      "familyMedicine": {
+        "title": "Family Medicine & Primary Care",
+        "summary": "Your everyday care team for annual physicals, preventive care, and managing ongoing conditions.",
+        "imageAlt": "Clinician in blue scrubs representing family medicine and primary care"
+      },
+      "labs": {
+        "title": "Lab Work",
+        "summary": "Diagnostic panels and preventive screenings with convenient in-office collection.",
+        "imageAlt": "Lab testing supplies representing blood testing and laboratory services"
+      },
+      "medicine": {
+        "title": "General Medicine",
+        "summary": "Evaluation and care for common, non-emergency health concerns, guided by a licensed provider."
+      },
+      "painManagement": {
+        "title": "Pain Management",
+        "summary": "Provider-led evaluation and care for ongoing pain. This service is opening soon."
+      }
+    },
     "seoTitle": "Request an Appointment in Miami",
-    "seoDescription": "Request an appointment with Sanos Medical Group: primary care, lab work, and medically supervised weight management, in Miami or by virtual visit across Florida. We follow up to confirm."
+    "seoDescription": "Request an appointment with Sanos Medical Group: family medicine, primary care, lab work, and general medicine, in Miami or by virtual visit across Florida. We follow up to confirm."
+  },
+  "getStartedRegen": {
+    "eyebrow": "Recovery & regenerative care",
+    "title": "Recovery and regenerative care in Miami. Request a provider evaluation.",
+    "subtitle": "Growth hormone therapy, regenerative medicine, endurance support, and peptide therapy — each evaluated and prescribed by a licensed provider only when clinically appropriate. Request a visit and our team follows up to confirm.",
+    "heroDisclaimer": "Prescription therapies provided only after a licensed-provider evaluation. Individual results vary. Not medical advice.",
+    "trustBullets": [
+      "Every therapy is evaluated and prescribed by a licensed provider",
+      "In-person visits in Miami or virtual visits across Florida",
+      "Nothing is dispensed without a clinical evaluation"
+    ],
+    "founder": {
+      "name": "Barbara Patino",
+      "role": "Office Manager, Sanos Medical Group",
+      "email": "officemanager@sanosmedical.com",
+      "emailNote": "Scheduling questions only. Please do not email medical details."
+    },
+    "formHeading": "Request an evaluation",
+    "formSubhead": "Scheduling only.",
+    "insuranceHeading": "Insurance & self-pay",
+    "insuranceBody": "Many recovery and regenerative services are self-pay. Ask us about coverage and self-pay options before your visit.",
+    "servicesHeading": "What we evaluate",
+    "callPrompt": "Prefer to talk to someone? Call us at",
+    "crossLink": "Looking for primary care?",
+    "tiles": {
+      "growthHormones": {
+        "title": "Growth Hormone Therapy",
+        "summary": "Prescription hormone therapy offered only for specific medical conditions diagnosed by a licensed provider after clinical evaluation and lab work. It is not offered for anti-aging, athletic or endurance performance, bodybuilding, or general wellness."
+      },
+      "regen": {
+        "title": "Regenerative Medicine",
+        "summary": "Regenerative treatment options a licensed provider may discuss and offer when clinically appropriate for your individual situation."
+      },
+      "endurance": {
+        "title": "Fatigue & Recovery Evaluation",
+        "summary": "A provider-led evaluation of medical factors that can contribute to fatigue, with any treatment based on that clinical assessment."
+      },
+      "peptides": {
+        "title": "Peptide Therapy",
+        "summary": "Peptide therapies prescribed only after a provider evaluation, when clinically appropriate for you."
+      }
+    },
+    "disclaimer": "This information is for general educational purposes only and is not medical advice, and it does not promise any specific result. These are prescription therapies provided only after an evaluation by a licensed provider who determines whether a treatment is appropriate for you. Individual results vary. In an emergency, call 911 or go to the nearest emergency room.",
+    "regulatoryNote": "Certain therapies offered here — including compounded peptide and regenerative preparations — are compounded and are not approved by the U.S. Food and Drug Administration. The FDA does not review compounded products for safety or effectiveness. Your provider will explain the regulatory status of any therapy before it is prescribed.",
+    "seoTitle": "Recovery & Regenerative Care in Miami",
+    "seoDescription": "Recovery and regenerative care in Miami and by virtual visit across Florida: growth hormone therapy, regenerative medicine, endurance support, and peptide therapy — each evaluated and prescribed by a licensed provider. Request an evaluation."
   },
   "common": {
     "underConstruction": "This page is being prepared. Content is coming soon.",

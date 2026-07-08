@@ -44,6 +44,22 @@ practice-approved information before launch. Search the codebase for `TODO` and
       compounded (vial/syringe), swap the image.
 - [ ] Weight-management program specifics (eligibility framing only — no
       outcome promises)
+- [ ] **LAUNCH GATE (Recovery & Regen funnel — `/get-started/recovery-regen`):**
+      requires written sign-off from BOTH a licensed provider AND a healthcare
+      attorney BEFORE this funnel goes live. Growth hormones, regenerative
+      medicine, endurance, and performance peptides are among the most
+      FTC/FDA-enforced categories in medical advertising. Confirm every offering
+      is genuinely available and clinically supervised. Copy in the
+      `getStartedRegen` namespace (both locales) is deliberately brand-agnostic
+      and provider-evaluation framed — NO efficacy/outcome promises, no
+      anti-aging/peak-performance hype, no before/after, and NO stated or implied
+      FDA approval. Where any therapy is compounded, `getStartedRegen.regulatoryNote`
+      (both locales) must be updated from its neutral placeholder to state
+      explicitly that it is a compounded drug and **not FDA-approved** (FTC/FDA
+      treat silence as a deceptive omission). Peptides in particular: confirm
+      legal status of each specific peptide before naming or offering it. Do NOT
+      link this funnel from the global header/footer/CTA until this gate clears
+      (currently reachable only via a subtle cross-link from `/get-started`).
 
 ## Home page
 

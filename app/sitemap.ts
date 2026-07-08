@@ -7,6 +7,10 @@ import { routing } from "@/i18n/routing";
 const PATHS = [
   "",
   "/get-started",
+  // "/get-started/recovery-regen" is intentionally omitted: the Recovery & Regen
+  // funnel must stay non-crawlable while its LAUNCH GATE is pending (see
+  // content/TODO.md). Re-add this path as part of the launch-gate checklist once
+  // licensed-provider + healthcare-attorney sign-off clears.
   "/about",
   "/services",
   "/services/primary-care",
