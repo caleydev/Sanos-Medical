@@ -34,11 +34,27 @@ export default async function PrivacyPage({
     getTranslations("legal.privacy"),
   ]);
 
+  // COMPLIANCE: the practice supplied this as its final, approved Privacy Policy
+  // & Notice of Privacy Practices (with its own effective date), so the generic
+  // "placeholder — review by counsel" banner is suppressed for this page only.
+  // Note: this document blends the website Privacy Policy with HIPAA NPP content;
+  // the separate /legal/hipaa-notice route remains a placeholder. The Spanish
+  // rendering is a faithful translation pending native legal review (content/TODO.md).
   return (
     <LegalLayout
       title={tPages("privacy.title")}
       intro={t("intro")}
-      sections={t.raw("sections") as { heading: string; body: string }[]}
+      sections={
+        t.raw("sections") as {
+          heading: string;
+          body?: string;
+          bullets?: string[];
+          note?: string;
+        }[]
+      }
+      closing={t("closing")}
+      lastUpdated={t("effectiveDate")}
+      showReviewNotice={false}
     />
   );
 }

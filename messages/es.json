@@ -519,37 +519,109 @@
     "lastUpdatedLabel": "Última actualización",
     "lastUpdated": "[Fecha — POR DEFINIR]",
     "privacy": {
-      "intro": "Esta Política de privacidad explica cómo Sanos Medical Group (\"nosotros\") recopila y utiliza la información a través de este sitio web. Se aplica únicamente a este sitio web y es independiente de nuestro Aviso de prácticas de privacidad de HIPAA, que rige la información médica protegida.",
+      "effectiveDate": "19 de mayo de 2026",
+      "intro": "En Sanos Medical Group, nos comprometemos a proteger la privacidad y la seguridad de su información personal y de salud, en cumplimiento de la Ley de Portabilidad y Responsabilidad de Seguros de Salud (\"HIPAA\"), la ley de Florida y otras regulaciones federales y estatales aplicables.\n\nEsta Política de privacidad y Aviso de prácticas de privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web, se comunica con nuestra oficina o recibe servicios relacionados con la atención médica.",
       "sections": [
         {
           "heading": "Información que recopilamos",
-          "body": "Cuando envía el formulario de solicitud de cita, recopilamos la información de contacto que usted proporciona: su nombre, correo electrónico, teléfono, método de contacto preferido, horario preferido y un motivo no médico para su visita. Por favor, no envíe detalles médicos a través de este sitio web."
+          "body": "Podemos recopilar la siguiente información:"
         },
         {
-          "heading": "Cómo usamos la información",
-          "body": "Usamos esta información únicamente para responder a su solicitud, programar y confirmar citas, y comunicarnos con usted sobre su consulta."
+          "heading": "Información personal",
+          "bullets": [
+            "Nombre",
+            "Fecha de nacimiento",
+            "Dirección",
+            "Número de teléfono",
+            "Correo electrónico",
+            "Información del seguro"
+          ]
         },
         {
-          "heading": "Cómo se almacena y comparte la información",
-          "body": "Las solicitudes se almacenan en nuestra base de datos segura y pueden compartirse con nuestro equipo de programación y con los proveedores de servicios que nos ayudan a operar este sitio web (por ejemplo, nuestros proveedores de alojamiento, base de datos y hojas de cálculo). No vendemos su información personal. [Confirmar proveedores — POR DEFINIR.]"
+          "heading": "Información de salud",
+          "bullets": [
+            "Historial médico",
+            "Información de citas",
+            "Registros de tratamiento",
+            "Información de recetas",
+            "Otra información médica protegida (\"PHI\")"
+          ]
         },
         {
-          "heading": "Cookies y análisis",
-          "body": "Este sitio web no utiliza cookies de análisis ni de publicidad. El mapa de nuestra página de contacto se carga desde Google Maps, que puede establecer cookies de Google al cargarse la página. Consulte la política de privacidad de Google para más detalles. Si en el futuro se agregan análisis u otras cookies no esenciales, solicitaremos su consentimiento primero. [Confirmar el alcance con el asesor legal — POR DEFINIR.]"
+          "heading": "Información de uso del sitio web",
+          "body": "Al visitar nuestro sitio web, podemos recopilar automáticamente:",
+          "bullets": [
+            "Dirección IP",
+            "Tipo de navegador",
+            "Información del dispositivo",
+            "Páginas visitadas",
+            "Cookies y datos de análisis"
+          ]
         },
         {
-          "heading": "Sus opciones",
-          "body": "Puede comunicarse con nosotros para consultar, actualizar o solicitar la eliminación de la información que envió, sujeto a la ley aplicable y a nuestras obligaciones de conservación de registros."
+          "heading": "Cómo usamos su información",
+          "body": "Podemos usar su información para:",
+          "bullets": [
+            "Brindar tratamiento médico y servicios de atención médica",
+            "Programación de citas y recordatorios",
+            "Verificación del seguro y facturación",
+            "Operaciones de atención médica y mejora de la calidad",
+            "Cumplimiento de obligaciones legales y regulatorias",
+            "Administración y seguridad del sitio web"
+          ],
+          "note": "No venderemos ni divulgaremos indebidamente su información médica protegida."
         },
         {
-          "heading": "Privacidad de los menores",
-          "body": "Este sitio web no está dirigido a niños menores de 13 años y no recopilamos a sabiendas información de niños menores de 13 años a través de él. Si solicita una cita para un menor, la solicitud debe hacerla el padre, la madre o el tutor."
+          "heading": "Divulgación de la información",
+          "body": "Podemos divulgar su información:",
+          "bullets": [
+            "A los proveedores de atención médica que participan en su cuidado",
+            "A las compañías de seguros con fines de pago",
+            "A proveedores o prestadores de servicios que actúan en nuestro nombre bajo acuerdos conformes con HIPAA",
+            "Cuando lo exija la ley, una orden judicial o los requisitos de notificación de salud pública"
+          ],
+          "note": "Todas las divulgaciones se realizan de acuerdo con las leyes de privacidad aplicables y las regulaciones de HIPAA."
         },
         {
-          "heading": "Cambios y contacto",
-          "body": "Podemos actualizar esta política periódicamente. Si tiene preguntas, comuníquese con nosotros en [contacto — POR DEFINIR]."
+          "heading": "Sus derechos",
+          "body": "Usted tiene derecho a:",
+          "bullets": [
+            "Solicitar acceso a sus registros médicos",
+            "Solicitar correcciones de información inexacta",
+            "Solicitar restricciones sobre ciertos usos o divulgaciones",
+            "Solicitar comunicaciones confidenciales",
+            "Recibir un informe de las divulgaciones",
+            "Obtener una copia de este Aviso"
+          ],
+          "note": "Las solicitudes deben presentarse por escrito a nuestro Oficial de Privacidad."
+        },
+        {
+          "heading": "Seguridad del sitio web",
+          "body": "Implementamos salvaguardas administrativas, técnicas y físicas razonables para proteger su información. Sin embargo, ningún sistema de transmisión o almacenamiento electrónico puede garantizarse como 100 % seguro.\n\nEvite enviar información médica sensible a través de correo electrónico o formularios de contacto del sitio web no seguros, a menos que nuestra oficina se lo indique específicamente."
+        },
+        {
+          "heading": "Cookies y tecnologías de seguimiento",
+          "body": "Nuestro sitio web puede utilizar cookies, herramientas de análisis y tecnologías relacionadas para mejorar la funcionalidad, la experiencia del usuario y el rendimiento del sitio web.\n\nPuede desactivar las cookies mediante la configuración de su navegador; sin embargo, es posible que algunas funciones del sitio web no funcionen correctamente."
+        },
+        {
+          "heading": "Enlaces a terceros",
+          "body": "Nuestro sitio web puede contener enlaces a sitios web o plataformas de terceros, incluidos portales de pacientes, sistemas de telesalud, procesadores de pagos o plataformas de redes sociales. No somos responsables de las prácticas de privacidad de los sitios web de terceros."
+        },
+        {
+          "heading": "Notificación de violación de datos",
+          "body": "En caso de una violación que involucre información médica protegida no asegurada, se notificará a las personas afectadas de acuerdo con HIPAA, la ley de Florida y los requisitos federales aplicables de notificación de violaciones."
+        },
+        {
+          "heading": "Cambios a esta política",
+          "body": "Nos reservamos el derecho de modificar esta Política de privacidad y Aviso de prácticas de privacidad en cualquier momento. Las versiones actualizadas se publicarán en este sitio web con una fecha de entrada en vigor revisada."
+        },
+        {
+          "heading": "Información de contacto",
+          "body": "Si tiene preguntas sobre esta Política de privacidad o sus derechos de privacidad, comuníquese con:\n\nOficial de Privacidad\nSanos Medical Group\n14024 SW 8th St Unit # B-1, Miami, FL 33184\n(786) 292-1402\ninfo@sanosmedical.com",
+          "note": "También puede presentar una queja ante la Oficina de Derechos Civiles del Departamento de Salud y Servicios Humanos de EE. UU., sin temor a represalias."
         }
-      ]
+      ],
+      "closing": "Este aviso se proporciona de conformidad con la Ley de Portabilidad y Responsabilidad de Seguros de Salud (HIPAA) y las leyes de privacidad aplicables de Florida."
     },
     "hipaa": {
       "intro": "ESTE AVISO DESCRIBE CÓMO PUEDE USARSE Y DIVULGARSE LA INFORMACIÓN MÉDICA SOBRE USTED Y CÓMO PUEDE ACCEDER A ESTA INFORMACIÓN. POR FAVOR, REVÍSELO CON ATENCIÓN. [Provisional — debe completarse y ser revisado por un asesor legal.]",

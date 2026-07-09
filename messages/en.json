@@ -519,37 +519,109 @@
     "lastUpdatedLabel": "Last updated",
     "lastUpdated": "[Date — TODO]",
     "privacy": {
-      "intro": "This Privacy Policy explains how Sanos Medical Group (\"we\", \"us\") collects and uses information through this website. It applies to this website only and is separate from our HIPAA Notice of Privacy Practices, which governs protected health information.",
+      "effectiveDate": "May 19, 2026",
+      "intro": "At Sanos Medical Group, we are committed to protecting the privacy and security of your personal and health information in compliance with the Health Insurance Portability and Accountability Act (\"HIPAA\"), Florida law, and other applicable federal and state regulations.\n\nThis Privacy Policy and Notice of Privacy Practices explains how we collect, use, disclose, and safeguard your information when you visit our website, communicate with our office, or receive healthcare-related services.",
       "sections": [
         {
           "heading": "Information we collect",
-          "body": "When you submit the appointment-request form, we collect the contact information you provide: your name, email, phone, preferred contact method, preferred time window, and a non-medical reason for your visit. Please do not submit medical details through this website."
+          "body": "We may collect the following information:"
         },
         {
-          "heading": "How we use information",
-          "body": "We use this information only to respond to your request, schedule and confirm appointments, and contact you about your inquiry."
+          "heading": "Personal information",
+          "bullets": [
+            "Name",
+            "Date of birth",
+            "Address",
+            "Telephone number",
+            "Email address",
+            "Insurance information"
+          ]
         },
         {
-          "heading": "How information is stored and shared",
-          "body": "Submissions are stored in our secure database and may be shared with our scheduling team and the service providers that help us operate this website (for example, our hosting, database, and spreadsheet providers). We do not sell your personal information. [Confirm vendors — TODO.]"
+          "heading": "Health information",
+          "bullets": [
+            "Medical history",
+            "Appointment information",
+            "Treatment records",
+            "Prescription information",
+            "Other protected health information (\"PHI\")"
+          ]
         },
         {
-          "heading": "Cookies and analytics",
-          "body": "This website does not use analytics or advertising cookies. The map on our contact page is loaded from Google Maps, which may set Google cookies when the page loads. See Google's privacy policy for details. If analytics or other non-essential cookies are ever added, we will request your consent first. [Confirm scope with counsel — TODO.]"
+          "heading": "Website usage information",
+          "body": "When visiting our website, we may automatically collect:",
+          "bullets": [
+            "IP address",
+            "Browser type",
+            "Device information",
+            "Pages visited",
+            "Cookies and analytics data"
+          ]
         },
         {
-          "heading": "Your choices",
-          "body": "You may contact us to ask about, update, or request deletion of the information you submitted, subject to applicable law and our record-keeping obligations."
+          "heading": "How we use your information",
+          "body": "We may use your information for:",
+          "bullets": [
+            "Providing medical treatment and healthcare services",
+            "Appointment scheduling and reminders",
+            "Insurance verification and billing",
+            "Healthcare operations and quality improvement",
+            "Compliance with legal and regulatory obligations",
+            "Website administration and security purposes"
+          ],
+          "note": "We will not sell or improperly disclose your protected health information."
         },
         {
-          "heading": "Children's privacy",
-          "body": "This website is not directed to children under 13, and we do not knowingly collect information from children under 13 through it. If you are requesting an appointment for a minor, a parent or guardian should submit the request."
+          "heading": "Disclosure of information",
+          "body": "We may disclose your information:",
+          "bullets": [
+            "To healthcare providers involved in your care",
+            "To insurance companies for payment purposes",
+            "To vendors or service providers performing services on our behalf under HIPAA-compliant agreements",
+            "When required by law, court order, or public health reporting requirements"
+          ],
+          "note": "All disclosures are made in accordance with applicable privacy laws and HIPAA regulations."
         },
         {
-          "heading": "Changes and contact",
-          "body": "We may update this policy from time to time. If you have questions, contact us at [contact — TODO]."
+          "heading": "Your rights",
+          "body": "You have the right to:",
+          "bullets": [
+            "Request access to your medical records",
+            "Request corrections to inaccurate information",
+            "Request restrictions on certain uses or disclosures",
+            "Request confidential communications",
+            "Receive an accounting of disclosures",
+            "Obtain a copy of this Notice"
+          ],
+          "note": "Requests must be submitted in writing to our Privacy Officer."
+        },
+        {
+          "heading": "Website security",
+          "body": "We implement reasonable administrative, technical, and physical safeguards to protect your information. However, no electronic transmission or storage system can be guaranteed 100% secure.\n\nPlease avoid submitting sensitive medical information through unsecured email or website contact forms unless specifically instructed by our office."
+        },
+        {
+          "heading": "Cookies & tracking technologies",
+          "body": "Our website may use cookies, analytics tools, and related technologies to improve functionality, user experience, and website performance.\n\nYou may disable cookies through your browser settings; however, some website features may not function properly."
+        },
+        {
+          "heading": "Third-party links",
+          "body": "Our website may contain links to third-party websites or platforms, including patient portals, telehealth systems, payment processors, or social media platforms. We are not responsible for the privacy practices of third-party websites."
+        },
+        {
+          "heading": "Data breach notification",
+          "body": "In the event of a breach involving unsecured protected health information, affected individuals will be notified in accordance with HIPAA, Florida law, and applicable federal breach notification requirements."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "We reserve the right to modify this Privacy Policy and Notice of Privacy Practices at any time. Updated versions will be posted on this website with a revised effective date."
+        },
+        {
+          "heading": "Contact information",
+          "body": "If you have questions regarding this Privacy Policy or your privacy rights, please contact:\n\nPrivacy Officer\nSanos Medical Group\n14024 SW 8th St Unit # B-1, Miami, FL 33184\n(786) 292-1402\ninfo@sanosmedical.com",
+          "note": "You may also file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights without fear of retaliation."
         }
-      ]
+      ],
+      "closing": "This notice is provided in accordance with the Health Insurance Portability and Accountability Act (HIPAA) and applicable Florida privacy laws."
     },
     "hipaa": {
       "intro": "THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY. [Placeholder — must be completed and reviewed by counsel.]",
