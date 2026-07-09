@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import { SHOW_PORTAL } from "@/lib/features";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -25,6 +26,7 @@ export async function SiteFooter() {
     getTranslations("pages.legal"),
   ]);
   // External patient portal (Healthie etc.) — link out, not a locale route.
+  // Hidden until a real portal exists (SHOW_PORTAL); see lib/features.ts.
   const portalUrl =
     process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.example.com";
 
@@ -71,16 +73,18 @@ export async function SiteFooter() {
                 </Link>
               </li>
             ))}
-            <li>
-              <a
-                href={portalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-ink hover:text-cta inline-flex transition hover:translate-x-0.5"
-              >
-                {tNav("portal")}
-              </a>
-            </li>
+            {SHOW_PORTAL ? (
+              <li>
+                <a
+                  href={portalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink hover:text-cta inline-flex transition hover:translate-x-0.5"
+                >
+                  {tNav("portal")}
+                </a>
+              </li>
+            ) : null}
           </ul>
         </nav>
 

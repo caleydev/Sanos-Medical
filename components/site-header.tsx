@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
 import { NavLinks } from "@/components/nav-links";
+import { SHOW_PORTAL } from "@/lib/features";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -23,8 +24,8 @@ export async function SiteHeader() {
     label: t(link.key),
   }));
   // External patient portal (Healthie etc.) — link out, not a locale route.
-  const portalUrl =
-    process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.example.com";
+  // Hidden until a real portal exists (SHOW_PORTAL); see lib/features.ts.
+  const portalUrl = process.env.NEXT_PUBLIC_PORTAL_URL;
 
   return (
     <header className="border-border bg-background/90 sticky top-0 z-40 border-b shadow-[0_10px_30px_rgb(28_44_89_/_0.04)] backdrop-blur-xl">
@@ -87,14 +88,16 @@ export async function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={portalUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-ink hover:text-cta hidden text-sm font-medium transition md:inline-flex"
-          >
-            {t("portal")}
-          </a>
+          {SHOW_PORTAL ? (
+            <a
+              href={portalUrl ?? "https://portal.example.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-ink hover:text-cta hidden text-sm font-medium transition md:inline-flex"
+            >
+              {t("portal")}
+            </a>
+          ) : null}
           <LanguageToggle />
           <Link
             href="/get-started"
@@ -108,8 +111,12 @@ export async function SiteHeader() {
             navLabel={t("primaryLabel")}
             openLabel={t("openMenu")}
             closeLabel={t("closeMenu")}
-            portalHref={portalUrl}
-            portalLabel={t("portal")}
+            portalHref={
+              SHOW_PORTAL
+                ? (portalUrl ?? "https://portal.example.com")
+                : undefined
+            }
+            portalLabel={SHOW_PORTAL ? t("portal") : undefined}
           />
         </div>
       </div>
