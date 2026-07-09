@@ -428,11 +428,13 @@
       },
       "medicine": {
         "title": "Medicina general",
-        "summary": "Evaluación y atención de problemas de salud comunes que no son de emergencia, con la orientación de un proveedor con licencia."
+        "summary": "Evaluación y atención de problemas de salud comunes que no son de emergencia, con la orientación de un proveedor con licencia.",
+        "imageAlt": "Un estetoscopio y pastillas sobre un fondo azul claro"
       },
       "painManagement": {
         "title": "Manejo del dolor",
-        "summary": "Evaluación y atención del dolor persistente dirigidas por un proveedor. Este servicio estará disponible próximamente."
+        "summary": "Evaluación y atención del dolor persistente dirigidas por un proveedor. Este servicio estará disponible próximamente.",
+        "imageAlt": "Un profesional clínico examinando la espalda baja de una paciente sentada"
       }
     },
     "seoTitle": "Solicitar una cita en Miami",

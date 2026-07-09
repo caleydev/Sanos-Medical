@@ -428,11 +428,13 @@
       },
       "medicine": {
         "title": "General Medicine",
-        "summary": "Evaluation and care for common, non-emergency health concerns, guided by a licensed provider."
+        "summary": "Evaluation and care for common, non-emergency health concerns, guided by a licensed provider.",
+        "imageAlt": "A stethoscope and tablets arranged on a light blue background"
       },
       "painManagement": {
         "title": "Pain Management",
-        "summary": "Provider-led evaluation and care for ongoing pain. This service is opening soon."
+        "summary": "Provider-led evaluation and care for ongoing pain. This service is opening soon.",
+        "imageAlt": "A clinician examining a seated patient's lower back"
       }
     },
     "seoTitle": "Request an Appointment in Miami",
