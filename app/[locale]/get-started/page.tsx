@@ -22,8 +22,8 @@ const PILLARS: {
 }[] = [
   { key: "familyMedicine", icon: HeartPulse, imageSrc: "/images/services/doctorBlue.png" },
   { key: "labs", icon: FlaskConical, imageSrc: "/images/services/labwork.png" },
-  { key: "medicine", icon: Stethoscope },
-  { key: "painManagement", icon: Activity, comingSoon: true },
+  { key: "medicine", icon: Stethoscope, imageSrc: "/images/services/gen-med.png" },
+  { key: "painManagement", icon: Activity, imageSrc: "/images/services/pain-management.jpg", comingSoon: true },
 ];
 
 export async function generateMetadata({
