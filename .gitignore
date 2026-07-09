@@ -10,6 +10,9 @@
 !.yarn/releases
 !.yarn/versions
 
+# TLS certificates + ACME webroot (Let's Encrypt state, host-only)
+/deploy/certbot
+
 # testing
 /coverage
 

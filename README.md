@@ -114,11 +114,32 @@ docker compose up -d --build
   `:3000` as a non-root user.
 - [`docker-compose.yml`](./docker-compose.yml) — `app` + `nginx` services;
   secrets via the host `.env`.
-- [`deploy/nginx.conf`](./deploy/nginx.conf) — reverse proxy on `:80` (sets
-  `X-Forwarded-For`, used for rate limiting).
-- **TLS:** terminate at Nginx (mount certs from certbot) or front the instance
-  with an AWS ALB/ACM cert. Open the EC2 security group for 80/443.
+- [`deploy/nginx.conf`](./deploy/nginx.conf) — reverse proxy: redirects `:80`
+  → `:443`, terminates TLS with the Let's Encrypt cert, sets `X-Forwarded-For`.
 - Updates: `git pull && docker compose up -d --build`.
+
+### Custom domain + TLS (Let's Encrypt via certbot)
+
+The domain (`sanosmedical.com`) points at the Elastic IP with two GoDaddy
+**A** records (`@` and `www` → `52.22.30.154`); the EC2 security group allows
+inbound `80` + `443`. TLS is self-hosted: the `nginx` container terminates it
+using a Let's Encrypt cert issued/renewed by the on-demand `certbot` service
+(HTTP-01 webroot challenge). Certs live under `deploy/certbot/` (gitignored).
+
+First-time issuance, once DNS resolves to the box:
+
+```bash
+# set NEXT_PUBLIC_SITE_URL=https://sanosmedical.com in the host .env first,
+# then obtain the cert (this also (re)builds + starts the stack):
+./deploy/init-tls.sh          # edit EMAIL at the top before running
+```
+
+Auto-renewal — add a host cron entry (certs are valid 90 days):
+
+```cron
+# renew twice daily; reload nginx only if the cert changed
+0 0,12 * * * cd /home/ubuntu/Sanos-Medical && docker compose run --rm certbot renew --quiet && docker compose exec nginx nginx -s reload
+```
 
 ## Project structure
 

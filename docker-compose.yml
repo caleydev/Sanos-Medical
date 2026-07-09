@@ -29,8 +29,18 @@ services:
       - app
     ports:
       - "80:80"
-      # For TLS, terminate here (mount certs) or front with an ALB. See README.
       - "443:443"
     volumes:
       - ./deploy/nginx.conf:/etc/nginx/conf.d/default.conf:ro
-      # - ./deploy/certs:/etc/nginx/certs:ro   # uncomment when adding TLS
+      # Let's Encrypt certs + ACME webroot, shared with the certbot service.
+      - ./deploy/certbot/conf:/etc/letsencrypt:ro
+      - ./deploy/certbot/www:/var/www/certbot:ro
+
+  # On-demand only (excluded from `docker compose up` by its profile). Used by
+  # deploy/init-tls.sh for first issuance and by the renewal cron. See README.
+  certbot:
+    image: certbot/certbot
+    profiles: ["tls"]
+    volumes:
+      - ./deploy/certbot/conf:/etc/letsencrypt
+      - ./deploy/certbot/www:/var/www/certbot
