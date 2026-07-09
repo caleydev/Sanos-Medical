@@ -130,8 +130,10 @@ First-time issuance, once DNS resolves to the box:
 
 ```bash
 # set NEXT_PUBLIC_SITE_URL=https://sanosmedical.com in the host .env first,
-# then obtain the cert (this also (re)builds + starts the stack):
-./deploy/init-tls.sh          # edit EMAIL at the top before running
+# then obtain the cert (this also (re)builds + starts the stack). Safe to
+# re-run; it recreates the bootstrap cert and gates on nginx serving :80:
+CERTBOT_EMAIL="you@example.com" ./deploy/init-tls.sh
+# optional dry run against LE staging first:  STAGING=1 CERTBOT_EMAIL=... ./deploy/init-tls.sh
 ```
 
 Auto-renewal — add a host cron entry (certs are valid 90 days):
