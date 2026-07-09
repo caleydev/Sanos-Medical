@@ -39,6 +39,11 @@ openssl req -x509 -nodes -newkey rsa:2048 -days 1 \
 echo "### Building and starting the stack..."
 docker compose up -d --build
 
+# Reset any crash-loop restart backoff from a previous failed run so nginx
+# retries immediately now that the bootstrap cert is present (otherwise Docker
+# may wait up to ~60s before its next restart attempt).
+docker compose restart nginx
+
 # 3. GATE: wait until nginx actually serves HTTP on :80. Certbot's challenge is
 #    pointless if nginx is crash-looping, so fail fast with logs if it is.
 echo "### Waiting for nginx to serve port 80..."
