@@ -23,8 +23,9 @@ export function MobileNav({
   navLabel: string;
   openLabel: string;
   closeLabel: string;
-  portalHref: string;
-  portalLabel: string;
+  // Omitted while the patient portal is hidden (SHOW_PORTAL); see lib/features.ts.
+  portalHref?: string;
+  portalLabel?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,15 +66,17 @@ export function MobileNav({
               ))}
             </ul>
           </nav>
-          <a
-            href={portalHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="text-ink hover:bg-surface mt-1 block rounded-xl px-4 py-3 text-sm font-semibold transition"
-          >
-            {portalLabel}
-          </a>
+          {portalHref && portalLabel ? (
+            <a
+              href={portalHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+              className="text-ink hover:bg-surface mt-1 block rounded-xl px-4 py-3 text-sm font-semibold transition"
+            >
+              {portalLabel}
+            </a>
+          ) : null}
           <Link
             href="/get-started"
             onClick={() => setIsOpen(false)}
