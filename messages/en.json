@@ -139,6 +139,7 @@
       "timeWindow": "Preferred time window",
       "timeWindowPlaceholder": "e.g. weekday mornings",
       "optional": "optional",
+      "requiredNote": "* Required field",
       "selectPlaceholder": "Please select…",
       "medicalDetailHelp": "Please don't share medical details here. We'll collect those securely at your visit.",
       "phoneHelp": "We'll only use this to schedule your visit.",
@@ -220,11 +221,11 @@
     },
     "forms": {
       "heading": "Patient forms",
-      "body": "Downloadable new-patient forms are coming soon. Until then, there's nothing to prepare — our front desk will have everything ready at your first visit, or call us and we'll gladly walk you through it."
+      "body": "Downloadable new-patient forms are coming soon. Until then, there's nothing to prepare, our front desk will have everything ready at your first visit, or call us and we'll gladly walk you through it."
     },
     "telehealth": {
       "heading": "Telehealth",
-      "body": "Virtual visits are available for patients located in Florida. A telehealth consent applies before your first virtual visit. [Telehealth consent details — TODO: finalize with counsel.]"
+      "body": "Virtual visits are available for patients located in Florida. A telehealth consent applies before your first virtual visit. [Telehealth consent details, TODO: finalize with counsel.]"
     }
   },
   "services": {
@@ -396,7 +397,7 @@
   "getStarted": {
     "eyebrow": "Get started",
     "title": "Primary care in Miami and across Florida. Request your appointment.",
-    "subtitle": "Family medicine and primary care, lab work, and general medicine — with pain management opening soon. Request a visit and our team follows up to confirm.",
+    "subtitle": "Family medicine and primary care, lab work, and general medicine, with pain management opening soon. Request a visit and our team follows up to confirm.",
     "trustBullets": [
       "In-person visits in Miami or virtual visits across Florida",
       "Family medicine, primary care, and labs in one place",
@@ -430,12 +431,12 @@
       "medicine": {
         "title": "General Medicine",
         "summary": "Evaluation and care for common, non-emergency health concerns, guided by a licensed provider.",
-        "imageAlt": "A stethoscope and tablets arranged on a light blue background"
+        "imageAlt": "General medicine visit with a clinician reviewing care with a patient"
       },
       "painManagement": {
         "title": "Pain Management",
         "summary": "Provider-led evaluation and care for ongoing pain. This service is opening soon.",
-        "imageAlt": "A clinician examining a seated patient's lower back"
+        "imageAlt": "Provider-led pain management consultation"
       }
     },
     "seoTitle": "Request an Appointment in Miami",
@@ -443,13 +444,13 @@
   },
   "getStartedRegen": {
     "eyebrow": "Recovery & regenerative care",
-    "title": "Recovery and regenerative care in Miami. Request a provider evaluation.",
-    "subtitle": "Growth hormone therapy, regenerative medicine, endurance support, and peptide therapy — each evaluated and prescribed by a licensed provider only when clinically appropriate. Request a visit and our team follows up to confirm.",
-    "heroDisclaimer": "Prescription therapies provided only after a licensed-provider evaluation. Individual results vary. Not medical advice.",
+    "title": "Recovery and regenerative care in Miami. Start with a provider evaluation.",
+    "subtitle": "Growth hormone therapy, regenerative medicine, endurance support, and peptide therapy. A licensed provider reviews each one with you and prescribes it only when it fits your care. Request a visit and our team follows up to confirm.",
+    "heroDisclaimer": "Prescription therapies are available only after a visit with a licensed provider. Individual results vary. This is not medical advice.",
     "trustBullets": [
-      "Every therapy is evaluated and prescribed by a licensed provider",
-      "In-person visits in Miami or virtual visits across Florida",
-      "Nothing is dispensed without a clinical evaluation"
+      "A licensed provider reviews and prescribes every therapy",
+      "In-person visits in Miami, or virtual visits anywhere in Florida",
+      "Nothing is dispensed until a provider has evaluated you"
     ],
     "founder": {
       "name": "Barbara Patino",
@@ -460,32 +461,36 @@
     "formHeading": "Request an evaluation",
     "formSubhead": "Scheduling only.",
     "insuranceHeading": "Insurance & self-pay",
-    "insuranceBody": "Many recovery and regenerative services are self-pay. Ask us about coverage and self-pay options before your visit.",
+    "insuranceBody": "Many recovery and regenerative services are self-pay. Ask us to walk through your coverage and self-pay options before you come in.",
     "servicesHeading": "What we evaluate",
     "callPrompt": "Prefer to talk to someone? Call us at",
     "crossLink": "Looking for primary care?",
     "tiles": {
       "growthHormones": {
         "title": "Growth Hormone Therapy",
-        "summary": "Prescription hormone therapy offered only for specific medical conditions diagnosed by a licensed provider after clinical evaluation and lab work. It is not offered for anti-aging, athletic or endurance performance, bodybuilding, or general wellness."
+        "summary": "Prescription hormone therapy for specific medical conditions, diagnosed by a licensed provider through an exam and lab work. We do not offer it for anti-aging, athletic or endurance performance, bodybuilding, or general wellness.",
+        "imageAlt": "A gloved hand selecting a clinical vial labeled Sanos Medical Group from a row of vials"
       },
       "regen": {
         "title": "Regenerative Medicine",
-        "summary": "Regenerative treatment options a licensed provider may discuss and offer when clinically appropriate for your individual situation."
+        "summary": "Regenerative treatment options your provider can talk through and offer if they are a good fit for your situation.",
+        "imageAlt": "A flat lay of glass vials, capsules, powders, and yellow flowers on a light blue background"
       },
       "endurance": {
         "title": "Fatigue & Recovery Evaluation",
-        "summary": "A provider-led evaluation of medical factors that can contribute to fatigue, with any treatment based on that clinical assessment."
+        "summary": "A provider looks at the medical factors that can contribute to fatigue, and any treatment follows from that assessment.",
+        "imageAlt": "A tired person resting with a towel around their neck"
       },
       "peptides": {
         "title": "Peptide Therapy",
-        "summary": "Peptide therapies prescribed only after a provider evaluation, when clinically appropriate for you."
+        "summary": "Peptide therapies your provider prescribes only after an evaluation, and only if they make sense for you.",
+        "imageAlt": "Gloved hands drawing medication from a vial into a syringe in a clinical setting"
       }
     },
-    "disclaimer": "This information is for general educational purposes only and is not medical advice, and it does not promise any specific result. These are prescription therapies provided only after an evaluation by a licensed provider who determines whether a treatment is appropriate for you. Individual results vary. In an emergency, call 911 or go to the nearest emergency room.",
-    "regulatoryNote": "Certain therapies offered here — including compounded peptide and regenerative preparations — are compounded and are not approved by the U.S. Food and Drug Administration. The FDA does not review compounded products for safety or effectiveness. Your provider will explain the regulatory status of any therapy before it is prescribed.",
+    "disclaimer": "This page is for general education only. It is not medical advice, and it promises no particular result. These are prescription therapies, available only after a licensed provider examines you and decides whether a treatment is right for you. Individual results vary. In an emergency, call 911 or go to the nearest emergency room.",
+    "regulatoryNote": "Some of the therapies offered here, such as compounded peptide and regenerative preparations, are compounded and are not approved by the U.S. Food and Drug Administration. The FDA does not review compounded products for safety or effectiveness. Your provider will explain the regulatory status of any therapy before prescribing it.",
     "seoTitle": "Recovery & Regenerative Care in Miami",
-    "seoDescription": "Recovery and regenerative care in Miami and by virtual visit across Florida: growth hormone therapy, regenerative medicine, endurance support, and peptide therapy — each evaluated and prescribed by a licensed provider. Request an evaluation."
+    "seoDescription": "Recovery and regenerative care in Miami and by virtual visit across Florida: growth hormone therapy, regenerative medicine, endurance support, and peptide therapy, each reviewed and prescribed by a licensed provider. Request an evaluation."
   },
   "common": {
     "underConstruction": "This page is being prepared. Content is coming soon.",
@@ -518,7 +523,7 @@
     "metaDescription": "{document} for Sanos Medical Group, a primary care practice in Miami, FL.",
     "reviewNotice": "Placeholder content. REVIEW BY LEGAL COUNSEL BEFORE LAUNCH.",
     "lastUpdatedLabel": "Last updated",
-    "lastUpdated": "[Date — TODO]",
+    "lastUpdated": "[Date, TODO]",
     "privacy": {
       "effectiveDate": "May 19, 2026",
       "intro": "At Sanos Medical Group, we are committed to protecting the privacy and security of your personal and health information in compliance with the Health Insurance Portability and Accountability Act (\"HIPAA\"), Florida law, and other applicable federal and state regulations.\n\nThis Privacy Policy and Notice of Privacy Practices explains how we collect, use, disclose, and safeguard your information when you visit our website, communicate with our office, or receive healthcare-related services.",
@@ -625,7 +630,7 @@
       "closing": "This notice is provided in accordance with the Health Insurance Portability and Accountability Act (HIPAA) and applicable Florida privacy laws."
     },
     "hipaa": {
-      "intro": "THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY. [Placeholder — must be completed and reviewed by counsel.]",
+      "intro": "THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY. [Placeholder, must be completed and reviewed by counsel.]",
       "sections": [
         {
           "heading": "Our duties",
@@ -633,11 +638,11 @@
         },
         {
           "heading": "How we may use and disclose your health information",
-          "body": "We may use and disclose your PHI for treatment, payment, and health care operations, and as otherwise permitted or required by law. [Detail — TODO.]"
+          "body": "We may use and disclose your PHI for treatment, payment, and health care operations, and as otherwise permitted or required by law. [Detail, TODO.]"
         },
         {
           "heading": "Your rights",
-          "body": "You have the right to inspect and copy your PHI, request amendments, request restrictions, request confidential communications, receive an accounting of certain disclosures, and obtain a paper copy of this Notice. [Detail — TODO.]"
+          "body": "You have the right to inspect and copy your PHI, request amendments, request restrictions, request confidential communications, receive an accounting of certain disclosures, and obtain a paper copy of this Notice. [Detail, TODO.]"
         },
         {
           "heading": "Complaints",
@@ -645,12 +650,12 @@
         },
         {
           "heading": "Contact and effective date",
-          "body": "For questions or to exercise your rights, contact our Privacy Officer at [contact — TODO]. Effective date: [Date — TODO]."
+          "body": "For questions or to exercise your rights, contact our Privacy Officer at [contact, TODO]. Effective date: [Date, TODO]."
         }
       ]
     },
     "terms": {
-      "intro": "These Terms of Use govern your use of this website. By using the site, you agree to these terms. [Placeholder — review by counsel.]",
+      "intro": "These Terms of Use govern your use of this website. By using the site, you agree to these terms. [Placeholder, review by counsel.]",
       "sections": [
         {
           "heading": "Informational purpose",
@@ -674,11 +679,11 @@
         },
         {
           "heading": "Disclaimers and limitation of liability",
-          "body": "The website is provided \"as is\" without warranties of any kind, to the fullest extent permitted by law. [Detail — TODO.]"
+          "body": "The website is provided \"as is\" without warranties of any kind, to the fullest extent permitted by law. [Detail, TODO.]"
         },
         {
           "heading": "Changes and governing law",
-          "body": "We may update these terms at any time. These terms are governed by the laws of the State of Florida. [Confirm — TODO.]"
+          "body": "We may update these terms at any time. These terms are governed by the laws of the State of Florida. [Confirm, TODO.]"
         }
       ]
     },
@@ -691,11 +696,11 @@
         },
         {
           "heading": "Ongoing effort",
-          "body": "Accessibility is an ongoing effort, and we continue to improve the site. [Confirm audit status before launch — TODO.]"
+          "body": "Accessibility is an ongoing effort, and we continue to improve the site. [Confirm audit status before launch, TODO.]"
         },
         {
           "heading": "Feedback and contact",
-          "body": "If you encounter an accessibility barrier or need assistance, please contact us at [contact — TODO] and we will work to provide the information or service you need."
+          "body": "If you encounter an accessibility barrier or need assistance, please contact us at [contact, TODO] and we will work to provide the information or service you need."
         },
         {
           "heading": "Alternative access",

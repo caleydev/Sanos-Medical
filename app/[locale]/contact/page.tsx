@@ -3,6 +3,7 @@ import { Clock, MapPin, Phone } from "lucide-react";
 import { AppointmentForm } from "@/components/appointment-form";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
+import { CLINIC } from "@/lib/site";
 
 export async function generateMetadata({
   params,
@@ -72,7 +73,7 @@ export default async function ContactPage({
               </h2>
               <p className="mt-3 text-sm">
                 <a
-                  href="tel:+17862921402"
+                  href={`tel:${CLINIC.phoneTel}`}
                   className="text-cta font-medium hover:underline"
                 >
                   {tFooter("phonePlaceholder")}

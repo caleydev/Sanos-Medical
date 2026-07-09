@@ -8,6 +8,8 @@ import {
 import { AppointmentForm } from "@/components/appointment-form";
 import { Disclaimer } from "@/components/disclaimer";
 import { Link } from "@/i18n/navigation";
+import { CLINIC } from "@/lib/site";
+import type { Reason } from "@/lib/appointment-schema";
 
 export type FunnelFounder = {
   name: string;
@@ -53,6 +55,7 @@ export function FunnelLayout({
   crossLink,
   heroDisclaimer,
   disclaimer,
+  defaultReason,
 }: {
   eyebrow: string;
   title: string;
@@ -75,6 +78,9 @@ export function FunnelLayout({
   heroDisclaimer?: string;
   // Optional visible medical disclaimer (COMPLIANCE) rendered under the tiles.
   disclaimer?: React.ReactNode;
+  // Pre-selects the form's "Reason for visit" from this funnel's context so the
+  // lead is tagged by funnel (e.g. "recoveryRegen") without the visitor re-picking.
+  defaultReason?: Reason;
 }) {
   return (
     <main id="main" className="flex-1">
@@ -125,6 +131,7 @@ export function FunnelLayout({
               <AppointmentForm
                 ariaLabelledBy={formHeadingId}
                 showCoverageNote={false}
+                defaultReason={defaultReason}
               />
             </div>
           </div>
@@ -164,7 +171,7 @@ export function FunnelLayout({
             <p className="text-muted mt-8 text-sm">
               {callPrompt}{" "}
               <a
-                href="tel:+17862921402"
+                href={`tel:${CLINIC.phoneTel}`}
                 className="text-cta font-semibold hover:underline"
               >
                 <Phone aria-hidden className="mr-1 inline h-4 w-4 align-[-2px]" />

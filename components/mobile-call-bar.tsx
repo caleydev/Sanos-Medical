@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { CalendarCheck, Phone } from "lucide-react";
-import { Link } from "@/i18n/navigation";
+import { RequestCta } from "@/components/request-cta";
+import { CLINIC } from "@/lib/site";
 
 /**
  * Sticky, mobile-only call / appointment bar (SPEC §5 conversion). Most
@@ -20,19 +21,16 @@ export async function MobileCallBar() {
         className="border-border bg-background/95 fixed inset-x-0 bottom-0 z-40 grid grid-cols-2 gap-2 border-t p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] backdrop-blur md:hidden"
       >
         <a
-          href="tel:+17862921402"
+          href={`tel:${CLINIC.phoneTel}`}
           className="bg-cta text-cta-foreground flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
         >
           <Phone aria-hidden className="h-4 w-4 shrink-0" />
           {t("callNow")}
         </a>
-        <Link
-          href="/get-started"
-          className="bg-primary text-primary-foreground flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold"
-        >
+        <RequestCta className="bg-primary text-primary-foreground flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold">
           <CalendarCheck aria-hidden className="h-4 w-4 shrink-0" />
           {t("requestShort")}
-        </Link>
+        </RequestCta>
       </nav>
     </>
   );

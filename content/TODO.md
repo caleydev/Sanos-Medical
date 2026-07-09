@@ -60,6 +60,13 @@ practice-approved information before launch. Search the codebase for `TODO` and
       legal status of each specific peptide before naming or offering it. Do NOT
       link this funnel from the global header/footer/CTA until this gate clears
       (currently reachable only via a subtle cross-link from `/get-started`).
+      IMAGERY FLAG: the "Fatigue & Recovery Evaluation" tile uses a
+      workout/fitness-context photo (`public/images/services/recovery.jpg`,
+      a tired person on exercise equipment) at the practice's request. This is
+      athletic-recovery imagery next to growth-hormone/peptide offerings and can
+      imply the athletic/endurance-performance use the Growth Hormone copy
+      explicitly disclaims — counsel should confirm or replace it with clinical/
+      consultation imagery before launch.
 
 ## Home page
 

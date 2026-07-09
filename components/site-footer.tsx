@@ -2,6 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { SHOW_PORTAL } from "@/lib/features";
+import { CLINIC } from "@/lib/site";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -49,7 +50,7 @@ export async function SiteFooter() {
             <p className="mt-2">
               {t("phoneLabel")}:{" "}
               <a
-                href="tel:+17862921402"
+                href={`tel:${CLINIC.phoneTel}`}
                 className="text-cta font-medium hover:underline"
               >
                 {t("phonePlaceholder")}

@@ -139,6 +139,7 @@
       "timeWindow": "Horario preferido",
       "timeWindowPlaceholder": "p. ej. mañanas entre semana",
       "optional": "opcional",
+      "requiredNote": "* Campo obligatorio",
       "selectPlaceholder": "Seleccione…",
       "medicalDetailHelp": "Por favor, no comparta detalles médicos aquí. Los recopilaremos de forma segura en su visita.",
       "phoneHelp": "Solo lo usaremos para programar su visita.",
@@ -224,7 +225,7 @@
     },
     "telehealth": {
       "heading": "Telemedicina",
-      "body": "Las visitas virtuales están disponibles para pacientes ubicados en la Florida. Se requiere un consentimiento de telemedicina antes de su primera visita virtual. [Detalles del consentimiento de telemedicina — POR DEFINIR: finalizar con asesoría legal.]"
+      "body": "Las visitas virtuales están disponibles para pacientes ubicados en la Florida. Se requiere un consentimiento de telemedicina antes de su primera visita virtual. [Detalles del consentimiento de telemedicina, POR DEFINIR: finalizar con asesoría legal.]"
     }
   },
   "services": {
@@ -430,12 +431,12 @@
       "medicine": {
         "title": "Medicina general",
         "summary": "Evaluación y atención de problemas de salud comunes que no son de emergencia, con la orientación de un proveedor con licencia.",
-        "imageAlt": "Un estetoscopio y pastillas sobre un fondo azul claro"
+        "imageAlt": "Visita de medicina general con un profesional clínico revisando la atención con un paciente"
       },
       "painManagement": {
         "title": "Manejo del dolor",
         "summary": "Evaluación y atención del dolor persistente dirigidas por un proveedor. Este servicio estará disponible próximamente.",
-        "imageAlt": "Un profesional clínico examinando la espalda baja de una paciente sentada"
+        "imageAlt": "Consulta de manejo del dolor dirigida por un proveedor"
       }
     },
     "seoTitle": "Solicitar una cita en Miami",
@@ -443,13 +444,13 @@
   },
   "getStartedRegen": {
     "eyebrow": "Cuidado de recuperación y regenerativo",
-    "title": "Cuidado de recuperación y medicina regenerativa en Miami. Solicite una evaluación con un proveedor.",
-    "subtitle": "Terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y péptidos de rendimiento, cada uno evaluado y recetado por un proveedor con licencia únicamente cuando es clínicamente apropiado. Solicite una cita y nuestro equipo se comunica para confirmar.",
-    "heroDisclaimer": "Las terapias con receta se proporcionan solo después de una evaluación de un proveedor con licencia. Los resultados individuales varían. No constituye consejo médico.",
+    "title": "Cuidado de recuperación y medicina regenerativa en Miami. Comience con la evaluación de un proveedor.",
+    "subtitle": "Terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y terapia con péptidos. Un proveedor con licencia revisa cada opción con usted y la receta solo cuando encaja en su atención. Solicite una cita y nuestro equipo se comunica para confirmar.",
+    "heroDisclaimer": "Las terapias con receta están disponibles solo después de una consulta con un proveedor con licencia. Los resultados varían según cada persona. Esto no constituye consejo médico.",
     "trustBullets": [
-      "Cada terapia es evaluada y recetada por un proveedor con licencia",
-      "Visitas presenciales en Miami o visitas virtuales en toda la Florida",
-      "Nada se dispensa sin una evaluación clínica"
+      "Un proveedor con licencia revisa y receta cada terapia",
+      "Visitas presenciales en Miami o visitas virtuales en cualquier lugar de la Florida",
+      "No se dispensa nada hasta que un proveedor lo haya evaluado"
     ],
     "founder": {
       "name": "Barbara Patino",
@@ -460,32 +461,36 @@
     "formHeading": "Solicitar una evaluación",
     "formSubhead": "Solo para programar.",
     "insuranceHeading": "Seguro y pago propio",
-    "insuranceBody": "Muchos de los servicios de recuperación y medicina regenerativa son de pago propio (self-pay). Pregúntenos sobre las opciones de cobertura y de pago propio antes de su visita.",
+    "insuranceBody": "Muchos de los servicios de recuperación y medicina regenerativa son de pago propio (self-pay). Pídanos revisar juntos su cobertura y sus opciones de pago propio antes de su visita.",
     "servicesHeading": "Lo que evaluamos",
     "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
     "crossLink": "¿Busca atención primaria?",
     "tiles": {
       "growthHormones": {
         "title": "Terapia con hormona de crecimiento",
-        "summary": "Terapia hormonal con receta que se considera únicamente después de una evaluación clínica y los análisis de laboratorio correspondientes, cuando un proveedor con licencia determina que es apropiada para usted."
+        "summary": "Terapia hormonal con receta para afecciones médicas específicas, diagnosticadas por un proveedor con licencia mediante un examen y análisis de laboratorio. No la ofrecemos con fines antienvejecimiento, de rendimiento atlético o de resistencia, fisicoculturismo ni bienestar general.",
+        "imageAlt": "Una mano con guante seleccionando un vial clínico con la etiqueta de Sanos Medical Group de una fila de viales"
       },
       "regen": {
         "title": "Medicina regenerativa",
-        "summary": "Opciones de tratamiento regenerativo que un proveedor con licencia puede conversar y ofrecer cuando sea clínicamente apropiado para su caso individual."
+        "summary": "Opciones de tratamiento regenerativo que su proveedor puede conversar con usted y ofrecer si resultan adecuadas para su caso.",
+        "imageAlt": "Un arreglo plano de viales de vidrio, cápsulas, polvos y flores amarillas sobre un fondo azul claro"
       },
       "endurance": {
-        "title": "Apoyo para la resistencia",
-        "summary": "Una evaluación dirigida por un proveedor de los factores que afectan la resistencia y la recuperación, con cualquier tratamiento basado en una evaluación clínica."
+        "title": "Evaluación de fatiga y recuperación",
+        "summary": "Un proveedor analiza los factores médicos que pueden contribuir a la fatiga, y cualquier tratamiento parte de esa evaluación.",
+        "imageAlt": "Una persona cansada descansando con una toalla al cuello"
       },
       "peptides": {
-        "title": "Péptidos de rendimiento",
-        "summary": "Terapias con péptidos que se recetan únicamente después de una evaluación del proveedor, cuando sea clínicamente apropiado para usted."
+        "title": "Terapia con péptidos",
+        "summary": "Terapias con péptidos que su proveedor receta solo después de una evaluación, y únicamente si son apropiadas para usted.",
+        "imageAlt": "Manos con guantes preparando un medicamento en una jeringa a partir de un vial en un entorno clínico"
       }
     },
-    "disclaimer": "Esta información tiene únicamente fines educativos generales y no constituye un consejo médico, y no promete ningún resultado específico. Se trata de terapias con receta que se proporcionan solo después de una evaluación realizada por un proveedor con licencia que determina si un tratamiento es apropiado para usted. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
-    "regulatoryNote": "Esta página no afirma ni da a entender la aprobación por la FDA de ninguna terapia específica. [TODO — la práctica debe confirmar:] cuando una terapia sea compuesta (compounded), el texto debe indicar que es compuesta y que no está aprobada por la FDA; la práctica proporcionará estos detalles antes de cualquier tratamiento.",
+    "disclaimer": "Esta página tiene únicamente fines educativos generales. No constituye consejo médico ni promete ningún resultado específico. Se trata de terapias con receta, disponibles solo después de que un proveedor con licencia lo examine y determine si un tratamiento es apropiado para usted. Los resultados varían según cada persona. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
+    "regulatoryNote": "Algunas de las terapias que se ofrecen aquí, como las preparaciones compuestas (compounded) de péptidos y regenerativas, son compuestas y no están aprobadas por la Administración de Alimentos y Medicamentos de los EE. UU. (FDA). La FDA no revisa los productos compuestos en cuanto a su seguridad ni su eficacia. Su proveedor le explicará el estado regulatorio de cualquier terapia antes de recetarla.",
     "seoTitle": "Cuidado de recuperación y medicina regenerativa en Miami",
-    "seoDescription": "Cuidado de recuperación y medicina regenerativa en Miami y por visita virtual en toda la Florida: terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y péptidos de rendimiento, cada uno evaluado y recetado por un proveedor con licencia. Solicite una evaluación."
+    "seoDescription": "Cuidado de recuperación y medicina regenerativa en Miami y por visita virtual en toda la Florida: terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y terapia con péptidos, cada uno revisado y recetado por un proveedor con licencia. Solicite una evaluación."
   },
   "common": {
     "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",
@@ -518,7 +523,7 @@
     "metaDescription": "{document} de Sanos Medical Group, un consultorio de atención primaria en Miami, FL.",
     "reviewNotice": "Contenido provisional. REVISAR POR UN ASESOR LEGAL ANTES DEL LANZAMIENTO.",
     "lastUpdatedLabel": "Última actualización",
-    "lastUpdated": "[Fecha — POR DEFINIR]",
+    "lastUpdated": "[Fecha, POR DEFINIR]",
     "privacy": {
       "effectiveDate": "19 de mayo de 2026",
       "intro": "En Sanos Medical Group, nos comprometemos a proteger la privacidad y la seguridad de su información personal y de salud, en cumplimiento de la Ley de Portabilidad y Responsabilidad de Seguros de Salud (\"HIPAA\"), la ley de Florida y otras regulaciones federales y estatales aplicables.\n\nEsta Política de privacidad y Aviso de prácticas de privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web, se comunica con nuestra oficina o recibe servicios relacionados con la atención médica.",
@@ -625,7 +630,7 @@
       "closing": "Este aviso se proporciona de conformidad con la Ley de Portabilidad y Responsabilidad de Seguros de Salud (HIPAA) y las leyes de privacidad aplicables de Florida."
     },
     "hipaa": {
-      "intro": "ESTE AVISO DESCRIBE CÓMO PUEDE USARSE Y DIVULGARSE LA INFORMACIÓN MÉDICA SOBRE USTED Y CÓMO PUEDE ACCEDER A ESTA INFORMACIÓN. POR FAVOR, REVÍSELO CON ATENCIÓN. [Provisional — debe completarse y ser revisado por un asesor legal.]",
+      "intro": "ESTE AVISO DESCRIBE CÓMO PUEDE USARSE Y DIVULGARSE LA INFORMACIÓN MÉDICA SOBRE USTED Y CÓMO PUEDE ACCEDER A ESTA INFORMACIÓN. POR FAVOR, REVÍSELO CON ATENCIÓN. [Provisional, debe completarse y ser revisado por un asesor legal.]",
       "sections": [
         {
           "heading": "Nuestras obligaciones",
@@ -633,11 +638,11 @@
         },
         {
           "heading": "Cómo podemos usar y divulgar su información médica",
-          "body": "Podemos usar y divulgar su PHI para tratamiento, pago y operaciones de atención médica, y según lo permita o exija la ley. [Detalle — POR DEFINIR.]"
+          "body": "Podemos usar y divulgar su PHI para tratamiento, pago y operaciones de atención médica, y según lo permita o exija la ley. [Detalle, POR DEFINIR.]"
         },
         {
           "heading": "Sus derechos",
-          "body": "Usted tiene derecho a inspeccionar y obtener copias de su PHI, solicitar modificaciones, solicitar restricciones, solicitar comunicaciones confidenciales, recibir un registro de ciertas divulgaciones y obtener una copia impresa de este Aviso. [Detalle — POR DEFINIR.]"
+          "body": "Usted tiene derecho a inspeccionar y obtener copias de su PHI, solicitar modificaciones, solicitar restricciones, solicitar comunicaciones confidenciales, recibir un registro de ciertas divulgaciones y obtener una copia impresa de este Aviso. [Detalle, POR DEFINIR.]"
         },
         {
           "heading": "Quejas",
@@ -645,12 +650,12 @@
         },
         {
           "heading": "Contacto y fecha de vigencia",
-          "body": "Para preguntas o para ejercer sus derechos, comuníquese con nuestro Oficial de Privacidad en [contacto — POR DEFINIR]. Fecha de vigencia: [Fecha — POR DEFINIR]."
+          "body": "Para preguntas o para ejercer sus derechos, comuníquese con nuestro Oficial de Privacidad en [contacto, POR DEFINIR]. Fecha de vigencia: [Fecha, POR DEFINIR]."
         }
       ]
     },
     "terms": {
-      "intro": "Estos Términos de uso rigen el uso de este sitio web. Al usar el sitio, usted acepta estos términos. [Provisional — revisar por un asesor legal.]",
+      "intro": "Estos Términos de uso rigen el uso de este sitio web. Al usar el sitio, usted acepta estos términos. [Provisional, revisar por un asesor legal.]",
       "sections": [
         {
           "heading": "Fines informativos",
@@ -674,11 +679,11 @@
         },
         {
           "heading": "Exención de garantías y limitación de responsabilidad",
-          "body": "El sitio web se proporciona \"tal cual\", sin garantías de ningún tipo, en la máxima medida permitida por la ley. [Detalle — POR DEFINIR.]"
+          "body": "El sitio web se proporciona \"tal cual\", sin garantías de ningún tipo, en la máxima medida permitida por la ley. [Detalle, POR DEFINIR.]"
         },
         {
           "heading": "Cambios y ley aplicable",
-          "body": "Podemos actualizar estos términos en cualquier momento. Estos términos se rigen por las leyes del estado de Florida. [Confirmar — POR DEFINIR.]"
+          "body": "Podemos actualizar estos términos en cualquier momento. Estos términos se rigen por las leyes del estado de Florida. [Confirmar, POR DEFINIR.]"
         }
       ]
     },
@@ -691,11 +696,11 @@
         },
         {
           "heading": "Esfuerzo continuo",
-          "body": "La accesibilidad es un esfuerzo continuo y seguimos mejorando el sitio. [Confirmar el estado de la auditoría antes del lanzamiento — POR DEFINIR.]"
+          "body": "La accesibilidad es un esfuerzo continuo y seguimos mejorando el sitio. [Confirmar el estado de la auditoría antes del lanzamiento, POR DEFINIR.]"
         },
         {
           "heading": "Comentarios y contacto",
-          "body": "Si encuentra una barrera de accesibilidad o necesita ayuda, comuníquese con nosotros en [contacto — POR DEFINIR] y trabajaremos para brindarle la información o el servicio que necesita."
+          "body": "Si encuentra una barrera de accesibilidad o necesita ayuda, comuníquese con nosotros en [contacto, POR DEFINIR] y trabajaremos para brindarle la información o el servicio que necesita."
         },
         {
           "heading": "Acceso alternativo",

@@ -12,7 +12,7 @@ export async function CTASection() {
   return (
     <section className="bg-background px-6 py-16">
       <div
-        className="topographic soft-panel mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-6 overflow-hidden rounded-3xl p-8 ring-1 ring-white/10 sm:flex-row sm:items-center sm:p-10"
+        className="topographic soft-panel rounded-panel mx-auto flex w-full max-w-6xl flex-col items-start justify-between gap-6 overflow-hidden p-8 ring-1 ring-white/10 sm:flex-row sm:items-center sm:p-10"
         style={{ backgroundColor: "var(--color-cta)" }}
       >
         <div>

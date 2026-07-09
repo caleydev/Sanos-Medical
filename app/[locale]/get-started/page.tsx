@@ -22,8 +22,13 @@ const PILLARS: {
 }[] = [
   { key: "familyMedicine", icon: HeartPulse, imageSrc: "/images/services/doctorBlue.png" },
   { key: "labs", icon: FlaskConical, imageSrc: "/images/services/labwork.png" },
-  { key: "medicine", icon: Stethoscope, imageSrc: "/images/services/gen-med.png" },
-  { key: "painManagement", icon: Activity, imageSrc: "/images/services/pain-management.jpg", comingSoon: true },
+  { key: "medicine", icon: Stethoscope, imageSrc: "/images/services/general-medicine.png" },
+  {
+    key: "painManagement",
+    icon: Activity,
+    imageSrc: "/images/services/pain-management.jpg",
+    comingSoon: true,
+  },
 ];
 
 export async function generateMetadata({
@@ -87,6 +92,7 @@ export default async function GetStartedPage({
       callPrompt={t("callPrompt")}
       phone={tFooter("phonePlaceholder")}
       pillars={pillars}
+      defaultReason="newPatient"
       crossLink={{
         href: "/get-started/recovery-regen",
         label: t("crossLink"),

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { RequestCta } from "@/components/request-cta";
 
 type NavLink = {
   href: string;
@@ -77,13 +78,12 @@ export function MobileNav({
               {portalLabel}
             </a>
           ) : null}
-          <Link
-            href="/get-started"
+          <RequestCta
             onClick={() => setIsOpen(false)}
             className="bg-cta text-cta-foreground mt-4 block rounded-full px-5 py-3 text-center text-sm font-semibold transition hover:opacity-95"
           >
             {ctaLabel}
-          </Link>
+          </RequestCta>
         </div>
       ) : null}
     </div>

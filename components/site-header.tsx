@@ -5,7 +5,9 @@ import { Link } from "@/i18n/navigation";
 import { LanguageToggle } from "@/components/language-toggle";
 import { MobileNav } from "@/components/mobile-nav";
 import { NavLinks } from "@/components/nav-links";
+import { RequestCta } from "@/components/request-cta";
 import { SHOW_PORTAL } from "@/lib/features";
+import { CLINIC } from "@/lib/site";
 
 const NAV_LINKS = [
   { href: "/about", key: "about" },
@@ -34,7 +36,7 @@ export async function SiteHeader() {
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-2">
           <div className="flex items-center gap-6">
             <a
-              href="tel:+17862921402"
+              href={`tel:${CLINIC.phoneTel}`}
               className="flex items-center gap-1.5 font-medium transition hover:opacity-80"
             >
               <Phone aria-hidden className="h-3.5 w-3.5 opacity-75" />
@@ -56,7 +58,7 @@ export async function SiteHeader() {
       <div className="bg-cta text-cta-foreground text-[11px] md:hidden">
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-center gap-x-4 gap-y-0.5 px-6 py-1.5">
           <a
-            href="tel:+17862921402"
+            href={`tel:${CLINIC.phoneTel}`}
             className="flex items-center gap-1 font-medium transition hover:opacity-80"
           >
             <Phone aria-hidden className="h-3 w-3 opacity-75" />
@@ -99,12 +101,9 @@ export async function SiteHeader() {
             </a>
           ) : null}
           <LanguageToggle />
-          <Link
-            href="/get-started"
-            className="bg-cta text-cta-foreground shadow-cta/25 hidden rounded-full px-4 py-2 text-sm font-semibold shadow-md transition hover:-translate-y-0.5 hover:opacity-95 sm:inline-flex"
-          >
+          <RequestCta className="bg-cta text-cta-foreground shadow-cta/25 hidden rounded-full px-4 py-2 text-sm font-semibold shadow-md transition hover:-translate-y-0.5 hover:opacity-95 sm:inline-flex">
             {t("requestAppointment")}
-          </Link>
+          </RequestCta>
           <MobileNav
             links={mobileLinks}
             ctaLabel={t("requestAppointment")}

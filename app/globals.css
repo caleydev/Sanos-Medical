@@ -29,6 +29,12 @@
   --color-muted: #4f5a6a; /* secondary text on white (>= 7:1) */
   --color-border: #d4e3f3; /* hairlines / card borders */
 
+  /* Feedback tokens (AA on white/surface). Errors/warnings route through these
+     so state colors are themeable and contrast-checked in one place. */
+  --color-danger: #c81e1e; /* form errors, emergency notice (~5.9:1 on white) */
+  --color-warning: #92650a; /* counsel/legal warnings (~4.9:1 on white) */
+  --color-warning-surface: #fffbeb;
+
   --font-sans:
     var(--font-source-sans), ui-sans-serif, system-ui, -apple-system,
     "Segoe UI", sans-serif;
@@ -36,7 +42,9 @@
     var(--font-jakarta), var(--font-source-sans), ui-sans-serif, system-ui,
     sans-serif;
 
-  --radius-card: 1rem;
+  --radius-card: 1rem; /* rounded-card — standard cards & callouts */
+  --radius-panel: 1.5rem; /* rounded-panel — hero / CTA panels */
+  --radius-field: 0.75rem; /* rounded-field — form inputs */
 }
 
 :root {
@@ -84,12 +92,17 @@ h4 {
   box-shadow:
     0 0 0 2px #ffffff,
     0 0 0 4px var(--color-primary);
-  border-radius: 3px;
+  /* No border-radius here: the box-shadow ring follows each element's own
+     radius, so pill buttons and rounded cards keep their shape on focus.
+     Setting a radius would square every focused control (WCAG 2.4.7). */
 }
 
-/* Brand-blue surface (Sanos blue from the logo) with a faint ripple texture. */
-.topographic {
-  background-color: var(--color-secondary);
+/* Brand-blue surface (Sanos blue from the logo) with a faint ripple texture.
+   Sanos blue is only 4.36:1 on white, so this variant is for DECORATIVE panels
+   with large/heading text only. For panels that carry normal-size body copy,
+   use `.topographic-navy` (navy base, ~13:1 for white text — passes AA). */
+.topographic,
+.topographic-navy {
   background-image:
     radial-gradient(
       circle at 20% 15%,
@@ -106,6 +119,14 @@ h4 {
       rgb(255 255 255 / 0.16) 0 1px,
       transparent 1px 30px
     );
+}
+
+.topographic {
+  background-color: var(--color-secondary);
+}
+
+.topographic-navy {
+  background-color: var(--color-primary);
 }
 
 .soft-panel {

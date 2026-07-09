@@ -11,11 +11,14 @@ import { buildPageMetadata } from "@/lib/seo";
 // implied FDA approval. A visible medical disclaimer + a TODO-gated regulatory
 // note render on the page. This funnel must NOT go live without licensed-
 // provider and healthcare-attorney sign-off (see the TODO LAUNCH GATE entry).
-const PILLARS: { key: string; icon: LucideIcon }[] = [
-  { key: "growthHormones", icon: Syringe },
-  { key: "regen", icon: Dna },
-  { key: "endurance", icon: Activity },
-  { key: "peptides", icon: FlaskConical },
+const PILLARS: { key: string; icon: LucideIcon; imageSrc?: string }[] = [
+  { key: "growthHormones", icon: Syringe, imageSrc: "/images/services/growth-hormone.png" },
+  { key: "regen", icon: Dna, imageSrc: "/images/services/regenerative-medicine.png" },
+  // COMPLIANCE: this photo is fitness/workout-context imagery on a fatigue tile;
+  // flagged for the launch-gate legal review (see content/TODO.md) as a known
+  // risk per the practice's decision to use it.
+  { key: "endurance", icon: Activity, imageSrc: "/images/services/recovery.jpg" },
+  { key: "peptides", icon: FlaskConical, imageSrc: "/images/services/peptide-therapy.png" },
 ];
 
 export async function generateMetadata({
@@ -58,10 +61,12 @@ export default async function RecoveryRegenPage({
     emailNote: string;
   };
 
-  const pillars: FunnelPillar[] = PILLARS.map(({ key, icon }) => ({
+  const pillars: FunnelPillar[] = PILLARS.map(({ key, icon, imageSrc }) => ({
     title: t(`tiles.${key}.title`),
     summary: t(`tiles.${key}.summary`),
     icon,
+    imageSrc,
+    imageAlt: imageSrc ? t(`tiles.${key}.imageAlt`) : undefined,
   }));
 
   return (
@@ -80,6 +85,7 @@ export default async function RecoveryRegenPage({
       callPrompt={t("callPrompt")}
       phone={tFooter("phonePlaceholder")}
       pillars={pillars}
+      defaultReason="recoveryRegen"
       // COMPLIANCE: short hedge surfaced near the hero claims (full block below).
       heroDisclaimer={t("heroDisclaimer")}
       crossLink={{ href: "/get-started", label: t("crossLink") }}

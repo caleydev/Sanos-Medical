@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { TriangleAlert } from "lucide-react";
+import { Disclaimer } from "@/components/disclaimer";
 
 // A section may lead with a paragraph (`body`), a bulleted list (`bullets`),
 // and/or a trailing paragraph (`note`) — any combination. Plain placeholder
@@ -50,18 +50,9 @@ export async function LegalLayout({
         </p>
 
         {showReviewNotice ? (
-          <div
-            role="note"
-            className="rounded-card mt-6 flex gap-3 border border-amber-300 bg-amber-50 p-4"
-          >
-            <TriangleAlert
-              aria-hidden
-              className="mt-0.5 h-5 w-5 shrink-0 text-amber-600"
-            />
-            <p className="text-sm font-medium text-amber-900">
-              {t("reviewNotice")}
-            </p>
-          </div>
+          <Disclaimer variant="warning" className="mt-6">
+            <p className="font-medium">{t("reviewNotice")}</p>
+          </Disclaimer>
         ) : null}
 
         <p className="text-muted mt-8 leading-relaxed whitespace-pre-line">
