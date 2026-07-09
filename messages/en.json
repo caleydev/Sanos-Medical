@@ -207,7 +207,8 @@
     "portal": {
       "heading": "Patient portal",
       "body": "Access your information and connect with our team through the patient portal.",
-      "button": "Open patient portal"
+      "button": "Open patient portal",
+      "comingSoon": "Coming soon"
     },
     "insurance": {
       "heading": "Accepted insurance",

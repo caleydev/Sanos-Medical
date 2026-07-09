@@ -207,7 +207,8 @@
     "portal": {
       "heading": "Portal del paciente",
       "body": "Acceda a su información y comuníquese con nuestro equipo a través del portal del paciente.",
-      "button": "Abrir el portal del paciente"
+      "button": "Abrir el portal del paciente",
+      "comingSoon": "Próximamente"
     },
     "insurance": {
       "heading": "Seguros aceptados",
