@@ -168,13 +168,13 @@ export function FunnelLayout({
                 </li>
               ))}
             </ul>
-            <p className="text-muted mt-8 text-sm">
+            <p className="text-muted mt-8 text-lg">
               {callPrompt}{" "}
               <a
                 href={`tel:${CLINIC.phoneTel}`}
                 className="text-cta font-semibold hover:underline"
               >
-                <Phone aria-hidden className="mr-1 inline h-4 w-4 align-[-2px]" />
+                <Phone aria-hidden className="mr-1 inline h-5 w-5 align-[-2px]" />
                 {phone}
               </a>
             </p>
