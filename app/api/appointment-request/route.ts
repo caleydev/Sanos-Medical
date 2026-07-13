@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { appointmentSchema } from "@/lib/appointment-schema";
 import { getSupabase } from "@/lib/supabase";
 import { appendLeadToSheet } from "@/lib/google-sheets";
+import { sendAppointmentNotification } from "@/lib/email-notify";
 
 // Basic in-memory rate limiting (SPEC §5). Per-instance only — for production
 // behind multiple instances, move this to a shared store (e.g. Upstash).
@@ -109,9 +110,27 @@ export async function POST(request: Request) {
     );
   }
 
-  // INTEGRATION POINT (SPEC §5): optional email notification (Resend). Wire up
-  // here using env vars — never hard-code keys.
-  //   if (process.env.RESEND_API_KEY) { await fetch("https://api.resend.com/emails", { ... }); }
+  // Email notification (SPEC §5): notify the practice via Amazon SES. Best-effort
+  // — an email failure must NOT fail the patient's submission (already stored).
+  // No-ops if APPOINTMENT_NOTIFY_FROM / APPOINTMENT_NOTIFY_TO are unset.
+  try {
+    await sendAppointmentNotification({
+      createdAt: new Date().toISOString(),
+      firstName,
+      lastName,
+      email,
+      phone,
+      contactMethod,
+      timeWindow: timeWindow || "",
+      reason,
+      locale: locale ?? "",
+    });
+  } catch (err) {
+    console.error(
+      "[appointment-request] SES notification failed:",
+      err instanceof Error ? err.message : err,
+    );
+  }
 
   return NextResponse.json({ ok: true });
 }
