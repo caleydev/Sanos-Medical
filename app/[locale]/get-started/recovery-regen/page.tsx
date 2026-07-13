@@ -12,7 +12,7 @@ import { buildPageMetadata } from "@/lib/seo";
 // note render on the page. This funnel must NOT go live without licensed-
 // provider and healthcare-attorney sign-off (see the TODO LAUNCH GATE entry).
 const PILLARS: { key: string; icon: LucideIcon; imageSrc?: string }[] = [
-  { key: "growthHormones", icon: Syringe, imageSrc: "/images/services/growth-hormone.png" },
+  { key: "glp", icon: Syringe, imageSrc: "/images/services/growth-hormone.png" },
   { key: "regen", icon: Dna, imageSrc: "/images/services/regenerative-medicine.png" },
   // COMPLIANCE: this photo is fitness/workout-context imagery on a fatigue tile;
   // flagged for the launch-gate legal review (see content/TODO.md) as a known

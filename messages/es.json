@@ -445,7 +445,7 @@
   "getStartedRegen": {
     "eyebrow": "Cuidado de recuperación y regenerativo",
     "title": "Cuidado de recuperación y medicina regenerativa en Miami. Comience con la evaluación de un proveedor.",
-    "subtitle": "Terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y terapia con péptidos. Un proveedor con licencia revisa cada opción con usted y la receta solo cuando encaja en su atención. Solicite una cita y nuestro equipo se comunica para confirmar.",
+    "subtitle": "Terapia con GLP-1, medicina regenerativa, apoyo para la resistencia y terapia con péptidos. Un proveedor con licencia revisa cada opción con usted y la receta solo cuando encaja en su atención. Solicite una cita y nuestro equipo se comunica para confirmar.",
     "heroDisclaimer": "Las terapias con receta están disponibles solo después de una consulta con un proveedor con licencia. Los resultados varían según cada persona. Esto no constituye consejo médico.",
     "trustBullets": [
       "Un proveedor con licencia revisa y receta cada terapia",
@@ -466,9 +466,9 @@
     "callPrompt": "¿Prefiere hablar con alguien? Llámenos al",
     "crossLink": "¿Busca atención primaria?",
     "tiles": {
-      "growthHormones": {
-        "title": "Terapia con hormona de crecimiento",
-        "summary": "Terapia hormonal con receta para afecciones médicas específicas, diagnosticadas por un proveedor con licencia mediante un examen y análisis de laboratorio. No la ofrecemos con fines antienvejecimiento, de rendimiento atlético o de resistencia, fisicoculturismo ni bienestar general.",
+      "glp": {
+        "title": "Terapia con GLP-1",
+        "summary": "El GLP-1 es un medicamento con receta que se ofrece solo después de una evaluación clínica, con la elegibilidad determinada por un proveedor con licencia. Se ofrece como parte de un plan supervisado y no prometemos resultados específicos.",
         "imageAlt": "Una mano con guante seleccionando un vial clínico con la etiqueta de Sanos Medical Group de una fila de viales"
       },
       "regen": {
@@ -490,7 +490,7 @@
     "disclaimer": "Esta página tiene únicamente fines educativos generales. No constituye consejo médico ni promete ningún resultado específico. Se trata de terapias con receta, disponibles solo después de que un proveedor con licencia lo examine y determine si un tratamiento es apropiado para usted. Los resultados varían según cada persona. En caso de emergencia, llame al 911 o acuda a la sala de emergencias más cercana.",
     "regulatoryNote": "Algunas de las terapias que se ofrecen aquí, como las preparaciones compuestas (compounded) de péptidos y regenerativas, son compuestas y no están aprobadas por la Administración de Alimentos y Medicamentos de los EE. UU. (FDA). La FDA no revisa los productos compuestos en cuanto a su seguridad ni su eficacia. Su proveedor le explicará el estado regulatorio de cualquier terapia antes de recetarla.",
     "seoTitle": "Cuidado de recuperación y medicina regenerativa en Miami",
-    "seoDescription": "Cuidado de recuperación y medicina regenerativa en Miami y por visita virtual en toda la Florida: terapia con hormona de crecimiento, medicina regenerativa, apoyo para la resistencia y terapia con péptidos, cada uno revisado y recetado por un proveedor con licencia. Solicite una evaluación."
+    "seoDescription": "Cuidado de recuperación y medicina regenerativa en Miami y por visita virtual en toda la Florida: terapia con GLP-1, medicina regenerativa, apoyo para la resistencia y terapia con péptidos, cada uno revisado y recetado por un proveedor con licencia. Solicite una evaluación."
   },
   "common": {
     "underConstruction": "Esta página está en preparación. El contenido estará disponible próximamente.",

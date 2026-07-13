@@ -445,7 +445,7 @@
   "getStartedRegen": {
     "eyebrow": "Recovery & regenerative care",
     "title": "Recovery and regenerative care in Miami. Start with a provider evaluation.",
-    "subtitle": "Growth hormone therapy, regenerative medicine, endurance support, and peptide therapy. A licensed provider reviews each one with you and prescribes it only when it fits your care. Request a visit and our team follows up to confirm.",
+    "subtitle": "GLP-1 therapy, regenerative medicine, endurance support, and peptide therapy. A licensed provider reviews each one with you and prescribes it only when it fits your care. Request a visit and our team follows up to confirm.",
     "heroDisclaimer": "Prescription therapies are available only after a visit with a licensed provider. Individual results vary. This is not medical advice.",
     "trustBullets": [
       "A licensed provider reviews and prescribes every therapy",
@@ -466,9 +466,9 @@
     "callPrompt": "Prefer to talk to someone? Call us at",
     "crossLink": "Looking for primary care?",
     "tiles": {
-      "growthHormones": {
-        "title": "Growth Hormone Therapy",
-        "summary": "Prescription hormone therapy for specific medical conditions, diagnosed by a licensed provider through an exam and lab work. We do not offer it for anti-aging, athletic or endurance performance, bodybuilding, or general wellness.",
+      "glp": {
+        "title": "GLP-1 Therapy",
+        "summary": "GLP-1 is a prescription medication provided only after a clinical evaluation, with eligibility determined by a licensed provider. It is offered as part of a supervised plan, and we do not promise specific outcomes.",
         "imageAlt": "A gloved hand selecting a clinical vial labeled Sanos Medical Group from a row of vials"
       },
       "regen": {
@@ -490,7 +490,7 @@
     "disclaimer": "This page is for general education only. It is not medical advice, and it promises no particular result. These are prescription therapies, available only after a licensed provider examines you and decides whether a treatment is right for you. Individual results vary. In an emergency, call 911 or go to the nearest emergency room.",
     "regulatoryNote": "Some of the therapies offered here, such as compounded peptide and regenerative preparations, are compounded and are not approved by the U.S. Food and Drug Administration. The FDA does not review compounded products for safety or effectiveness. Your provider will explain the regulatory status of any therapy before prescribing it.",
     "seoTitle": "Recovery & Regenerative Care in Miami",
-    "seoDescription": "Recovery and regenerative care in Miami and by virtual visit across Florida: growth hormone therapy, regenerative medicine, endurance support, and peptide therapy, each reviewed and prescribed by a licensed provider. Request an evaluation."
+    "seoDescription": "Recovery and regenerative care in Miami and by virtual visit across Florida: GLP-1 therapy, regenerative medicine, endurance support, and peptide therapy, each reviewed and prescribed by a licensed provider. Request an evaluation."
   },
   "common": {
     "underConstruction": "This page is being prepared. Content is coming soon.",
