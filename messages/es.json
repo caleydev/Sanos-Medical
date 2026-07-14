@@ -129,6 +129,13 @@
     "callHeading": "Llámenos",
     "mapTitle": "Mapa que muestra la ubicación de Sanos Medical Group en Miami",
     "formHeading": "Formulario de solicitud de cita",
+    "orDivider": "o",
+    "scheduler": {
+      "heading": "Reserve al instante en línea",
+      "intro": "¿Prefiere elegir su propio horario? Seleccione un espacio disponible a continuación y reciba confirmación inmediata. Comparta solo detalles de programación, sin información médica.",
+      "unavailable": "La reserva en línea no está disponible en este momento. Utilice el formulario de solicitud a continuación o llámenos.",
+      "fallbackLink": "Abrir nuestra página de reservas"
+    },
     "form": {
       "firstName": "Nombre",
       "lastName": "Apellido",

@@ -10,6 +10,12 @@ export const CLINIC = {
   phoneTel: "+17862921402",
   /** External patient portal (Healthie etc.) — link out, not a locale route. */
   portalUrl: process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://portal.example.com",
+  /**
+   * Calendly event link for the inline scheduler on /contact. Client-side embed
+   * only — no API key. `undefined` when unset (local dev / not yet provisioned),
+   * which makes the widget render a friendly placeholder instead of failing.
+   */
+  calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
 } as const;
 
 /**
