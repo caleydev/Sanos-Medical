@@ -129,6 +129,13 @@
     "callHeading": "Call us",
     "mapTitle": "Map showing the location of Sanos Medical Group in Miami",
     "formHeading": "Appointment request form",
+    "orDivider": "or",
+    "scheduler": {
+      "heading": "Book instantly online",
+      "intro": "Prefer to pick your own time? Choose an open slot below for instant confirmation. Please share scheduling details only — no medical information.",
+      "unavailable": "Online booking isn't available right now. Please use the request form below or call us.",
+      "fallbackLink": "Open our scheduling page"
+    },
     "form": {
       "firstName": "First name",
       "lastName": "Last name",

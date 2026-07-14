@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Clock, MapPin, Phone } from "lucide-react";
+import { CalendarClock, Clock, MapPin, Phone } from "lucide-react";
 import { AppointmentForm } from "@/components/appointment-form";
+import { CalendlyInline } from "@/components/calendly-inline";
 import type { Metadata } from "next";
 import { buildPageMetadata } from "@/lib/seo";
 import { CLINIC } from "@/lib/site";
@@ -103,15 +104,45 @@ export default async function ContactPage({
           </div>
         </aside>
 
-        <section
-          aria-labelledby="form-heading"
-          className="soft-panel border-border bg-background rounded-2xl border p-6 sm:p-8"
-        >
-          <h2 id="form-heading" className="sr-only">
-            {t("formHeading")}
-          </h2>
-          <AppointmentForm />
-        </section>
+        <div className="space-y-8">
+          {/* Scheduling path A: self-book a real slot via the Calendly embed. */}
+          <section
+            aria-labelledby="scheduler-heading"
+            className="soft-panel border-border bg-background rounded-2xl border p-6 sm:p-8"
+          >
+            <h2
+              id="scheduler-heading"
+              className="text-primary flex items-center gap-2 text-xl font-semibold"
+            >
+              <CalendarClock aria-hidden className="text-secondary h-5 w-5" />
+              {t("scheduler.heading")}
+            </h2>
+            {/* COMPLIANCE (SPEC §5): scheduling-only framing, no medical detail. */}
+            <p className="text-muted mt-2 text-sm">{t("scheduler.intro")}</p>
+            <div className="mt-4">
+              <CalendlyInline />
+            </div>
+          </section>
+
+          <div className="flex items-center gap-4" aria-hidden>
+            <span className="bg-border h-px flex-1" />
+            <span className="text-muted text-sm font-medium tracking-wide uppercase">
+              {t("orDivider")}
+            </span>
+            <span className="bg-border h-px flex-1" />
+          </div>
+
+          {/* Scheduling path B: request a callback (the PHI-safe Supabase form). */}
+          <section
+            aria-labelledby="form-heading"
+            className="soft-panel border-border bg-background rounded-2xl border p-6 sm:p-8"
+          >
+            <h2 id="form-heading" className="sr-only">
+              {t("formHeading")}
+            </h2>
+            <AppointmentForm />
+          </section>
+        </div>
       </div>
     </main>
   );
