@@ -1,11 +1,13 @@
 import Image from "next/image";
 import {
+  CalendarClock,
   CheckCircle2,
   Phone,
   ShieldCheck,
   type LucideIcon,
 } from "lucide-react";
 import { AppointmentForm } from "@/components/appointment-form";
+import { CalendlyInline } from "@/components/calendly-inline";
 import { Disclaimer } from "@/components/disclaimer";
 import { Link } from "@/i18n/navigation";
 import { CLINIC } from "@/lib/site";
@@ -43,6 +45,9 @@ export function FunnelLayout({
   subtitle,
   trustBullets,
   founder,
+  schedulerHeading,
+  schedulerIntro,
+  orDivider,
   formHeading,
   formSubhead,
   formHeadingId,
@@ -62,6 +67,11 @@ export function FunnelLayout({
   subtitle: string;
   trustBullets: string[];
   founder: FunnelFounder;
+  // Scheduling path A: the "book instantly" Calendly heading + intro, and the
+  // divider label between it and the request form below.
+  schedulerHeading: string;
+  schedulerIntro: string;
+  orDivider: string;
   formHeading: string;
   formSubhead: string;
   formHeadingId: string;
@@ -114,10 +124,37 @@ export function FunnelLayout({
             ) : null}
           </div>
 
-          {/* Form card. AppointmentForm is PHI-safe and wired to Supabase + Sheet.
-              On mobile it renders last (order-3) so trust signals come first;
-              on desktop it returns to the right rail spanning both rows. */}
+          {/* Booking card. Two scheduling paths: (A) instant self-booking via
+              Calendly, (B) the PHI-safe request form (Supabase + Sheet). On
+              mobile it renders last (order-3) so trust signals come first; on
+              desktop it returns to the right rail spanning both rows. */}
           <div className="soft-panel border-border bg-background order-3 rounded-3xl border p-6 sm:p-8 lg:order-2 lg:row-span-2">
+            {/* Scheduling path A: self-book a real slot via the Calendly embed
+                (rendered compact to fit the narrower funnel rail). */}
+            <section aria-labelledby={`${formHeadingId}-scheduler`}>
+              <h2
+                id={`${formHeadingId}-scheduler`}
+                className="text-primary flex items-center gap-2 text-xl font-semibold"
+              >
+                <CalendarClock aria-hidden className="text-secondary h-5 w-5" />
+                {schedulerHeading}
+              </h2>
+              {/* COMPLIANCE (SPEC §5): scheduling-only framing, no medical detail. */}
+              <p className="text-muted mt-2 text-sm">{schedulerIntro}</p>
+              <div className="mt-4">
+                <CalendlyInline compact />
+              </div>
+            </section>
+
+            <div className="my-6 flex items-center gap-4" aria-hidden>
+              <span className="bg-border h-px flex-1" />
+              <span className="text-muted text-sm font-medium tracking-wide uppercase">
+                {orDivider}
+              </span>
+              <span className="bg-border h-px flex-1" />
+            </div>
+
+            {/* Scheduling path B: request a callback (the PHI-safe form). */}
             <h2
               id={formHeadingId}
               className="text-primary text-2xl font-bold tracking-tight"

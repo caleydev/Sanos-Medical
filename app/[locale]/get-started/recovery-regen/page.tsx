@@ -49,9 +49,10 @@ export default async function RecoveryRegenPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const [t, tFooter] = await Promise.all([
+  const [t, tFooter, tContact] = await Promise.all([
     getTranslations("getStartedRegen"),
     getTranslations("footer"),
+    getTranslations("contact"),
   ]);
   const bullets = t.raw("trustBullets") as string[];
   const founder = t.raw("founder") as {
@@ -76,6 +77,9 @@ export default async function RecoveryRegenPage({
       subtitle={t("subtitle")}
       trustBullets={bullets}
       founder={founder}
+      schedulerHeading={tContact("scheduler.heading")}
+      schedulerIntro={tContact("scheduler.intro")}
+      orDivider={tContact("orDivider")}
       formHeading={t("formHeading")}
       formSubhead={t("formSubhead")}
       formHeadingId="recovery-regen-form-heading"
