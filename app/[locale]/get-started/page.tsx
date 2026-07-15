@@ -53,9 +53,10 @@ export default async function GetStartedPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const [t, tFooter] = await Promise.all([
+  const [t, tFooter, tContact] = await Promise.all([
     getTranslations("getStarted"),
     getTranslations("footer"),
+    getTranslations("contact"),
   ]);
   const bullets = t.raw("trustBullets") as string[];
   const founder = t.raw("founder") as {
@@ -83,6 +84,9 @@ export default async function GetStartedPage({
       subtitle={t("subtitle")}
       trustBullets={bullets}
       founder={founder}
+      schedulerHeading={tContact("scheduler.heading")}
+      schedulerIntro={tContact("scheduler.intro")}
+      orDivider={tContact("orDivider")}
       formHeading={t("formHeading")}
       formSubhead={t("formSubhead")}
       formHeadingId="get-started-form-heading"

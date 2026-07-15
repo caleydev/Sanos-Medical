@@ -31,7 +31,7 @@ const WIDGET_SRC = "https://assets.calendly.com/assets/external/widget.js";
  * (name, email, phone, non-medical reason). No symptom/medical questions —
  * standard Calendly is not HIPAA-eligible without an Enterprise BAA.
  */
-export function CalendlyInline() {
+export function CalendlyInline({ compact = false }: { compact?: boolean } = {}) {
   const t = useTranslations("contact.scheduler");
   const locale = useLocale();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -111,10 +111,11 @@ export function CalendlyInline() {
   return (
     <>
       {/* Calendly injects its iframe here. A fixed height avoids layout shift
-          while the widget boots and gives the iframe a box to fill. */}
+          while the widget boots and gives the iframe a box to fill. `compact`
+          trims the height for the narrower funnel right-rail. */}
       <div
         ref={containerRef}
-        className="min-w-[320px] h-[700px] w-full"
+        className={`min-w-[320px] w-full ${compact ? "h-[560px]" : "h-[700px]"}`}
         aria-label={t("heading")}
       />
       {/* Progressive-enhancement fallback: if the script is blocked or JS is
