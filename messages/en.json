@@ -507,7 +507,11 @@
     "emergencyNotice": "Not for emergencies. If this is a medical emergency, call 911 or go to the nearest emergency room.",
     "callNow": "Call now",
     "requestShort": "Request visit",
-    "mobileActionsLabel": "Quick actions"
+    "mobileActionsLabel": "Quick actions",
+    "whatsapp": {
+      "label": "Chat with us on WhatsApp",
+      "prefill": "Hi Sanos Medical, I'd like to book an appointment."
+    }
   },
   "pages": {
     "about": { "title": "About Sanos Medical Group" },

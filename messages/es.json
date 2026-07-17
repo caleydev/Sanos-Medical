@@ -507,7 +507,11 @@
     "emergencyNotice": "No es para emergencias. Si se trata de una emergencia médica, llame al 911 o acuda a la sala de emergencias más cercana.",
     "callNow": "Llamar ahora",
     "requestShort": "Solicitar cita",
-    "mobileActionsLabel": "Acciones rápidas"
+    "mobileActionsLabel": "Acciones rápidas",
+    "whatsapp": {
+      "label": "Chatee con nosotros por WhatsApp",
+      "prefill": "Hola Sanos Medical, me gustaría solicitar una cita."
+    }
   },
   "pages": {
     "about": { "title": "Acerca de Sanos Medical Group" },

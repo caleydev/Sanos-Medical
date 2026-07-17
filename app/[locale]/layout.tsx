@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileCallBar } from "@/components/mobile-call-bar";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 import { StructuredData } from "@/components/structured-data";
 import { SITE_URL, BRAND, buildAlternates } from "@/lib/seo";
 import "../globals.css";
@@ -95,6 +96,7 @@ export default async function LocaleLayout({
           {children}
           <SiteFooter />
           <MobileCallBar />
+          <WhatsAppButton />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -16,6 +16,13 @@ export const CLINIC = {
    * which makes the widget render a friendly placeholder instead of failing.
    */
   calendlyUrl: process.env.NEXT_PUBLIC_CALENDLY_URL,
+  /**
+   * WhatsApp Business line for the floating click-to-chat button — same number
+   * as `phoneTel`, but digits only (no `+`) as `wa.me` requires. Override via
+   * env if the WhatsApp line ever diverges from the main phone; unset disables
+   * the button.
+   */
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "17862921402",
 } as const;
 
 /**
